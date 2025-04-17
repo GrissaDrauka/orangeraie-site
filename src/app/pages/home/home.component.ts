@@ -5,20 +5,17 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
      <!-- Hero Section -->
-    <section class="relative h-[600px] w-full">
-      <img
-        src="assets/maison-hotes.png"
-        alt="Maison d'hôtes"
-        class="absolute inset-0 w-full h-full object-cover"
-      />
-      <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4 text-white">
-        <h1 class="text-5xl md:text-6xl font-bold font-serif mb-4">Chambres d'hôtes</h1>
-        <p class="text-lg md:text-xl max-w-2xl mb-6 font-sans">
+     <section
+        class="relative w-full bg-black/50 text-white text-center px-4 pt-24 sm:pt-28 pb-16 flex flex-col items-center justify-center min-h-[80vh] bg-cover bg-center"
+        style="background-image: url('assets/maison-hotes.png');"
+      >
+        <h1 class="text-4xl sm:text-5xl font-bold font-serif mb-4">Chambres d'hôtes</h1>
+        <p class="text-base sm:text-lg max-w-2xl mb-6 font-sans">
           Laurence & Fabrice vous accueillent dans leur maison d'hôtes et vous souhaitent la bienvenue.
         </p>
 
-        <!-- Labels (responsive) -->
-        <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 mb-6">
+        <!-- Labels -->
+        <div class="flex flex-wrap gap-3 justify-center mb-6">
           <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
             <img src="assets/clevacances.png" alt="Clévacances" class="h-6" />
             <span class="text-sm text-orangeraie font-semibold font-sans">Clévacances</span>
@@ -34,18 +31,22 @@ import { Component } from '@angular/core';
         </div>
 
         <!-- Boutons réservation -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
-          <a href="tel:+33468822279"
-            class="bg-orangeraie text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-[#7a583f] transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 text-sm sm:text-base">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="tel:+33468822279"
+            class="bg-orangeraie text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-[#7a583f] transition text-sm sm:text-base"
+          >
             📞 Réserver par téléphone
           </a>
-          <a routerLink="/reservation"
-            class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 text-sm sm:text-base">
+          <a
+            routerLink="/reservation"
+            class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base"
+          >
             📝 Réserver en ligne
           </a>
         </div>
-      </div>
-    </section>
+      </section>
+
 
     <!-- Section Nos chambres -->
     <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
