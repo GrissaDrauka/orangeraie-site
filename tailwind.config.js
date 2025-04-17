@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        test: ['"Playfair Display"', 'serif'],
+        playfair: ['"Playfair Display"', 'serif'],
         serif: ['"EB Garamond"', 'serif'],
         sans: ['Montserrat', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
