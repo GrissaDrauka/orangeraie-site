@@ -1,3 +1,5 @@
+const { snapshot } = require('node:test');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,8 +8,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Open Sans"', 'sans-serif'],
-        serif: ['"Playfair Display"', 'serif']
+        test: ['"Playfair Display"', 'serif'],
+        serif: ['"EB Garamond"', 'serif'],
+        sans: ['Montserrat', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
       },
       colors: {
         orangeraie: "#926d53",
