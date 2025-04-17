@@ -37,19 +37,19 @@ import { RouterModule } from '@angular/router';
 
         <!-- Menu desktop -->
         <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide">
-          <a routerLink="/" routerLinkActive="text-orangeraie"
+          <a routerLink="/" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
             Accueil
           </a>
-          <a routerLink="/chambres" routerLinkActive="text-orangeraie"
+          <a routerLink="/chambres" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
             Nos Chambres
           </a>
-          <a routerLink="/gite" routerLinkActive="text-orangeraie"
+          <a routerLink="/gite" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
             Notre Gîte
           </a>
-          <a routerLink="/contact" routerLinkActive="text-orangeraie"
+          <a routerLink="/contact" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
             Contact
           </a>

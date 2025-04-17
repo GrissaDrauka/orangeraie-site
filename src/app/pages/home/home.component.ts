@@ -40,7 +40,7 @@ import { Component } from '@angular/core';
           </a>
           <a
             routerLink="/reservation"
-            class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base"
+            class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base cursor-pointer"
           >
             📝 Réserver en ligne
           </a>
@@ -58,7 +58,7 @@ import { Component } from '@angular/core';
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
           <!-- Chambre 1 -->
           <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/chambre_nature.jpg" alt="Chambre Nature" class="h-56 w-full object-cover" />
+            <img src="assets/chambres/chambre_nature.jpg" alt="Chambre Nature" class="h-56 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Chambre Nature</h3>
               <p class="text-gray-700 text-sm font-sans">
@@ -69,7 +69,7 @@ import { Component } from '@angular/core';
 
           <!-- Chambre 2 -->
           <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/chambre_atelier.jpg" alt="Chambre triple" class="h-56 w-full object-cover" />
+            <img src="assets/chambres/chambre_atelier.jpg" alt="Chambre triple" class="h-56 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Chambre Atelier</h3>
               <p class="text-gray-700 text-sm font-sans">
@@ -80,7 +80,7 @@ import { Component } from '@angular/core';
 
           <!-- Chambre 3 -->
           <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/chambre_coloniale.jpg" alt="Suite familiale" class="h-56 w-full object-cover" />
+            <img src="assets/chambres/chambre_coloniale.jpg" alt="Suite familiale" class="h-56 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Suite Familiale "Coloniale"</h3>
               <p class="text-gray-700 text-sm font-sans">
@@ -92,7 +92,7 @@ import { Component } from '@angular/core';
 
         <!-- Bouton vers la page dédiée -->
         <div class="text-center mt-12">
-          <a routerLink="/chambres" class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition">
+          <a routerLink="/chambres" class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
             Voir toutes les chambres
           </a>
         </div>
@@ -107,7 +107,7 @@ import { Component } from '@angular/core';
           N’hésitez pas à nous contacter, nous répondons rapidement et avec plaisir.
         </p>
         <a routerLink="/contact"
-          class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition">
+          class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
           Nous contacter
         </a>
       </div>
@@ -130,7 +130,7 @@ import { Component } from '@angular/core';
           <p class="text-gray-700 text-base font-sans mb-6">
             Découvrez notre gîte indépendant, confortable et parfaitement équipé pour accueillir couples, familles ou groupes d’amis. Situé au calme, avec terrasse et vue sur le jardin, c’est le lieu idéal pour un séjour prolongé dans les Pyrénées-Orientales.
           </p>
-          <a routerLink="/gite" class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition">
+          <a routerLink="/gite" class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
             En savoir plus
           </a>
         </div>
@@ -257,7 +257,7 @@ import { Component } from '@angular/core';
         </div>
 
         <div class="mt-12">
-          <a routerLink="/activites" class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition">
+          <a routerLink="/activites" class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
             Découvrir la région
           </a>
         </div>
@@ -286,7 +286,7 @@ import { Component } from '@angular/core';
         </div>
 
         <a routerLink="/contact"
-          class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition">
+          class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
           Nous écrire
         </a>
       </div>

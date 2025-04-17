@@ -1,0 +1,50 @@
+<section class="pt-24 pb-16 px-4 max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-8">Nos Chambres</h2>
+    <p class="text-center max-w-2xl mx-auto text-gray-600 font-sans text-base sm:text-lg mb-10">
+        Découvrez nos cinq chambres chaleureuses, confortables et décorées avec soin pour un séjour inoubliable.
+    </p>
+
+    <h3 class="text-xl sm:text-2xl font-semibold font-serif text-[#7a583f] text-center mb-6">
+        Chambres pour 2 personnes
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div *ngFor="let chambre of chambresDeux"
+            class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom" class="w-full h-48 object-cover">
+            <span class="inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold">
+                {{ chambre.nbPers }}
+            </span>
+            <div class="p-4">
+                <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
+                <p class="text-sm text-gray-700 font-sans">{{ chambre.description }}</p>
+                <a routerLink="/contact"
+                    class="inline-block mt-4 text-orangeraie font-semibold hover:underline text-sm ">
+                    En savoir plus →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-12 h-[1px] bg-[#e6e1dd] w-1/2 mx-auto"></div>
+
+    <h3 class="text-xl sm:text-2xl font-semibold font-serif text-[#7a583f] text-center mb-6">
+        Chambres familiales
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div *ngFor="let chambre of chambresFamille"
+            class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom" class="w-full h-48 object-cover">
+            <span class="inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold">
+                {{ chambre.nbPers }}
+            </span>
+            <div class="p-4">
+                <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
+                <p class="text-sm text-gray-700 font-sans">{{ chambre.description }}</p>
+                <a routerLink="/contact"
+                    class="inline-block mt-4 text-orangeraie font-semibold hover:underline text-sm cursor-pointer">
+                    En savoir plus →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

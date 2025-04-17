@@ -32,10 +32,10 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         <div class="space-y-2">
           <h4 class="font-semibold text-orangeraie">Navigation</h4>
           <ul class="space-y-1">
-            <li><a routerLink="/" class="hover:underline">Accueil</a></li>
-            <li><a routerLink="/chambres" class="hover:underline">Nos chambres</a></li>
-            <li><a routerLink="/gite" class="hover:underline">Notre gîte</a></li>
-            <li><a routerLink="/contact" class="hover:underline">Contact</a></li>
+            <li><a routerLink="/" class="hover:underline cursor-pointer">Accueil</a></li>
+            <li><a routerLink="/chambres" class="hover:underline cursor-pointer">Nos chambres</a></li>
+            <li><a routerLink="/gite" class="hover:underline cursor-pointer">Notre gîte</a></li>
+            <li><a routerLink="/contact" class="hover:underline cursor-pointer">Contact</a></li>
           </ul>
         </div>
 
