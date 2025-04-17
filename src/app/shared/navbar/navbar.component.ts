@@ -15,7 +15,13 @@ import { RouterModule } from '@angular/router';
     ></div>
 
     <!-- Navbar principale -->
-    <header class="fixed top-0 left-0 w-full bg-[#f9f4ef] z-50 shadow transition-all duration-300">
+    <header
+      [ngClass]="{
+        'bg-[#f9f4ef]/80 backdrop-blur-md shadow-md scale-95 border-b border-orangeraie py-2': isScrolled,
+        'bg-[#f9f4ef] scale-100 border-transparent py-4': !isScrolled
+      }"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b"
+    >
       <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         <!-- Logo -->
         <a routerLink="/" class="flex items-center space-x-2 text-orangeraie font-serif font-bold text-xl">
@@ -79,6 +85,7 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   isOpen = false;
+  isScrolled = false;
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
@@ -93,12 +100,14 @@ export class NavbarComponent implements OnInit, OnDestroy {
   ngOnInit() {
     if (typeof window !== 'undefined') {
       window.addEventListener('keydown', this.handleKeyDown);
+      window.addEventListener('scroll', this.handleScroll);
     }
   }
 
   ngOnDestroy() {
     if (typeof window !== 'undefined') {
       window.removeEventListener('keydown', this.handleKeyDown);
+      window.removeEventListener('scroll', this.handleScroll);
     }
   }
 
@@ -107,4 +116,9 @@ export class NavbarComponent implements OnInit, OnDestroy {
       this.closeMenu();
     }
   };
+
+  handleScroll = (): void => {
+    this.isScrolled = window.scrollY > 60;
+  };
+
 }
