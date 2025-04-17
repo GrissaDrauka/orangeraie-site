@@ -19,7 +19,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     </router-outlet>
 
     <!-- Footer -->
-    <footer class="bg-[#f9f4ef] text-gray-700 py-10 px-4 md:px-16 mt-16">
+    <!--<div class="h-6 bg-gradient-to-b from-transparent to-[#f9f4ef]"></div>-->
+    <footer class="bg-[#f9f4ef] text-gray-700 pt-12 pb-10 px-4 md:px-16">
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
         
         <!-- Nom / logo -->
