@@ -13,7 +13,7 @@
 
     <p-dialog [(visible)]="showDialog" [modal]="true" [dismissableMask]="true"
         [style]="{ width: '60vw', 'max-width': '60vw' }" [contentStyle]="{ padding: '0' }" [draggable]="false"
-        [closable]="true" (onHide)="closeZoom()">
+        [closable]="true" (onHide)="closeZoom()" styleClass="rounded-xl shadow-2xl">
         <div class="relative flex justify-center items-center py-6 px-2">
             <!-- Bouton précédent -->
             <button (click)="prevImage()"
@@ -23,7 +23,7 @@
 
             <!-- Image zoomée -->
             <img *ngIf="selectedImage" [src]="selectedImage.image"
-                class="max-h-[80vh] max-w-full object-contain rounded shadow z-0" />
+                class="max-h-[80vh] max-w-full object-contain rounded-xl shadow z-0" />
 
             <!-- Bouton suivant -->
             <button (click)="nextImage()"
