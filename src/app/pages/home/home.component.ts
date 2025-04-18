@@ -136,6 +136,7 @@ import { Component } from '@angular/core';
         </div>
 
       </div>
+    </section>
 
     <!-- Section Services & Commodités -->
     <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
