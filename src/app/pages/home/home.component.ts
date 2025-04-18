@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
+  standalone: false,
   template: `
      <!-- Hero Section -->
      <section

@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-chambres',
-  imports: [CommonModule],
-  templateUrl: './chambres.component.html',
-  styleUrl: './chambres.component.scss'
+  standalone: false,
+  templateUrl: './chambres.component.html'
 })
 export class ChambresComponent {
   chambresDeux = [

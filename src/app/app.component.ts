@@ -1,16 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { FooterComponent } from "./shared/footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent],
+  standalone: false,
   template: `
-  
-  <!--<div class="min-h-screen bg-[#E6D9BC]">-->
     <app-navbar></app-navbar>
+
     <router-outlet>
       <!-- Bouton flottant pour mobile -->
       <a href="tel:+33468822279"
@@ -18,8 +13,8 @@ import { FooterComponent } from "./shared/footer/footer.component";
         📞 Réserver
       </a>
     </router-outlet>
+
     <app-footer></app-footer>
   `
 })
-export class AppComponent {
-}
+export class AppComponent { }

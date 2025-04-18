@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-gite',
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './gite.component.html'
 })
 
