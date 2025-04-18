@@ -1,28 +1,60 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-gite',
   standalone: false,
-  templateUrl: './gite.component.html'
+  templateUrl: './gite.component.html',
+  styleUrls: ['./gite.component.scss']
 })
-
 export class GiteComponent {
-  img = [
+  album = [
     {
-      src: 'assets/gite1.jpg',
-      thumb: 'assets/gite1.jpg',
-      caption: 'Salon du gîte'
+      image: 'assets/chambres/chambre_marine.jpg',
+      thumbnail: 'assets/chambres/chambre_marine.jpg',
+      alt: 'Photo 1',
+      title: 'Salon'
     },
     {
-      src: 'assets/gite2.jpg',
-      thumb: 'assets/gite2.jpg',
-      caption: 'Cuisine équipée'
+      image: 'assets/chambres/chambre_bambouseraie.jpg',
+      thumbnail: 'assets/chambres/chambre_bambouseraie.jpg',
+      alt: 'Photo 2',
+      title: 'Cuisine'
     },
     {
-      src: 'assets/gite3.jpg',
-      thumb: 'assets/gite3.jpg',
-      caption: 'Chambre spacieuse'
+      image: 'assets/chambres/chambre_atelier.jpg',
+      thumbnail: 'assets/chambres/chambre_atelier.jpg',
+      alt: 'Photo 3',
+      title: 'Chambre'
     }
   ];
+
+  responsiveOptions = [
+    {
+      breakpoint: '1024px',
+      numVisible: 3
+    },
+    {
+      breakpoint: '768px',
+      numVisible: 2
+    },
+    {
+      breakpoint: '560px',
+      numVisible: 1
+    }
+  ];
+
+  selectedImage: string | null = null;
+  showDialog: boolean = false;
+
+  openZoom(image: string): void {
+    this.selectedImage = image;
+    this.showDialog = true;
+  }
+
+  closeZoom(): void {
+    this.selectedImage = null;
+    this.showDialog = false;
+  }
+
+
 }

@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ChambresComponent } from './pages/chambres/chambres.component';
 import { GiteComponent } from './pages/gite/gite.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GiteModule } from './pages/gite/gite.module';
 
 @NgModule({
     declarations: [
@@ -17,12 +18,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         NavbarComponent,
         FooterComponent,
         HomeComponent,
-        ChambresComponent,
-        GiteComponent
+        ChambresComponent
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
+        GiteModule,
         RouterModule.forRoot(routes)
     ],
     bootstrap: [AppComponent]

@@ -1,0 +1,28 @@
+::ng-deep .p-galleria-indicators {
+    transform: translateY(10px);
+    /* décale vers le bas */
+    margin-top: 1rem;
+    /* ajoute un peu d'espace */
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+::ng-deep .p-galleria-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    /* 👈 Rendu rond */
+    background-color: #c8a27e;
+    /* couleur douce orangée */
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+::ng-deep .p-galleria-indicator.p-highlight {
+    opacity: 1;
+    transform: scale(1.2);
+    background-color: #926d53;
+    /* couleur plus foncée à l’active */
+}

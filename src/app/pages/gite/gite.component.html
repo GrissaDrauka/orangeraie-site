@@ -2,9 +2,27 @@
     <h2 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-8">
         Notre Gîte
     </h2>
+    <p-galleria [value]="album" [showThumbnails]="false" [showIndicators]="true" [responsiveOptions]="responsiveOptions"
+        [circular]="true" [autoPlay]="true" [transitionInterval]="4000"
+        [style]="{ 'max-width': '100%', 'margin': 'auto' }" [showItemNavigators]="true"
+        [showItemNavigatorsOnHover]="true">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.image" class="w-full object-cover rounded-xl shadow cursor-zoom-in"
+                style="max-height: 400px;" (click)="openZoom(item.image)" />
+        </ng-template>
+    </p-galleria>
+
+    <p-dialog [(visible)]="showDialog" [modal]="true" [dismissableMask]="true" [style]="{ width: '90vw' }"
+        contentStyleClass="flex justify-center items-center p-0" (onHide)="closeZoom()">
+        <img *ngIf="selectedImage" [src]="selectedImage" class="max-h-[80vh] object-contain" />
+    </p-dialog>
+
+
+
+
     <!-- Texte & boutons -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div class="order-2 md:order-1">
+    <div class="flex flex-col items-center text-center mt-10">
+        <div class="order-2 md:order-1 items-center">
             <p class="text-base sm:text-lg font-sans text-gray-700 mb-4">
                 Niché au cœur d’Elne, notre gîte indépendant vous accueille dans une ambiance chaleureuse et
                 confortable.
@@ -17,7 +35,7 @@
                 jardin.
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-4">
+            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center w-full">
                 <a href="tel:+33468822279"
                     class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base text-center">
                     📞 Réserver par téléphone
@@ -28,10 +46,20 @@
                 </a>
             </div>
         </div>
-
-        <!-- Si tu veux une image décorative à droite (optionnel) -->
-        <div class="order-1 md:order-2 hidden md:block">
-            <img src="assets/gite.jpg" alt="Visuel gîte" class="rounded-2xl shadow w-full h-64 object-cover" />
-        </div>
     </div>
+
+    <div class="mt-10 bg-[#f9f4ef] rounded-xl shadow px-6 py-6 max-w-3xl mx-auto text-center">
+        <h3 class="text-xl font-semibold font-serif text-orangeraie mb-4">Équipements du gîte</h3>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 text-sm font-sans">
+            <li>🍳 Cuisine équipée</li>
+            <li>🛏️ 1 chambre spacieuse et 2 lits dans le salon</li>
+            <li>🛁 Salle de bain moderne</li>
+            <li>🌐 Wi-Fi gratuit</li>
+            <li>📺 Télévision</li>
+            <li>🌳 Accès jardin privé</li>
+            <li>🚗 Parking gratuit à proximité</li>
+            <li>🐾 Animaux acceptés</li>
+        </ul>
+    </div>
+
 </section>
