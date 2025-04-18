@@ -10,18 +10,28 @@
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div *ngFor="let chambre of chambresDeux"
-                class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-                <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom" class="w-full h-48 object-cover">
-                <span class="inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold">
-                    {{ chambre.nbPers }}
-                </span>
+                class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden relative">
+
+                <div class="relative">
+                    <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom"
+                        class="w-full h-48 object-cover" />
+                    <span
+                        class="absolute bottom-2 left-2 inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold shadow">
+                        {{ chambre.nbPers }}
+                    </span>
+                </div>
+
                 <div class="p-4">
                     <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
                     <p class="text-sm text-gray-700 font-sans">{{ chambre.description }}</p>
-                    <a routerLink="/contact"
-                        class="inline-block mt-4 text-orangeraie font-semibold hover:underline text-sm ">
-                        En savoir plus →
-                    </a>
+
+                    <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <a routerLink="/contact"
+                            class="text-orangeraie font-semibold hover:underline text-sm cursor-pointer">
+                            En savoir plus →
+                        </a>
+                        <span class="text-sm text-gray-600 italic font-sans">Tarifs dès {{ chambre.tarif }}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,18 +43,28 @@
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div *ngFor="let chambre of chambresFamille"
-                class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-                <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom" class="w-full h-48 object-cover">
-                <span class="inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold">
-                    {{ chambre.nbPers }}
-                </span>
+                class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden relative">
+
+                <div class="relative">
+                    <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom"
+                        class="w-full h-48 object-cover" />
+                    <span
+                        class="absolute bottom-2 left-2 inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold shadow">
+                        {{ chambre.nbPers }}
+                    </span>
+                </div>
+
                 <div class="p-4">
                     <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
                     <p class="text-sm text-gray-700 font-sans">{{ chambre.description }}</p>
-                    <a routerLink="/contact"
-                        class="inline-block mt-4 text-orangeraie font-semibold hover:underline text-sm cursor-pointer">
-                        En savoir plus →
-                    </a>
+
+                    <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <a routerLink="/contact"
+                            class="text-orangeraie font-semibold hover:underline text-sm cursor-pointer">
+                            En savoir plus →
+                        </a>
+                        <span class="text-sm text-gray-600 italic font-sans">Tarifs dès {{ chambre.tarif }}</span>
+                    </div>
                 </div>
             </div>
         </div>
