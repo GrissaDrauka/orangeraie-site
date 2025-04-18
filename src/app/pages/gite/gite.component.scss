@@ -1,8 +1,6 @@
 ::ng-deep .p-galleria-indicators {
     transform: translateY(10px);
-    /* décale vers le bas */
     margin-top: 1rem;
-    /* ajoute un peu d'espace */
     gap: 12px;
     display: flex;
     justify-content: center;
@@ -12,17 +10,42 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    /* 👈 Rendu rond */
     background-color: #c8a27e;
-    /* couleur douce orangée */
     opacity: 0.4;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-::ng-deep .p-galleria-indicator.p-highlight {
-    opacity: 1;
-    transform: scale(1.2);
-    background-color: #926d53;
-    /* couleur plus foncée à l’active */
+::ng-deep .p-dialog-mask.p-component-overlay {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000 !important;
+}
+
+/* Supprime tout flou sur la boîte de contenu interne */
+::ng-deep .p-dialog {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Supprime la bande plus sombre autour du contenu */
+::ng-deep .p-dialog .p-dialog-content {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+@keyframes fadeInZoomDialog {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+::ng-deep .p-dialog {
+    animation: fadeInZoomDialog 0.5s ease-in-out;
 }

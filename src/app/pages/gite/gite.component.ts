@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./gite.component.scss']
 })
 export class GiteComponent {
+
   album = [
     {
       image: 'assets/chambres/chambre_marine.jpg',
@@ -43,18 +44,33 @@ export class GiteComponent {
     }
   ];
 
-  selectedImage: string | null = null;
-  showDialog: boolean = false;
+  showDialog = false;
+  selectedImage: any = null;
 
-  openZoom(image: string): void {
+  closeZoom() {
+    this.showDialog = false;
+    document.body.style.overflow = '';
+  }
+
+  openZoom(image: any) {
     this.selectedImage = image;
     this.showDialog = true;
   }
 
-  closeZoom(): void {
-    this.selectedImage = null;
-    this.showDialog = false;
+  goToImage(image: any) {
+    this.selectedImage = image;
   }
 
+  nextImage() {
+    const currentIndex = this.album.indexOf(this.selectedImage);
+    this.selectedImage = this.album[(currentIndex + 1) % this.album.length];
+  }
+
+  prevImage() {
+    const currentIndex = this.album.indexOf(this.selectedImage);
+    this.selectedImage = this.album[
+      (currentIndex - 1 + this.album.length) % this.album.length
+    ];
+  }
 
 }
