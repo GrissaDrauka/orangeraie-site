@@ -8,7 +8,6 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ChambresComponent } from './pages/chambres/chambres.component';
-import { GiteComponent } from './pages/gite/gite.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GiteModule } from './pages/gite/gite.module';
 
@@ -24,7 +23,10 @@ import { GiteModule } from './pages/gite/gite.module';
         BrowserModule,
         BrowserAnimationsModule,
         GiteModule,
-        RouterModule.forRoot(routes)
+        RouterModule.forRoot(routes, {
+            scrollPositionRestoration: 'enabled',
+            anchorScrolling: 'enabled'
+        })
     ],
     bootstrap: [AppComponent]
 })

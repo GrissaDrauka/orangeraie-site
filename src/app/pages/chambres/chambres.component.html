@@ -10,7 +10,7 @@
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div *ngFor="let chambre of chambresDeux"
-                class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden relative">
+                class="bg-white rounded-2xl shadow hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] overflow-hidden relative">
 
                 <div class="relative">
                     <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom"
@@ -43,7 +43,7 @@
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div *ngFor="let chambre of chambresFamille"
-                class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden relative">
+                class="bg-white rounded-2xl shadow hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] overflow-hidden relative">
 
                 <div class="relative">
                     <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom"
