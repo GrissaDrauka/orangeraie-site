@@ -203,8 +203,56 @@ import { Component } from '@angular/core';
       </div>
     </section>
 
-    <!-- Section À découvrir autour -->
-    <section class="bg-white py-16 px-4 md:px-16">
+     <!-- Essai 2 pour les services et commodités -->
+     <section class="bg-white py-12 px-4">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-orangeraie mb-6">Infos pratiques</h2>
+        
+        <div class="grid gap-6 sm:grid-cols-2 text-left text-sm text-gray-700 font-sans">
+          <div>
+            <h3 class="font-semibold text-orangeraie mb-2">🍽️ Petit déjeuner</h3>
+            <p>
+              Petit déjeuner à la française avec café, thé, chocolat, viennoiseries, pain, yaourt, jus d’orange
+              et nos <strong>10 confitures maison</strong>, servi dans le jardin ou la salle à manger.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-orangeraie mb-2">🕒 Arrivées & Départs</h3>
+            <p>
+              Accueil à partir de <strong>17h30</strong>. Les chambres doivent être libérées à <strong>10h</strong>.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-orangeraie mb-2">💳 Moyens de paiement</h3>
+            <p>
+              Chèques, espèces, <strong>chèques vacances ANCV</strong> et <strong>chèques vacances connect</strong>.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-orangeraie mb-2">📍 Autres services</h3>
+            <ul class="list-disc list-inside">
+              <li>Patio et jardin avec mobilier</li>
+              <li>Cuisine d'été équipée</li>
+              <li>Réfrigérateurs en libre service</li>
+              <li>Sèche-cheveux sur demande</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <a routerLink="/infos-pratiques"
+            class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base">
+            ➕ Tout savoir
+          </a>
+        </div>
+      </div>
+    </section>
+
+     <!-- Section À découvrir autour -->
+     <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
       <div class="max-w-6xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-12">
           À découvrir autour
@@ -259,54 +307,6 @@ import { Component } from '@angular/core';
         <div class="mt-12">
           <a routerLink="/activites" class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
             Découvrir la région
-          </a>
-        </div>
-      </div>
-    </section>
-
-     <!-- Essai 2 pour les services et commodités -->
-     <section class="bg-[#f9f4ef] py-12 px-4">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-orangeraie mb-6">Infos pratiques</h2>
-        
-        <div class="grid gap-6 sm:grid-cols-2 text-left text-sm text-gray-700 font-sans">
-          <div>
-            <h3 class="font-semibold text-orangeraie mb-2">🍽️ Petit déjeuner</h3>
-            <p>
-              Petit déjeuner à la française avec café, thé, chocolat, viennoiseries, pain, yaourt, jus d’orange
-              et nos <strong>10 confitures maison</strong>, servi dans le jardin ou la salle à manger.
-            </p>
-          </div>
-
-          <div>
-            <h3 class="font-semibold text-orangeraie mb-2">🕒 Arrivées & Départs</h3>
-            <p>
-              Accueil à partir de <strong>17h30</strong>. Les chambres doivent être libérées à <strong>10h</strong>.
-            </p>
-          </div>
-
-          <div>
-            <h3 class="font-semibold text-orangeraie mb-2">💳 Moyens de paiement</h3>
-            <p>
-              Chèques, espèces, <strong>chèques vacances ANCV</strong> et <strong>chèques vacances connect</strong>.
-            </p>
-          </div>
-
-          <div>
-            <h3 class="font-semibold text-orangeraie mb-2">📍 Autres services</h3>
-            <ul class="list-disc list-inside">
-              <li>Patio et jardin avec mobilier</li>
-              <li>Cuisine d'été équipée</li>
-              <li>Réfrigérateurs en libre service</li>
-              <li>Sèche-cheveux sur demande</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="mt-8">
-          <a routerLink="/infos-pratiques"
-            class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base">
-            ➕ Tout savoir
           </a>
         </div>
       </div>
