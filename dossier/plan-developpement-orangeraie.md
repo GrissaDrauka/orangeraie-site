@@ -4,60 +4,65 @@
 ## ✅ Fonctionnalités déjà en place
 
 ### 🌐 Structure & Navigation
-- Navbar sticky avec fond transparent + flou & couleur au scroll
-- Hover élégant avec soulignement (desktop)
-- Menu mobile fluide, responsive, avec animation d’ouverture
+- Navbar sticky (transparent/floutée → couleur au scroll)
+- Navigation responsive (desktop + mobile)
+- Scroll auto vers le haut à chaque changement de page
+- Début d'optimisation des composants Angular (footer extrait, structure des dossiers, etc.)
 
-### 🛏️ Pages Créées
-- Page d’accueil terminée (avec texte d’intro, services, etc.)
-- Page "Nos Chambres" :
-  - Cartes des chambres (2 pers. et familles) avec badge, description, et lien "En savoir plus"
-- ✅ Page **Notre Gîte** :
-  - Carousel PrimeNG Galleria fonctionnel
-  - Zoom via modale personnalisée
-  - Navigation (précédent/suivant)
-  - Miniatures sous la modale
-  - Apparition douce
-  - Design responsive et fluide
-  - Présentation des équipements du gîte
-  - CTA “Réserver” (téléphone / en ligne)
+### 🛏️ Pages créées
+- **Accueil**
+  - Introduction + Services
+  - Bloc “Services et commodités” + “Infos pratiques”
+- **Nos Chambres**
+  - Séparation chambres 2 pers. / familles
+  - Cartes avec badge “nb de pers.”, description, bouton “En savoir plus”
+- **Notre Gîte**
+  - Carousel (PrimeNG Galleria)
+  - Zoom dans une modale avec fond, navigation, miniatures
+  - Présentation + équipements
+  - CTA réservation
+- **Scroll top automatique** ajouté à chaque navigation
 
 ### ☁️ Déploiement
-- Version actuelle en Angular 16 avec Webpack (pas Vite)
-- Site en ligne via GitHub Pages
-- Prévu : déploiement final sur OVH avec :
+- Angular 16 (Webpack)
+- Déploiement GitHub Pages OK
+- Déploiement final prévu sur **OVH** :
   - nom de domaine déjà existant
-  - build via `ng build --base-href ./`
-  - envoi FTP dans `/www`
-  - `.htaccess` pour rediriger vers `index.html`
+  - build avec `ng build --base-href ./`
+  - FTP vers `/www`
+  - redirection via `.htaccess`
 
-## 🔜 À FAIRE / Plan de Développement
+## 🔜 Plan de Développement (en cours)
 
 ### 🛎️ Étapes principales
-1. Créer une vraie **page “Nos Chambres”** avec lien "En savoir plus" menant à une page dédiée par chambre
-2. Ajouter une **page “Notre Gîte” complète** *(✅ déjà réalisée, validée)*
-3. Créer une **page “Contact”** avec :
-   - Carte Google Maps intégrée
-   - Formulaire de contact fonctionnel
-   - Coordonnées visibles (tél, email)
-4. Créer une **page “Infos Pratiques”** :
-   - Horaires d’arrivée / départ
-   - Moyens de paiement
-   - Services inclus (petit-déjeuner, cuisine d’été, wifi…)
-   - Parking, animaux, accessibilité
-5. Ajouter une **page “Réservation”** dédiée avec :
-   - Intégration du calendrier de réservation en ligne (iframe ou autre)
-   - Horaires + moyen de paiement visibles ici aussi
+1. ✅ Page “Notre Gîte”
+2. 🔄 Finaliser la **page “Nos Chambres”**
+   - Ajouter pages individuelles pour chaque chambre (avec infos complètes)
+   - Intégrer les tarifs dans chaque fiche
+3. 🔧 **Page “Infos Pratiques”**
+   - Avec toutes les infos du bloc donné (horaires, petit-déj, équipements partagés…)
+   - Ajouter aussi les **tables d’hôtes**
+   - Affichée sur la home aussi (après services & commodités)
+4. 📍 **Page “Contact”**
+   - Formulaire fonctionnel
+   - Carte Google Maps
+   - Coordonnées
+5. 📅 **Page “Réservation”**
+   - Intégration du widget OpenPro (comme sur l'ancien site)
+   - Affichage aussi des moyens de paiement et horaires ici
 
 ### 🪄 Améliorations UX / Design
-- Ajouter un bouton “Retour en haut” sur mobile
-- Ajouter une vraie galerie photos (avec tri ?)
-- Ajouter un bouton flottant “Réserver” sur les pages chambres
-- Ajout “Petit-déjeuner inclus” sur les cartes de chambre
-- Mini résumé des infos pratiques sur la home
-- Footer propre avec mentions légales + lien vers CGV si besoin
+- ✅ Zoom niveau 2 sur les images du Gîte
+- ✅ Miniatures dans la modale
+- Footer propre, mentions légales (en cours)
+- Bouton “Retour en haut” (mobile)
+- Ajout “Petit déjeuner inclus” dans les cartes chambres
+- Bouton de réservation flottant sur certaines pages
+- Galerie photo (plus tard)
+- Accessibilité & SEO (dans un second temps)
 
-### 🔍 À réfléchir
-- Pages chambres en dynamic route (`/chambres/:slug`) ?
-- Redirection 404 personnalisée sur GitHub Pages et OVH
-- SEO : balises `title`, `description`, `alt`, etc.
+### 🧠 À réfléchir
+- Pages chambres dynamiques (`/chambres/:slug`) ou routes manuelles ?
+- Redirection 404 pour GitHub Pages & OVH
+- Intégration de Google Analytics
+- Version EN plus tard ?

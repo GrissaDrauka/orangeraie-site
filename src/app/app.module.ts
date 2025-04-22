@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ChambresComponent } from './pages/chambres/chambres.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GiteModule } from './pages/gite/gite.module';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { GiteModule } from './pages/gite/gite.module';
         NavbarComponent,
         FooterComponent,
         HomeComponent,
-        ChambresComponent
+        ChambresComponent,
+        ContactComponent
     ],
     imports: [
         BrowserModule,
