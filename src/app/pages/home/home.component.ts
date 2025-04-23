@@ -73,7 +73,7 @@ import { Component } from '@angular/core';
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Chambre Atelier</h3>
               <p class="text-gray-700 text-sm font-sans">
-                Chambre triple spacieuse avec lit double et lit simple. Idéale pour petits groupes ou familles.
+                Chambre triple spacieuse avec lit double et lit simple. Idéale pour petit groupe ou famille.
               </p>
             </div>
           </div>
@@ -124,15 +124,17 @@ import { Component } from '@angular/core';
 
         <!-- Texte -->
         <div>
-          <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-6">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-6 text-center">
             Notre Gîte
           </h2>
           <p class="text-gray-700 text-base font-sans mb-6">
             Découvrez notre gîte indépendant, confortable et parfaitement équipé pour accueillir couples, familles ou groupes d’amis. Situé au calme, avec terrasse et vue sur le jardin, c’est le lieu idéal pour un séjour prolongé dans les Pyrénées-Orientales.
           </p>
-          <a routerLink="/gite" class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
-            En savoir plus
-          </a>
+          <div class="text-center">
+            <a routerLink="/gite" class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+              En savoir plus
+            </a>
+          </div>
         </div>
 
       </div>

@@ -11,6 +11,7 @@ import { ChambresComponent } from './pages/chambres/chambres.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GiteModule } from './pages/gite/gite.module';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import { ContactComponent } from './pages/contact/contact.component';
         FooterComponent,
         HomeComponent,
         ChambresComponent,
-        ContactComponent
+        ContactComponent,
+        ChambreDetailComponent
     ],
     imports: [
         BrowserModule,
