@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './chambres.component.html'
 })
 export class ChambresComponent {
+
   chambresDeux = [
     {
       nom: 'Chambre Marine',
