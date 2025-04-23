@@ -1,1 +1,22 @@
-<p>chambre-detail works!</p>
+<section class="pt-24 pb-16 px-4 max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-6">
+        {{ chambre.nom }}
+    </h2>
+
+    <img [src]="chambre.image" [alt]="chambre.nom" class="w-full h-64 object-cover rounded-xl shadow mb-6" />
+
+    <p class="text-gray-700 text-base sm:text-lg mb-4">{{ chambre.description }}</p>
+
+    <ul class="list-disc list-inside text-sm text-gray-700 mb-6">
+        <li *ngFor="let equipement of chambre.equipements">{{ equipement }}</li>
+    </ul>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+33468822279"
+            class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] text-sm sm:text-base text-center">📞
+            Réserver par téléphone</a>
+        <a routerLink="/contact"
+            class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] text-sm sm:text-base text-center">📝
+            Réserver en ligne</a>
+    </div>
+</section>
