@@ -13,11 +13,11 @@
                 class="bg-white rounded-2xl shadow hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] overflow-hidden relative">
 
                 <div class="relative">
-                    <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom"
+                    <img *ngIf="chambre.photos[1]" [src]="chambre.photos[1]" [alt]="chambre.nom"
                         class="w-full h-48 object-cover" />
                     <span
                         class="absolute bottom-2 left-2 inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold shadow">
-                        {{ chambre.nbPers }}
+                        {{ chambre.personnes }} pers.
                     </span>
                 </div>
 
@@ -26,7 +26,7 @@
                     <p class="text-sm text-gray-700 font-sans">{{ chambre.description }}</p>
 
                     <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                        <a routerLink="/contact"
+                        <a [routerLink]="['/chambres', chambre.slug]"
                             class="text-orangeraie font-semibold hover:underline text-sm cursor-pointer">
                             En savoir plus →
                         </a>
@@ -42,15 +42,15 @@
             Chambres familiales
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div *ngFor="let chambre of chambresFamille"
+            <div *ngFor="let chambre of chambresFamiliales"
                 class="bg-white rounded-2xl shadow hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] overflow-hidden relative">
 
                 <div class="relative">
-                    <img *ngIf="chambre.image" [src]="chambre.image" [alt]="chambre.nom"
+                    <img *ngIf="chambre.photos" [src]="chambre.photos[1]" [alt]="chambre.nom"
                         class="w-full h-48 object-cover" />
                     <span
                         class="absolute bottom-2 left-2 inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold shadow">
-                        {{ chambre.nbPers }}
+                        {{ chambre.personnes }} pers.
                     </span>
                 </div>
 
@@ -59,7 +59,7 @@
                     <p class="text-sm text-gray-700 font-sans">{{ chambre.description }}</p>
 
                     <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                        <a routerLink="/contact"
+                        <a [routerLink]="['/chambres', chambre.slug]"
                             class="text-orangeraie font-semibold hover:underline text-sm cursor-pointer">
                             En savoir plus →
                         </a>

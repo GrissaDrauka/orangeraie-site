@@ -1,0 +1,19 @@
+   :host {
+       display: block;
+       font-family: 'Open Sans', sans-serif;
+   }
+
+   img {
+       transition: transform 0.3s ease;
+       border-radius: 1rem;
+
+       &:hover {
+           transform: scale(1.02);
+       }
+   }
+
+   mat-icon {
+       font-size: 28px;
+       color: #ef6c00;
+       /* orange doux */
+   }

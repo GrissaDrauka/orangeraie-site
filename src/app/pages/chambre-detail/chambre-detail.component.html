@@ -1,0 +1,46 @@
+<ng-container *ngIf="chambre; else notFound">
+    <section class="container mx-auto px-4 py-10">
+        <h1 class="text-4xl font-bold mb-6">{{ chambre.nom }}</h1>
+
+        <!-- Galerie -->
+        <div class="grid gap-4 grid-cols-1 md:grid-cols-2 mb-8">
+            <img *ngFor="let photo of chambre.photos" [src]="photo" [alt]="chambre.nom"
+                class="w-full h-60 object-cover rounded-xl shadow" />
+        </div>
+
+        <!-- Description -->
+        <p class="text-lg mb-6">{{ chambre.description }}</p>
+
+        <!-- Infos clés -->
+        <div class="grid md:grid-cols-2 gap-4 mb-6 text-gray-700 text-sm">
+            <div><strong>Capacité :</strong> {{ chambre.personnes }} personne(s)</div>
+            <div><strong>Tarif :</strong> {{ chambre.tarif }} </div>
+        </div>
+
+        <!-- Équipements -->
+        <div class="mb-6">
+            <h2 class="text-lg font-semibold mb-2">Équipements :</h2>
+            <ul class="flex flex-wrap gap-4 text-primary text-xl">
+                <li *ngFor="let icon of chambre.equipements">
+                    <mat-icon>{{ icon }}</mat-icon>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Bouton de réservation -->
+        <div class="mt-8">
+            <a [routerLink]="['/reservation']" [queryParams]="{ chambre: chambre.slug }"
+                class="bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-xl shadow transition">
+                Réserver cette chambre
+            </a>
+        </div>
+    </section>
+</ng-container>
+
+<!-- Template si slug non reconnu -->
+<ng-template #notFound>
+    <section class="container mx-auto px-4 py-16 text-center">
+        <h2 class="text-2xl font-bold mb-4">Chambre introuvable 😢</h2>
+        <a routerLink="/chambres" class="text-primary underline">Retour à la liste des chambres</a>
+    </section>
+</ng-template>

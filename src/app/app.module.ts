@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GiteModule } from './pages/gite/gite.module';
 import { ContactComponent } from './pages/contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
+import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
 
 @NgModule({
     declarations: [
@@ -21,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
         HomeComponent,
         ChambresComponent,
         ContactComponent,
+        ChambreDetailComponent,
     ],
     imports: [
         BrowserModule,
