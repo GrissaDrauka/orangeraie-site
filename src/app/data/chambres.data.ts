@@ -17,7 +17,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_marine.jpg',
             'assets/chambres/chambre_marine.jpg',
         ],
-        equipements: ['wifi', 'snowflake', 'shower-head'],
+        equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double'
     },
     {
@@ -36,7 +36,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_nature.jpg',
             'assets/chambres/chambre_nature.jpg',
         ],
-        equipements: ['wifi', 'snowflake', 'shower-head'],
+        equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double'
     },
     {
@@ -55,7 +55,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_bambouseraie.jpg',
             'assets/chambres/chambre_bambouseraie.jpg',
         ],
-        equipements: ['wifi', 'snowflake', 'shower-head'],
+        equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double'
     },
     {
@@ -74,7 +74,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_atelier.jpg',
             'assets/chambres/chambre_atelier.jpg',
         ],
-        equipements: ['wifi', 'snowflake', 'shower-head'],
+        equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double et 1 lit simple'
     },
     {
@@ -93,7 +93,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_coloniale.jpg',
             'assets/chambres/chambre_coloniale.jpg',
         ],
-        equipements: ['wifi', 'snowflake', 'shower-head'],
+        equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double et 2 lits simples'
     }
 ];

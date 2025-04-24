@@ -65,9 +65,10 @@
 
                 <div>
                     <strong>Équipements :</strong>
-                    <ul class="flex flex-wrap gap-3 text-primary text-lg mt-2">
-                        <li *ngFor="let icon of chambre.equipements" class="flex items-center gap-1 text-orange-700">
-                            <lucide-icon [name]="icon" size="20"></lucide-icon>
+                    <ul class="flex flex-wrap gap-3 text-sm text-gray-700 mt-2">
+                        <li *ngFor="let key of chambre.equipements" class="flex items-center gap-2">
+                            <lucide-icon [name]="LUCIDE_ICONS[key].icon" size="20"></lucide-icon>
+                            {{ LUCIDE_ICONS[key].label }}
                         </li>
                     </ul>
                 </div>

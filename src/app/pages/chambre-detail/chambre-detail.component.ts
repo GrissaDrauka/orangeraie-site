@@ -10,6 +10,20 @@ import { ChambresService } from '../../services/chambres.service';
 })
 export class ChambreDetailComponent implements OnInit {
 
+  //Liste des icônes lucide
+  LUCIDE_ICONS: Record<string, { icon: string; label: string }> = {
+    lit: { icon: 'bed', label: 'Lit double' },
+    wifi: { icon: 'wifi', label: 'Wifi gratuit' },
+    clim: { icon: 'snowflake', label: 'Climatisation' },
+    douche: { icon: 'shower-head', label: 'Salle d’eau' },
+    tv: { icon: 'tv', label: 'Télévision' },
+    wc: { icon: 'toilet', label: 'WC privés' },
+    jardin: { icon: 'trees', label: 'Vue jardin' },
+    petitdej: { icon: 'coffee', label: 'Petit déjeuner inclus' },
+    frigo: { icon: 'fridge', label: 'Réfrigérateur' },
+    terrasse: { icon: 'sun', label: 'Terrasse' }
+  };
+
   // Dates de saison, un seul endroit à changer si elles changent
   readonly saisonDates = {
     basse: '30/09 – 01/04',
@@ -31,3 +45,4 @@ export class ChambreDetailComponent implements OnInit {
     }
   }
 }
+
