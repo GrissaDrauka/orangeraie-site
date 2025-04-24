@@ -25,6 +25,7 @@
               "src/favicon.ico"
             ],
             "styles": [
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.scss",
               "node_modules/primeicons/primeicons.css"
             ],
@@ -81,6 +82,7 @@
               "src/favicon.ico"
             ],
             "styles": [
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.scss",
               "node_modules/primeicons/primeicons.css"
             ],

@@ -23,14 +23,14 @@
 
                 <div class="p-4">
                     <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
-                    <p class="text-sm text-gray-700 font-sans">{{ chambre.description }}</p>
+                    <p class="text-sm text-gray-700 font-sans">{{ chambre.resume }}</p>
 
                     <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <a [routerLink]="['/chambres', chambre.slug]"
                             class="text-orangeraie font-semibold hover:underline text-sm cursor-pointer">
                             En savoir plus →
                         </a>
-                        <span class="text-sm text-gray-600 italic font-sans">Tarifs dès {{ chambre.tarif }}</span>
+                        <span class="text-sm text-gray-600 italic font-sans">Tarifs dès {{ chambre.tarif }}€/nuit</span>
                     </div>
                 </div>
             </div>
@@ -56,14 +56,14 @@
 
                 <div class="p-4">
                     <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
-                    <p class="text-sm text-gray-700 font-sans">{{ chambre.description }}</p>
+                    <p class="text-sm text-gray-700 font-sans">{{ chambre.resume }}</p>
 
                     <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <a [routerLink]="['/chambres', chambre.slug]"
                             class="text-orangeraie font-semibold hover:underline text-sm cursor-pointer">
                             En savoir plus →
                         </a>
-                        <span class="text-sm text-gray-600 italic font-sans">Tarifs dès {{ chambre.tarif }}</span>
+                        <span class="text-sm text-gray-600 italic font-sans">Tarifs dès {{ chambre.tarif }}€/nuit</span>
                     </div>
                 </div>
             </div>

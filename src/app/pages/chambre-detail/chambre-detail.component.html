@@ -1,46 +1,68 @@
 <ng-container *ngIf="chambre; else notFound">
-    <section class="container mx-auto px-4 py-10">
-        <h1 class="text-4xl font-bold mb-6">{{ chambre.nom }}</h1>
-
-        <!-- Galerie -->
-        <div class="grid gap-4 grid-cols-1 md:grid-cols-2 mb-8">
-            <img *ngFor="let photo of chambre.photos" [src]="photo" [alt]="chambre.nom"
-                class="w-full h-60 object-cover rounded-xl shadow" />
+    <section class="container mx-auto px-4 py-10 space-y-10">
+        <!-- Bouton de retour -->
+        <div class="text-left">
+            <a routerLink="/chambres"
+                class="inline-flex items-center gap-2 text-orange-700 hover:text-orange-900 font-serif transition">
+                <mat-icon>arrow_back</mat-icon>
+                Retour aux chambres
+            </a>
         </div>
 
-        <!-- Description -->
-        <p class="text-lg mb-6">{{ chambre.description }}</p>
+        <!-- Titre -->
+        <h1 class="text-4xl font-serif font-bold text-center text-orangeraie">{{ chambre.nom }}</h1>
 
-        <!-- Infos clés -->
-        <div class="grid md:grid-cols-2 gap-4 mb-6 text-gray-700 text-sm">
-            <div><strong>Capacité :</strong> {{ chambre.personnes }} personne(s)</div>
-            <div><strong>Tarif :</strong> {{ chambre.tarif }} </div>
+        <!-- Image principale -->
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img [src]="chambre.photos[0]" [alt]="chambre.nom" class="w-full h-[300px] md:h-[450px] object-cover" />
         </div>
 
-        <!-- Équipements -->
-        <div class="mb-6">
-            <h2 class="text-lg font-semibold mb-2">Équipements :</h2>
-            <ul class="flex flex-wrap gap-4 text-primary text-xl">
-                <li *ngFor="let icon of chambre.equipements">
-                    <mat-icon>{{ icon }}</mat-icon>
-                </li>
-            </ul>
+        <!-- Section description + infos -->
+        <div class="bg-orange-50 font-sans p-6 md:p-10 rounded-2xl shadow-lg grid md:grid-cols-2 gap-6 text-gray-800">
+            <!-- Description -->
+            <div>
+                <h2 class="text-xl font-semibold mb-2">Description</h2>
+                <p class="leading-relaxed text-base">{{ chambre.description }}</p>
+            </div>
+
+            <!-- Infos pratiques -->
+            <div class="space-y-4 text-sm">
+                <div><strong>Capacité :</strong> {{ chambre.personnes }} personne(s)</div>
+                <div><strong>Tarif :</strong> {{ chambre.tarif }} € / nuit</div>
+                <div>
+                    <strong>Équipements :</strong>
+                    <ul class="flex flex-wrap gap-3 mt-2">
+                        <li *ngFor="let icon of chambre.equipements" class="flex items-center gap-1 text-orange-700">
+                            <mat-icon>{{ icon }}</mat-icon>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galerie simple (hors image principale) -->
+        <div *ngIf="chambre.photos.length > 1">
+            <h2 class="text-xl font-semibold mb-4 text-orange-800">Autres vues</h2>
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <img *ngFor="let photo of chambre.photos.slice(1)" [src]="photo" [alt]="chambre.nom"
+                    class="w-full h-60 object-cover rounded-xl shadow" />
+            </div>
         </div>
 
         <!-- Bouton de réservation -->
-        <div class="mt-8">
+        <div class="text-center pt-6">
             <a [routerLink]="['/reservation']" [queryParams]="{ chambre: chambre.slug }"
-                class="bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-xl shadow transition">
+                class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-xl shadow transition">
                 Réserver cette chambre
             </a>
         </div>
     </section>
 </ng-container>
 
-<!-- Template si slug non reconnu -->
+<!-- Chambre non trouvée -->
 <ng-template #notFound>
     <section class="container mx-auto px-4 py-16 text-center">
-        <h2 class="text-2xl font-bold mb-4">Chambre introuvable 😢</h2>
-        <a routerLink="/chambres" class="text-primary underline">Retour à la liste des chambres</a>
+        <h2 class="text-2xl font-bold mb-4 text-orange-800">Chambre introuvable 😢</h2>
+        <a routerLink="/chambres" class="text-orange-600 underline">Retour à la liste des chambres</a>
     </section>
 </ng-template>

@@ -4,7 +4,7 @@ export interface Chambre {
     resume: string;
     description: string;
     personnes: number;
-    tarif: string;
+    tarif: number;
     photos: string[];
     equipements: string[]; // icônes Material
 }

@@ -13,6 +13,7 @@ import { GiteModule } from './pages/gite/gite.module';
 import { ContactComponent } from './pages/contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
+import { GalleriaModule } from 'primeng/galleria';
 
 @NgModule({
     declarations: [
@@ -29,6 +30,7 @@ import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.co
         BrowserAnimationsModule,
         GiteModule,
         MatIconModule,
+        GalleriaModule,
         RouterModule.forRoot(routes, {
             scrollPositionRestoration: 'enabled',
             anchorScrolling: 'enabled'
