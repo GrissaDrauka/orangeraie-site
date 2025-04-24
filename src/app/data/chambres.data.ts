@@ -18,7 +18,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_marine.jpg',
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
-        lit: '1 lit double'
+        lit: '1 lit double (140x190cm)'
     },
     {
         slug: 'chambre-nature',
@@ -37,7 +37,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_nature.jpg',
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
-        lit: '1 lit double'
+        lit: '1 lit double (140x190cm)'
     },
     {
         slug: 'chambre-bambouseraie',
@@ -56,7 +56,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_bambouseraie.jpg',
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
-        lit: '1 lit double'
+        lit: '1 lit double (140x190cm)'
     },
     {
         slug: 'chambre-atelier',
@@ -75,7 +75,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_atelier.jpg',
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
-        lit: '1 lit double et 1 lit simple'
+        lit: '1 lit double (140x190cm) et 1 lit simple (90x190cm)'
     },
     {
         slug: 'chambre-coloniale',
@@ -94,6 +94,6 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_coloniale.jpg',
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
-        lit: '1 lit double et 2 lits simples'
+        lit: '1 lit double (160x200cm) et 2 lits simples (90x190cm)'
     }
 ];

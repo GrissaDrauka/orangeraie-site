@@ -114,7 +114,7 @@ import { Component } from '@angular/core';
     </section>
 
     <!-- Section Notre Gîte -->
-    <section class="bg-white py-16 px-4 md:px-16">
+    <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         <!-- Image du gîte -->
@@ -141,7 +141,7 @@ import { Component } from '@angular/core';
     </section>
 
     <!-- Section Services & Commodités -->
-    <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
+    <section class="bg-white py-16 px-4 md:px-16">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie text-center mb-12">
           Services & commodités
@@ -206,7 +206,7 @@ import { Component } from '@angular/core';
     </section>
 
      <!-- Essai 2 pour les services et commodités -->
-     <section class="bg-white py-12 px-4">
+     <section class="bg-[#f9f4ef] py-12 px-4">
       <div class="max-w-5xl mx-auto text-center">
         <h2 class="text-2xl sm:text-3xl font-serif font-bold text-orangeraie mb-6">Infos pratiques</h2>
         
@@ -254,7 +254,7 @@ import { Component } from '@angular/core';
     </section>
 
      <!-- Section À découvrir autour -->
-     <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
+     <section class="bg-white py-16 px-4 md:px-16">
       <div class="max-w-6xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-12">
           À découvrir autour
@@ -315,7 +315,7 @@ import { Component } from '@angular/core';
     </section>
 
     <!-- Section Contactez-nous -->
-    <section class="bg-white py-16 px-4 md:px-16">
+    <!--<section class="bg-white py-16 px-4 md:px-16">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-6">
           Contactez-nous
@@ -339,7 +339,7 @@ import { Component } from '@angular/core';
           Nous écrire
         </a>
       </div>
-    </section>
+    </section>-->
 
   `
 })
