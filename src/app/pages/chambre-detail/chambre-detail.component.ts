@@ -9,6 +9,14 @@ import { ChambresService } from '../../services/chambres.service';
   styleUrls: ['./chambre-detail.component.scss']
 })
 export class ChambreDetailComponent implements OnInit {
+
+  // Dates de saison, un seul endroit à changer si elles changent
+  readonly saisonDates = {
+    basse: '30/09 – 01/04',
+    moyenne: '01/04 – 14/07, 16/08 – 30/09',
+    haute: '14/07 – 16/08'
+  };
+
   chambre?: Chambre;
 
   constructor(

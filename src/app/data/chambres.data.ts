@@ -7,7 +7,11 @@ export const CHAMBRES: Chambre[] = [
         resume: 'Laissez-vous bercer par une atmosphère marine, entre bleu doux et esprit bord de mer.',
         description: 'Plongez dans une ambiance iodée, où les teintes de bleu doux rappellent l’horizon et le souffle marin. Chaque détail évoque le calme des rivages, pour une échappée relaxante entre ciel, mer et lumière.',
         personnes: 2,
-        tarif: 49,
+        tarifs: {
+            basse: [49, 57],
+            moyenne: [60, 68],
+            haute: [64, 71]
+        },
         photos: [
             'assets/chambres/chambre_marine.jpg',
             'assets/chambres/chambre_marine.jpg',
@@ -20,7 +24,11 @@ export const CHAMBRES: Chambre[] = [
         resume: 'Nature et élégance',
         description: 'Une chambre habillée de fer forgé aux motifs végétaux pour une touche de nature élégante.',
         personnes: 2,
-        tarif: 49,
+        tarifs: {
+            basse: [49, 57],
+            moyenne: [60, 68],
+            haute: [64, 71]
+        },
         photos: [
             'assets/chambres/chambre_nature.jpg',
             'assets/chambres/chambre_nature.jpg',
@@ -33,7 +41,11 @@ export const CHAMBRES: Chambre[] = [
         resume: 'Ambiance zen et apaisante',
         description: 'Une chambre apaisante à l’ambiance zen, inspirée par la douceur des bambous.',
         personnes: 2,
-        tarif: 49,
+        tarifs: {
+            basse: [49, 57],
+            moyenne: [60, 68],
+            haute: [64, 71]
+        },
         photos: [
             'assets/chambres/chambre_bambouseraie.jpg',
             'assets/chambres/chambre_bambouseraie.jpg',
@@ -46,7 +58,11 @@ export const CHAMBRES: Chambre[] = [
         resume: 'Un séjour inspiré',
         description: 'Une chambre au caractère affirmé, entre bois, métal et esprit atelier, pour un séjour inspiré.',
         personnes: 3,
-        tarif: 62,
+        tarifs: {
+            basse: [62, 62, 68],
+            moyenne: [73, 73, 80],
+            haute: [76, 76, 83]
+        },
         photos: [
             'assets/chambres/chambre_atelier.jpg',
             'assets/chambres/chambre_atelier.jpg',
@@ -59,10 +75,14 @@ export const CHAMBRES: Chambre[] = [
         resume: 'Charme colonial et élégance',
         description: 'Une chambre élégante aux accents d’ailleurs, bois foncé, matières naturelles et charme colonial.',
         personnes: 4,
-        tarif: 66,
+        tarifs: {
+            basse: [66, 66, 76, 88],
+            moyenne: [0, 76, 88, 99],
+            haute: [0, 81, 91, 102]
+        },
         photos: [
-            'assets/chambres/chambre_atelier.jpg',
-            'assets/chambres/chambre_atelier.jpg',
+            'assets/chambres/chambre_coloniale.jpg',
+            'assets/chambres/chambre_coloniale.jpg',
         ],
         equipements: ['wifi', 'local_cafe', 'ac_unit', 'bathroom']
     }

@@ -1,9 +1,9 @@
 <ng-container *ngIf="chambre; else notFound">
-    <section class="container mx-auto px-4 py-10 space-y-10">
+    <section class="container mx-auto px-4 py-8 mt-20 space-y-8">
         <!-- Bouton de retour -->
-        <div class="text-left">
+        <div class="text-left mb-2">
             <a routerLink="/chambres"
-                class="inline-flex items-center gap-2 text-orange-700 hover:text-orange-900 font-serif transition">
+                class="inline-flex items-end gap-2 text-orange-700 hover:text-orange-900 text-base md:text-lg font-sans transition">
                 <mat-icon>arrow_back</mat-icon>
                 Retour aux chambres
             </a>
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Section description + infos -->
-        <div class="bg-orange-50 font-sans p-6 md:p-10 rounded-2xl shadow-lg grid md:grid-cols-2 gap-6 text-gray-800">
+        <div class="bg-orange-50 p-4 md:p-6 rounded-2xl shadow-md grid md:grid-cols-2 gap-4 font-sans">
             <!-- Description -->
             <div>
                 <h2 class="text-xl font-semibold mb-2">Description</h2>
@@ -27,11 +27,62 @@
 
             <!-- Infos pratiques -->
             <div class="space-y-4 text-sm">
-                <div><strong>Capacité :</strong> {{ chambre.personnes }} personne(s)</div>
-                <div><strong>Tarif :</strong> {{ chambre.tarif }} € / nuit</div>
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">Tarifs par saison et nombre de personnes</h2>
+                    <div class="overflow-x-auto">
+                        <table
+                            class="min-w-full text-sm text-gray-800 rounded-xl overflow-hidden border border-gray-300">
+                            <thead class="bg-orange-100 text-left border-b border-gray-300">
+                                <tr>
+                                    <th class="p-2 border-r border-gray-300">Saison</th>
+                                    <th class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">1 pers</th>
+                                    <th class="p-2 border-r border-gray-300">2 pers</th>
+                                    <th class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">3 pers</th>
+                                    <th class="p-2" *ngIf="chambre.personnes > 3">4 pers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-200">
+                                    <td class="p-2 border-r border-gray-300 font-semibold">
+                                        Basse<br /><span class="text-xs text-gray-500">({{ saisonDates.basse }})</span>
+                                    </td>
+                                    <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">
+                                        {{ chambre.tarifs.basse[0] }} €</td>
+                                    <td class="p-2 border-r border-gray-300">{{ chambre.tarifs.basse[1] }} €</td>
+                                    <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">{{
+                                        chambre.tarifs.basse[2] }} €</td>
+                                    <td class="p-2" *ngIf="chambre.personnes > 3">{{ chambre.tarifs.basse[3] }} €</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="p-2 border-r border-gray-300 font-semibold">
+                                        Moyenne<br />
+                                        <span class="text-xs text-gray-500">({{ saisonDates.moyenne }})</span>
+                                    </td>
+                                    <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">
+                                        {{ chambre.tarifs.moyenne[0] }} €</td>
+                                    <td class="p-2 border-r border-gray-300">{{ chambre.tarifs.moyenne[1] }} €</td>
+                                    <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">
+                                        {{ chambre.tarifs.moyenne[2] }} €</td>
+                                    <td class="p-2" *ngIf="chambre.personnes > 3">{{ chambre.tarifs.moyenne[3] }} €</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2 border-r border-gray-300 font-semibold">
+                                        Haute<br /><span class="text-xs text-gray-500">({{ saisonDates.haute }})</span>
+                                    </td>
+                                    <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">
+                                        {{ chambre.tarifs.haute[0] }} €</td>
+                                    <td class="p-2 border-r border-gray-300">{{ chambre.tarifs.haute[1] }} €</td>
+                                    <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">{{
+                                        chambre.tarifs.haute[2] }} €</td>
+                                    <td class="p-2" *ngIf="chambre.personnes > 3">{{ chambre.tarifs.haute[3] }} €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                 <div>
                     <strong>Équipements :</strong>
-                    <ul class="flex flex-wrap gap-3 mt-2">
+                    <ul class="flex flex-wrap gap-3 text-primary text-lg mt-2">
                         <li *ngFor="let icon of chambre.equipements" class="flex items-center gap-1 text-orange-700">
                             <mat-icon>{{ icon }}</mat-icon>
                         </li>
@@ -42,15 +93,15 @@
 
         <!-- Galerie simple (hors image principale) -->
         <div *ngIf="chambre.photos.length > 1">
-            <h2 class="text-xl font-semibold mb-4 text-orange-800">Autres vues</h2>
-            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <h2 class="text-lg font-semibold mb-2 text-orange-800">Autres vues</h2>
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4">
                 <img *ngFor="let photo of chambre.photos.slice(1)" [src]="photo" [alt]="chambre.nom"
                     class="w-full h-60 object-cover rounded-xl shadow" />
             </div>
         </div>
 
         <!-- Bouton de réservation -->
-        <div class="text-center pt-6">
+        <div class="text-center mt-4">
             <a [routerLink]="['/reservation']" [queryParams]="{ chambre: chambre.slug }"
                 class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-xl shadow transition">
                 Réserver cette chambre
