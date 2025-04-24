@@ -14,6 +14,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
 import { GalleriaModule } from 'primeng/galleria';
+import { LucideAngularModule, icons } from 'lucide-angular';
 
 @NgModule({
     declarations: [
@@ -31,6 +32,7 @@ import { GalleriaModule } from 'primeng/galleria';
         GiteModule,
         MatIconModule,
         GalleriaModule,
+        LucideAngularModule.pick(icons),
         RouterModule.forRoot(routes, {
             scrollPositionRestoration: 'enabled',
             anchorScrolling: 'enabled'

@@ -7,6 +7,7 @@ export const CHAMBRES: Chambre[] = [
         resume: 'Laissez-vous bercer par une atmosphère marine, entre bleu doux et esprit bord de mer.',
         description: 'Plongez dans une ambiance iodée, où les teintes de bleu doux rappellent l’horizon et le souffle marin. Chaque détail évoque le calme des rivages, pour une échappée relaxante entre ciel, mer et lumière.',
         personnes: 2,
+        etage: '2ème étage',
         tarifs: {
             basse: [49, 57],
             moyenne: [60, 68],
@@ -16,14 +17,16 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_marine.jpg',
             'assets/chambres/chambre_marine.jpg',
         ],
-        equipements: ['wifi', 'local_cafe', 'ac_unit', 'bathroom']
+        equipements: ['wifi', 'snowflake', 'shower-head'],
+        lit: '1 lit double'
     },
     {
         slug: 'chambre-nature',
         nom: 'Chambre Nature',
-        resume: 'Nature et élégance',
-        description: 'Une chambre habillée de fer forgé aux motifs végétaux pour une touche de nature élégante.',
+        resume: 'Une chambre habillée de fer forgé aux motifs végétaux pour une touche de nature élégante.',
+        description: 'Une chambre lumineuse où le fer forgé dessine de délicats motifs végétaux, pour une ambiance naturelle et élégante. Le charme discret des matériaux s’allie à la douceur des teintes pour une pause paisible et raffinée.',
         personnes: 2,
+        etage: '1er étage',
         tarifs: {
             basse: [49, 57],
             moyenne: [60, 68],
@@ -33,14 +36,16 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_nature.jpg',
             'assets/chambres/chambre_nature.jpg',
         ],
-        equipements: ['wifi', 'local_cafe', 'ac_unit', 'bathroom']
+        equipements: ['wifi', 'snowflake', 'shower-head'],
+        lit: '1 lit double'
     },
     {
         slug: 'chambre-bambouseraie',
         nom: 'Chambre Bambouseraie',
-        resume: 'Ambiance zen et apaisante',
-        description: 'Une chambre apaisante à l’ambiance zen, inspirée par la douceur des bambous.',
+        resume: 'Une chambre apaisante à l’ambiance zen, inspirée par la douceur des bambous.',
+        description: 'Esprit zen, matériaux naturels, touches végétales : cette chambre inspirée par les bambous offre une atmosphère apaisante, idéale pour se ressourcer en toute simplicité.',
         personnes: 2,
+        etage: '1er étage',
         tarifs: {
             basse: [49, 57],
             moyenne: [60, 68],
@@ -50,14 +55,16 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_bambouseraie.jpg',
             'assets/chambres/chambre_bambouseraie.jpg',
         ],
-        equipements: ['wifi', 'local_cafe', 'ac_unit', 'bathroom']
+        equipements: ['wifi', 'snowflake', 'shower-head'],
+        lit: '1 lit double'
     },
     {
         slug: 'chambre-atelier',
         nom: 'Chambre l\'Atelier',
-        resume: 'Un séjour inspiré',
-        description: 'Une chambre au caractère affirmé, entre bois, métal et esprit atelier, pour un séjour inspiré.',
+        resume: 'Une chambre au caractère affirmé, entre bois, métal et esprit atelier, pour un séjour inspiré.',
+        description: 'Une chambre au caractère affirmé, où bois brut et métal se rencontrent dans une ambiance atelier chic. Une atmosphère singulière, inspirée des lofts, pour un séjour résolument créatif.',
         personnes: 3,
+        etage: '2ème étage',
         tarifs: {
             basse: [62, 62, 68],
             moyenne: [73, 73, 80],
@@ -67,14 +74,16 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_atelier.jpg',
             'assets/chambres/chambre_atelier.jpg',
         ],
-        equipements: ['wifi', 'local_cafe', 'ac_unit', 'bathroom']
+        equipements: ['wifi', 'snowflake', 'shower-head'],
+        lit: '1 lit double et 1 lit simple'
     },
     {
         slug: 'chambre-coloniale',
         nom: 'Chambre Coloniale',
-        resume: 'Charme colonial et élégance',
-        description: 'Une chambre élégante aux accents d’ailleurs, bois foncé, matières naturelles et charme colonial.',
+        resume: 'Une chambre élégante aux accents d’ailleurs, bois foncé, matières naturelles et charme colonial.',
+        description: 'Une chambre élégante aux accents d’ailleurs, où bois foncé et matières naturelles composent un décor inspiré du charme colonial. Une invitation au voyage dans un cadre raffiné et apaisant.',
         personnes: 4,
+        etage: '1er étage',
         tarifs: {
             basse: [66, 66, 76, 88],
             moyenne: [0, 76, 88, 99],
@@ -84,6 +93,7 @@ export const CHAMBRES: Chambre[] = [
             'assets/chambres/chambre_coloniale.jpg',
             'assets/chambres/chambre_coloniale.jpg',
         ],
-        equipements: ['wifi', 'local_cafe', 'ac_unit', 'bathroom']
+        equipements: ['wifi', 'snowflake', 'shower-head'],
+        lit: '1 lit double et 2 lits simples'
     }
 ];

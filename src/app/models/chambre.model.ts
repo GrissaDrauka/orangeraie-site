@@ -9,6 +9,8 @@ export interface Chambre {
         moyenne: number[];
         haute: number[];
     };
+    etage: string;
     photos: string[];
-    equipements: string[]; // icônes Material
+    equipements: string[]; // icônes
+    lit: string;
 }
