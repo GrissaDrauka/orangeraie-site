@@ -11,7 +11,8 @@ import { Component } from '@angular/core';
       >
         <h1 class="text-4xl sm:text-5xl font-bold font-playfair mb-4">Chambres d'hôtes</h1>
         <p class="text-base sm:text-lg max-w-2xl mb-6 font-sans">
-          Laurence & Fabrice vous accueillent dans leur maison d'hôtes et vous souhaitent la bienvenue.
+          Laurence & Fabrice vous accueillent dans leur maison d'hôtes <br/>
+          et vous souhaitent la bienvenue.
         </p>
 
         <!-- Labels -->
@@ -52,12 +53,12 @@ import { Component } from '@angular/core';
     <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie text-center mb-12">
-          Nos chambres
+          Nos Chambres
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
           <!-- Chambre 1 -->
-          <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+          <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
             <img src="assets/chambres/chambre_nature.jpg" alt="Chambre Nature" class="h-56 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Chambre Nature</h3>
@@ -68,7 +69,7 @@ import { Component } from '@angular/core';
           </div>
 
           <!-- Chambre 2 -->
-          <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+          <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
             <img src="assets/chambres/chambre_atelier.jpg" alt="Chambre triple" class="h-56 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Chambre Atelier</h3>
@@ -79,7 +80,7 @@ import { Component } from '@angular/core';
           </div>
 
           <!-- Chambre 3 -->
-          <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+          <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
             <img src="assets/chambres/chambre_coloniale.jpg" alt="Suite familiale" class="h-56 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Suite Familiale "Coloniale"</h3>
