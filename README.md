@@ -1,6 +1,6 @@
 # Orangeraie - Site Officiel
 
-Bienvenue sur le dépôt du projet **L'Orangeraie**, un site vitrine pour chambres d'hôtes et gîte à Elne, développé avec Angular.
+Bienvenue sur le dépôt d'un projet de site vitrine pour B&B, développé avec Angular.
 
 ---
 
