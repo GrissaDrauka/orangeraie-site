@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --base-href /orangeraie-site/ && npx angular-cli-ghpages --dir=dist/orangeraie-site",
-    "deploy:prod": "ng build --configuration production --base-href ./"
+    "deploy:git": "ng build --base-href /orangeraie-site/ && npx angular-cli-ghpages --dir=dist/orangeraie-site",
+    "deploy:ovh": "node ftp-deploy.js"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +35,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
     "autoprefixer": "^10.4.21",
+    "ftp-deploy": "^2.4.7",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
