@@ -18,8 +18,8 @@ exec("ng build --configuration production --base-href ./", (error, stdout, stder
     console.log("🚀 Début de l'upload FTP...");
 
     const config = {
-        user: "remiwab",
-        password: "xaMTkAeT4EhJ",
+        user: "",
+        password: "",
         host: "ftp.cluster100.hosting.ovh.net",
         port: 21,
         localRoot: __dirname + "/dist/orangeraie-site",
