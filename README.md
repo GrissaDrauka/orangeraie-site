@@ -1,59 +1,142 @@
-# OrangeraieSite
+# Orangeraie - Site Officiel
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+Bienvenue sur le dépôt du projet **L'Orangeraie**, un site vitrine pour chambres d'hôtes et gîte à Elne, développé avec Angular.
 
-## Development server
+---
 
-To start a local development server, run:
+# 📅 Informations principales
 
-```bash
-ng serve
-```
+- **Framework** : Angular 16
+- **Style** : Tailwind CSS, Lucide Icons, Angular Material (léger)
+- **Hébergement** : OVH
+- **Pages disponibles** :
+  - Accueil
+  - Nos Chambres
+  - Notre Gîte
+  - Contact
+  - (Bientôt : Réservation, Infos pratiques)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+# 🚀 Commandes principales
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Développement local
 
 ```bash
-ng generate --help
+npm install
+npm start
 ```
 
-## Building
-
-To build the project run:
+## Build production
 
 ```bash
-ng build
+npm run deploy:prod
+```
+Alias de :
+```bash
+ng build --configuration production --base-href ./
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Déploiement
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Sur OVH (FTP)
 
 ```bash
-ng test
+npm run deploy:ovh
 ```
+- Build de production
+- Envoi automatique par FTP grâce à `ftp-deploy`
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### Sur GitHub Pages (preview)
 
 ```bash
-ng e2e
+npm run deploy:git
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+# 📆 Organisation du projet
 
-## Additional Resources
+- `src/app/pages/` : Pages principales du site
+- `src/assets/` : Images et ressources statiques
+- `ftp-deploy.js` : Script de déploiement automatisé
+- `.env` : Variables d'environnement FTP (non versionné)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# 🔒 Sécurité
+
+- Identifiants FTP protégés dans `.env`
+
+# 🔢 Déploiement Automatique Détail
+
+## Build Angular
+
+```bash
+npm run deploy:prod
+```
+Alias de :
+```bash
+ng build --configuration production --base-href ./
+```
+
+## Déploiement OVH (FTP automatique)
+
+### Architecture
+
+- `ftp-deploy.js` automatisé
+- `.env` pour variables sensibles
+
+### Exemple `.env`
+
+```plaintext
+FTP_USER=identifiant_ftp
+FTP_PASSWORD=motdepasse_ftp
+FTP_HOST=url_serveur
+```
+
+### Exemple `ftp-deploy.js`
+
+```javascript
+require('dotenv').config();
+const FtpDeploy = require("ftp-deploy");
+const ftpDeploy = new FtpDeploy();
+const { exec } = require("child_process");
+
+console.log("🚀 Lancement du build Angular...");
+
+exec("ng build --configuration production --base-href ./", (error, stdout, stderr) => {
+  if (error) {
+    console.error(`❌ Erreur build : ${error.message}`);
+    return;
+  }
+  if (stderr) {
+    console.error(`❗ Build stderr : ${stderr}`);
+  }
+  console.log(`✅ Build terminé :\n${stdout}`);
+  
+  console.log("🚀 Début de l'upload FTP...");
+
+  const config = {
+    user: process.env.FTP_USER,
+    password: process.env.FTP_PASSWORD,
+    host: process.env.FTP_HOST,
+    port: 21,
+    localRoot: __dirname + "/dist/orangeraie-site",
+    remoteRoot: "/www/",
+    include: ["*", "**/*"],
+    deleteRemote: false,
+    forcePasv: true,
+    verbose: true
+  };
+
+  ftpDeploy
+    .deploy(config)
+    .then(res => console.log("✅ Déploiement terminé avec succès :", res))
+    .catch(err => console.error("❌ Erreur FTP :", err));
+});
+```
+
+### Scripts package.json
+
+```json
+"scripts": {
+  "deploy:prod": "ng build --configuration production --base-href ./",
+  "deploy:ovh": "node ftp-deploy.js",
+  "deploy:git": "ng build --base-href /orangeraie-site/ && npx angular-cli-ghpages --dir=dist/orangeraie-site"
+}
+```
