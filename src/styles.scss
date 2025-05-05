@@ -6,16 +6,3 @@
     background-color: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(6px);
 }
-
-/* Force le bouton à rester sous le calendrier */
-#widget-produit-OSCH-61770 .OsPlanning {
-    display: flex;
-    flex-direction: column !important;
-    align-items: stretch;
-}
-
-#widget-produit-OSCH-61770 .OsPlanningForm {
-    align-self: flex-start !important;
-    margin-top: 1rem;
-    /* espace au-dessus du bouton */
-}
