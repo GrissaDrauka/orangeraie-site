@@ -8,28 +8,28 @@ import { AfterViewInit, Component } from '@angular/core';
 export class ReservationComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
-    const script1 = document.createElement('script');
-    script1.src = '//gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js';
-    script1.type = 'text/javascript';
-    script1.onload = () => {
-      const script2 = document.createElement('script');
-      script2.type = 'text/javascript';
-      script2.text = `
-        (function() {
-          var widgetProduit = AllianceReseaux.Widget.Instance("Produit", {
-            idPanier: "pImkpKQ",
-            idIntegration: 1185,
-            langue: "fr",
-            ui: "OSCH-61770"
-          });
-          widgetProduit.PreApp("planning.actif", true);
-          widgetProduit.PreApp("planning.nbMaxProduits", 100);
-          widgetProduit.Initialise();
-        })();
-      `;
-      document.body.appendChild(script2);
-    };
+    // Charge le script de base
+    const scriptCore = document.createElement('script');
+    scriptCore.src = '//gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js';
+    scriptCore.async = true;
+    scriptCore.onload = () => this.initialiseWidget();
+    document.body.appendChild(scriptCore);
+  }
 
-    document.body.appendChild(script1);
+  private initialiseWidget(): void {
+    const scriptInit = document.createElement('script');
+    scriptInit.type = 'text/javascript';
+    scriptInit.text = `
+      (function() {
+        var widgetProduit = AllianceReseaux.Widget.Instance("Produit", {
+          idPanier: "pImkpKQ",
+          idIntegration: 1185,
+          langue: "fr",
+          ui: "OSCH-61770"
+        });
+        widgetProduit.Initialise();
+      })();
+    `;
+    document.body.appendChild(scriptInit);
   }
 }
