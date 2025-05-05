@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { LucideAngularModule, icons } from 'lucide-angular';
+import { ReservationComponent } from './pages/reservation/reservation.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import { LucideAngularModule, icons } from 'lucide-angular';
         ChambresComponent,
         ContactComponent,
         ChambreDetailComponent,
+        ReservationComponent,
     ],
     imports: [
         BrowserModule,
