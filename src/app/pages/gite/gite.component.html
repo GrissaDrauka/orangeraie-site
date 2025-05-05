@@ -77,6 +77,57 @@
                 </ul>
             </div>
 
+            <!-- Tableau des tarifs -->
+            <div class="mt-10 bg-orange-50 rounded-xl shadow px-6 py-6 max-w-3xl mx-auto text-center">
+                <h3 class="text-2xl font-semibold font-serif text-orangeraie mb-4">Tarifs du Gîte</h3>
+
+                <table class="w-full text-sm sm:text-base text-left text-gray-700 font-sans border-collapse">
+                    <thead>
+                        <tr class="bg-orangeraie text-white">
+                            <th class="px-4 py-2 text-center">Saison</th>
+                            <th class="px-4 py-2 text-center">Semaine</th>
+                            <th class="px-4 py-2 text-center">Animal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t">
+                            <td class="px-4 py-2 font-medium text-center">Basse <br />
+                                <span class="text-xs text-gray-500">(01/09 – 01/07)</span>
+                            </td>
+                            <td class="px-4 py-2 text-center">480 €</td>
+                            <td class="px-4 py-2 text-center">+7,50 €</td>
+                        </tr>
+                        <tr class="border-t bg-[#fdfaf7]">
+                            <td class="px-4 py-2 font-medium text-center">Moyenne <br />
+                                <span class="text-xs text-gray-500">(02/07 – 14/07)</span>
+                            </td>
+                            <td class="px-4 py-2 text-center">560 €</td>
+                            <td class="px-4 py-2 text-center">+15 €</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="px-4 py-2 font-medium text-center">Haute <br />
+                                <span class="text-xs text-gray-500">(14/07 – 31/08)</span>
+                            </td>
+                            <td class="px-4 py-2 text-center">630 €</td>
+                            <td class="px-4 py-2 text-center">+18 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="text-sm text-gray-500 mt-4 italic">
+                    Tarifs indicatifs, contactez-nous pour un devis personnalisé.
+                </p>
+
+                <div class="text-left mt-6 text-sm text-gray-700 font-sans space-y-2">
+                    <p><strong>🗓️ Location du gîte :</strong> à la semaine, du samedi 17h30 au samedi 10h.</p>
+                    <p><strong>💶 Moyens de paiement :</strong> chèques, espèces, chèques vacances, chèques vacances
+                        connect et virement.</p>
+                    <p><strong>🚭 Le gîte est non-fumeur.</strong></p>
+                    <p><strong>🧾 Taxe de séjour :</strong> 1,15 € / personne / jour en supplément.</p>
+                </div>
+            </div>
+
+
             <div class="flex flex-col sm:flex-row gap-4 items-center justify-center w-full mt-10">
                 <a [routerLink]="['/reservation']"
                     class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-xl shadow transition">
