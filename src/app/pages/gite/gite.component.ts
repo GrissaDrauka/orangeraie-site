@@ -10,20 +10,20 @@ export class GiteComponent {
 
   album = [
     {
-      image: 'assets/chambres/chambre_marine.jpg',
-      thumbnail: 'assets/chambres/chambre_marine.jpg',
+      image: 'assets/chambres/MARINE/recto.jpg',
+      thumbnail: 'assets/chambres/MARINE/recto.jpg',
       alt: 'Photo 1',
       title: 'Salon'
     },
     {
-      image: 'assets/chambres/chambre_bambouseraie.jpg',
-      thumbnail: 'assets/chambres/chambre_bambouseraie.jpg',
+      image: 'assets/chambres/BAMBOUSERAIE/recto.jpg',
+      thumbnail: 'assets/chambres/BAMBOUSERAIE/recto.jpg',
       alt: 'Photo 2',
       title: 'Cuisine'
     },
     {
-      image: 'assets/chambres/chambre_atelier.jpg',
-      thumbnail: 'assets/chambres/chambre_atelier.jpg',
+      image: 'assets/chambres/ATELIER/recto.jpg',
+      thumbnail: 'assets/chambres/ATELIER/recto.jpg',
       alt: 'Photo 3',
       title: 'Chambre'
     }
