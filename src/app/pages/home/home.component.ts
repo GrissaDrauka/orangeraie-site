@@ -34,16 +34,10 @@ import { Component } from '@angular/core';
         <!-- Boutons réservation -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="tel:+33468822279"
-            class="bg-orangeraie text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-[#7a583f] transition text-sm sm:text-base"
-          >
-            📞 Réserver par téléphone
-          </a>
-          <a
             routerLink="/reservation"
             class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base cursor-pointer"
           >
-            📝 Réserver en ligne
+            📝 Réserver →
           </a>
         </div>
       </section>

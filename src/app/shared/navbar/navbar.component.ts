@@ -46,6 +46,10 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
             Notre Gîte
           </a>
+          <a routerLink="/reservation" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
+              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
+            Réserver
+          </a>
           <a routerLink="/contact" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
             Contact
@@ -73,6 +77,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
         <a routerLink="/gite" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
           Notre Gîte
         </a>
+        <a routerLink="/reservation" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
+            Réserver
+          </a>
         <a routerLink="/contact" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
           Contact
         </a>

@@ -73,13 +73,9 @@
             </div>
 
             <div class="flex flex-col sm:flex-row gap-4 items-center justify-center w-full mt-10">
-                <a href="tel:+33468822279"
-                    class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base text-center">
-                    📞 Réserver par téléphone
-                </a>
-                <a routerLink="/contact"
-                    class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base text-center">
-                    📝 Réserver en ligne
+                <a [routerLink]="['/reservation']"
+                    class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-xl shadow transition">
+                    Réserver maintenant
                 </a>
             </div>
         </div>

@@ -43,6 +43,18 @@ export class ChambreDetailComponent implements OnInit {
     if (slug) {
       this.chambresSrv.getBySlug(slug).subscribe(c => (this.chambre = c));
     }
+
+  }
+
+  getWidgetSuffixForSlug(slug: string): string | null {
+    const mapping: Record<string, string> = {
+      'chambre-coloniale': '61770-1',
+      'chambre-atelier': '61770-4',
+      'chambre-bambouseraie': '61770-6',
+      'chambre-nature': '61770-5',
+      'chambre-marin': '61770-7',
+    };
+    return mapping[slug] || null;
   }
 }
 

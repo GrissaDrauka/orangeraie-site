@@ -17,19 +17,20 @@ export class ReservationComponent implements AfterViewInit {
   }
 
   private initialiseWidget(): void {
-    const scriptInit = document.createElement('script');
-    scriptInit.type = 'text/javascript';
-    scriptInit.text = `
-      (function() {
-        var widgetProduit = AllianceReseaux.Widget.Instance("Produit", {
-          idPanier: "pImkpKQ",
-          idIntegration: 1185,
-          langue: "fr",
-          ui: "OSCH-61770"
-        });
-        widgetProduit.Initialise();
-      })();
-    `;
-    document.body.appendChild(scriptInit);
+    const script = document.createElement('script');
+    script.src = '//gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js';
+    script.onload = () => {
+      const widget = (window as any).AllianceReseaux.Widget.Instance('Produit', {
+        idPanier: 'pImkpKQ',
+        idIntegration: 1185,
+        langue: 'fr',
+        ui: 'OSCH-61770'
+      });
+
+      widget.PreApp('planning.actif', true);
+      widget.PreApp('planning.nbMaxProduits', 100);
+      widget.Initialise();
+    };
+    document.body.appendChild(script);
   }
 }

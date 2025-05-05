@@ -10,10 +10,10 @@ import { Component } from '@angular/core';
     <main class="flex-grow">
       <router-outlet>
         <!-- Bouton flottant pour mobile -->
-        <a href="tel:+33468822279"
-          class="md:hidden fixed bottom-6 right-6 bg-orangeraie text-white text-sm font-semibold px-4 py-3 rounded-full shadow-lg hover:bg-[#7a583f] transition z-50">
-          📞 Réserver
-        </a>
+        <a routerLink="/reservation"
+         class="md:hidden fixed bottom-6 right-6 bg-orangeraie text-white text-sm font-semibold px-4 py-3 rounded-full shadow-lg hover:bg-[#7a583f] transition z-50">
+            📝 Réserver
+          </a>
       </router-outlet>
     </main>
 

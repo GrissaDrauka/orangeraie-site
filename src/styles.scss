@@ -7,29 +7,15 @@
     backdrop-filter: blur(6px);
 }
 
-/* Forcer le style mobile du widget OpenPro même en desktop */
-/*@media (min-width: 768px) {
-    #widget-produit-OSCH-61770 .OsPlanningDatePicker {
-        flex-direction: column !important;
-        align-items: stretch !important;
-        max-width: 669px !important;
-        margin: 0 auto !important;
-    }
+/* Force le bouton à rester sous le calendrier */
+#widget-produit-OSCH-61770 .OsPlanning {
+    display: flex;
+    flex-direction: column !important;
+    align-items: stretch;
+}
 
-    #widget-produit-OSCH-61770 select,
-    #widget-produit-OSCH-61770 .DateSelect,
-    #widget-produit-OSCH-61770 .PlanningEntete {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    #widget-produit-OSCH-61770 .ui-datepicker {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    /* Optionnel : centrer le bouton "Réserver" 
-    #widget-produit-OSCH-61770 .BtnReserver {
-        align-self: center !important;
-    }
-}*/
+#widget-produit-OSCH-61770 .OsPlanningForm {
+    align-self: flex-start !important;
+    margin-top: 1rem;
+    /* espace au-dessus du bouton */
+}
