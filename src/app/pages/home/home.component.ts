@@ -15,19 +15,24 @@ import { Component } from '@angular/core';
           et vous souhaitent la bienvenue.
         </p>
 
-        <!-- Labels -->
-        <div class="flex flex-wrap gap-3 justify-center mb-6">
-          <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
-            <img src="assets/clevacances.png" alt="Clévacances" class="h-6" />
-            <span class="text-sm text-orangeraie font-semibold font-sans">Clévacances</span>
+        <!-- Cartouche CléVacances seul au-dessus -->
+        <div class="flex justify-center mb-4">
+          <div class="bg-white/90 backdrop-blur-md px-6 py-3 rounded-xl shadow flex items-center gap-4">
+            <img src="assets/picto_3cles4.png" alt="Clévacances" class="h-12 sm:h-12" />
+            <span class="text-lg sm:text-xl text-orangeraie font-semibold font-sans whitespace-nowrap">CléVacances</span>
           </div>
+        </div>
+
+        <!-- Les deux autres côte à côte -->
+        <div class="flex flex-wrap justify-center gap-3 mb-6">
           <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
             <img src="assets/accueil-velo.png" alt="Accueil Vélo" class="h-6" />
             <span class="text-sm text-orangeraie font-semibold font-sans">Accueil Vélo</span>
           </div>
           <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
             <img src="assets/vignobles.png" alt="Vignobles & Découvertes" class="h-6" />
-            <span class="text-sm text-orangeraie font-semibold font-sans">Vignobles & Découvertes</span>
+            <span class="text-sm text-orangeraie font-semibold font-sans">Vignobles & <br/>
+              Découvertes</span>
           </div>
         </div>
 
@@ -53,7 +58,7 @@ import { Component } from '@angular/core';
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
           <!-- Chambre 1 -->
           <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/chambres/chambre_nature.jpg" alt="Chambre Nature" class="h-56 w-full object-cover" />
+            <img src="assets/chambres/NATURE/recto.jpg" alt="Chambre Nature" class="h-56 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Chambre Nature</h3>
               <p class="text-gray-700 text-sm font-sans">
@@ -64,7 +69,7 @@ import { Component } from '@angular/core';
 
           <!-- Chambre 2 -->
           <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/chambres/chambre_atelier.jpg" alt="Chambre triple" class="h-56 w-full object-cover" />
+            <img src="assets/chambres/ATELIER/recto.jpg" alt="Chambre triple" class="h-56 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Chambre Atelier</h3>
               <p class="text-gray-700 text-sm font-sans">
@@ -75,7 +80,7 @@ import { Component } from '@angular/core';
 
           <!-- Chambre 3 -->
           <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/chambres/chambre_coloniale.jpg" alt="Suite familiale" class="h-56 w-full object-cover" />
+            <img src="assets/chambres/COLONIALE/recto.jpg" alt="Suite familiale" class="h-56 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Suite Familiale "Coloniale"</h3>
               <p class="text-gray-700 text-sm font-sans">

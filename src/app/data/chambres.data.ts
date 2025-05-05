@@ -14,8 +14,9 @@ export const CHAMBRES: Chambre[] = [
             haute: [64, 71]
         },
         photos: [
-            'assets/chambres/chambre_marine.jpg',
-            'assets/chambres/chambre_marine.jpg',
+            'assets/chambres/MARINE/recto.jpg',
+            'assets/chambres/MARINE/verso.jpg',
+            'assets/chambres/MARINE/sdb.jpg'
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double (140x190cm)'
@@ -33,8 +34,9 @@ export const CHAMBRES: Chambre[] = [
             haute: [64, 71]
         },
         photos: [
-            'assets/chambres/chambre_nature.jpg',
-            'assets/chambres/chambre_nature.jpg',
+            'assets/chambres/NATURE/recto.jpg',
+            'assets/chambres/NATURE/verso.jpg',
+            'assets/chambres/NATURE/sdb.jpg'
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double (140x190cm)'
@@ -52,8 +54,9 @@ export const CHAMBRES: Chambre[] = [
             haute: [64, 71]
         },
         photos: [
-            'assets/chambres/chambre_bambouseraie.jpg',
-            'assets/chambres/chambre_bambouseraie.jpg',
+            'assets/chambres/BAMBOUSERAIE/recto.jpg',
+            'assets/chambres/BAMBOUSERAIE/verso.jpg',
+            'assets/chambres/BAMBOUSERAIE/sdb.jpg'
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double (140x190cm)'
@@ -71,8 +74,9 @@ export const CHAMBRES: Chambre[] = [
             haute: [76, 76, 83]
         },
         photos: [
-            'assets/chambres/chambre_atelier.jpg',
-            'assets/chambres/chambre_atelier.jpg',
+            'assets/chambres/ATELIER/recto.jpg',
+            'assets/chambres/ATELIER/verso.jpg',
+            'assets/chambres/ATELIER/sdb.jpg'
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double (140x190cm) et 1 lit simple (90x190cm)'
@@ -90,8 +94,9 @@ export const CHAMBRES: Chambre[] = [
             haute: [0, 81, 91, 102]
         },
         photos: [
-            'assets/chambres/chambre_coloniale.jpg',
-            'assets/chambres/chambre_coloniale.jpg',
+            'assets/chambres/COLONIALE/recto.jpg',
+            'assets/chambres/COLONIALE/verso.jpg',
+            'assets/chambres/COLONIALE/sdb.jpg'
         ],
         equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         lit: '1 lit double (160x200cm) et 2 lits simples (90x190cm)'
