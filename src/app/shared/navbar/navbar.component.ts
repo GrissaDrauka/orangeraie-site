@@ -21,8 +21,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
     >
       <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         <!-- Logo -->
-        <a routerLink="/" class="flex items-center space-x-2 text-orangeraie font-serif font-bold text-xl">
-          <img src="assets/logo.png" alt="Logo" class="h-8 w-8" />
+        <a routerLink="/" class="flex items-center text-orangeraie font-serif font-bold text-xl">
+          <img src="assets/logo.png" alt="Logo" class="h-42 w-32 pt-2" />
           <span>L'Orangeraie</span>
         </a>
 
