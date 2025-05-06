@@ -16,6 +16,7 @@ import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.co
 import { GalleriaModule } from 'primeng/galleria';
 import { LucideAngularModule, icons } from 'lucide-angular';
 import { ReservationComponent } from './pages/reservation/reservation.component';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
     declarations: [
@@ -34,6 +35,7 @@ import { ReservationComponent } from './pages/reservation/reservation.component'
         GiteModule,
         MatIconModule,
         GalleriaModule,
+        DialogModule,
         LucideAngularModule.pick(icons),
         RouterModule.forRoot(routes, {
             scrollPositionRestoration: 'enabled',

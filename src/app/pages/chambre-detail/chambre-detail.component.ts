@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Chambre } from '../../models/chambre.model';
 import { ChambresService } from '../../services/chambres.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chambre-detail',
@@ -9,6 +10,12 @@ import { ChambresService } from '../../services/chambres.service';
   styleUrls: ['./chambre-detail.component.scss']
 })
 export class ChambreDetailComponent implements OnInit {
+
+  // Variables pour la chambre
+  chambre?: Chambre;
+  // Variables pour le zoom des images  
+  selectedImageIndex: number = 0;
+  showDialog: boolean = false;
 
   //Liste des icônes lucide
   LUCIDE_ICONS: Record<string, { icon: string; label: string }> = {
@@ -31,11 +38,10 @@ export class ChambreDetailComponent implements OnInit {
     haute: '14/07 – 16/08'
   };
 
-  chambre?: Chambre;
-
   constructor(
     private route: ActivatedRoute,
-    private chambresSrv: ChambresService
+    private chambresSrv: ChambresService,
+    public router: Router
   ) { }
 
   ngOnInit(): void {
@@ -46,15 +52,30 @@ export class ChambreDetailComponent implements OnInit {
 
   }
 
-  getWidgetSuffixForSlug(slug: string): string | null {
-    const mapping: Record<string, string> = {
-      'chambre-coloniale': '61770-1',
-      'chambre-atelier': '61770-4',
-      'chambre-bambouseraie': '61770-6',
-      'chambre-nature': '61770-5',
-      'chambre-marin': '61770-7',
-    };
-    return mapping[slug] || null;
+  openZoom(index: number) {
+    this.selectedImageIndex = index;
+    this.showDialog = true;
+  }
+
+  closeZoom() {
+    this.showDialog = false;
+  }
+
+  prevImage() {
+    if (!this.chambre) return;
+    this.selectedImageIndex =
+      (this.selectedImageIndex - 1 + this.chambre.photos.length) %
+      this.chambre.photos.length;
+  }
+
+  nextImage() {
+    if (!this.chambre) return;
+    this.selectedImageIndex =
+      (this.selectedImageIndex + 1) % this.chambre.photos.length;
+  }
+
+  goToImage(index: number) {
+    this.selectedImageIndex = index;
   }
 }
 

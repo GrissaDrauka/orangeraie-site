@@ -28,7 +28,8 @@
 
         <!-- Image principale -->
         <div class="rounded-2xl overflow-hidden shadow-lg">
-            <img [src]="chambre.photos[0]" [alt]="chambre.nom" class="w-full h-[300px] md:h-[450px] object-cover" />
+            <img [src]="chambre.photos[0]" [alt]="chambre.nom" (click)="openZoom(0)"
+                class="w-full h-[300px] md:h-[450px] object-cover cursor-zoom-in" />
         </div>
 
         <!-- Section description + infos -->
@@ -118,12 +119,13 @@
             </div>
         </div>
 
-        <!-- Galerie simple (hors image principale) -->
+        <!-- Galerie simple -->
         <div *ngIf="chambre.photos.length > 1">
             <h2 id="galerie" class="scroll-mt-28 text-lg font-semibold mb-2 text-orange-800">Autres vues</h2>
             <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4">
-                <img *ngFor="let photo of chambre.photos.slice(1)" [src]="photo" [alt]="chambre.nom"
-                    class="w-full h-60 object-cover rounded-xl shadow" />
+                <img *ngFor="let photo of chambre.photos.slice(1); let i = index" [src]="photo" [alt]="chambre.nom"
+                    (click)="openZoom(i + 1)" class="w-full h-60 object-cover rounded-xl shadow cursor-zoom-in" />
+
             </div>
         </div>
 
@@ -135,6 +137,36 @@
             </a>
         </div>
     </section>
+
+    <!-- Zoom de l'image -->
+    <p-dialog [(visible)]="showDialog" [modal]="true" [dismissableMask]="true"
+        [style]="{ width: '60vw', 'max-width': '60vw' }" [contentStyle]="{ padding: '0'}" [draggable]="false"
+        [closable]="true" (onHide)="closeZoom()" styleClass="rounded-xl shadow-2xl">
+        <div class="relative flex justify-center items-center py-6 px-2">
+            <button (click)="prevImage()"
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-orangeraie transition z-10">
+                ‹
+            </button>
+
+            <img *ngIf="chambre" [src]="chambre.photos[selectedImageIndex]"
+                class="max-h-[70vh] max-w-full object-contain rounded-xl shadow z-0" />
+
+            <button (click)="nextImage()"
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-orangeraie transition z-10">
+                ›
+            </button>
+        </div>
+
+        <!-- Miniatures -->
+        <div class="flex gap-2 justify-center mt-4 flex-wrap">
+            <img *ngFor="let thumb of chambre.photos; let i = index" [src]="thumb" (click)="goToImage(i)"
+                class="w-16 h-16 object-cover rounded cursor-pointer transition border-2" [ngClass]="{
+          'border-orangeraie': i === selectedImageIndex,
+          'border-transparent hover:border-orangeraie': i !== selectedImageIndex
+        }" />
+        </div>
+    </p-dialog>
+
 </ng-container>
 
 <!-- Chambre non trouvée -->
