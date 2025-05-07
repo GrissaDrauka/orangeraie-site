@@ -1,4 +1,4 @@
-<ng-container *ngIf="chambre; else notFound">
+<ng-container *ngIf="chambre$ | async as chambre; else notFound">
     <section class="container mx-auto px-4 py-8 mt-20 space-y-8">
         <!-- Bouton de retour -->
         <div
@@ -6,7 +6,7 @@
             <a routerLink="/chambres"
                 class="inline-flex items-center gap-2 text-orange-700 hover:text-orange-900 text-base md:text-lg font-medium transition">
                 <mat-icon>arrow_back</mat-icon>
-                {{ 'chambre.backButton' | translate }}
+                {{ 'chambres.backButton' | translate }}
             </a>
         </div>
 
@@ -16,7 +16,7 @@
             <div class="flex gap-2 justify-center md:justify-end">
                 <span
                     class="bg-green-100 text-green-800 text-s px-3 py-1 rounded-full font-medium inline-flex items-center">
-                    Petit déjeuner inclus
+                    {{ 'chambres.petitDejInclus' | translate }}
                 </span>
                 <span
                     class="bg-orange-50 text-gray-800 items-center text-s px-3 py-1 rounded-full font-medium inline-flex gap-1">
@@ -37,7 +37,7 @@
             <!-- Description -->
             <div class="space-y-4 text-sm">
                 <div>
-                    <h2 id="description" class="scroll-mt-28 text-xl font-semibold mb-2">{{ 'chambre.description' |
+                    <h2 id="description" class="scroll-mt-28 text-xl font-semibold mb-2">{{ 'chambres.description' |
                         translate }}</h2>
                     <p class="leading-relaxed text-base">{{ chambre.description }}</p>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="bg-orange-50 px-4 py-3 mb-4 text-sm text-gray-800">
                     <div class="flex items-center gap-2 font-medium mb-1">
                         <lucide-icon name="bed" size="20"></lucide-icon>
-                        {{ 'chambre.couchage' | translate }}
+                        {{ 'chambres.couchage' | translate }}
                     </div>
                     <div class="pl-7">
                         {{ chambre.lit }}
@@ -53,11 +53,11 @@
                 </div>
 
                 <div>
-                    <strong>{{ 'chambre.equipements' | translate }} :</strong>
+                    <strong>{{ 'chambres.equipement' | translate }} :</strong>
                     <ul class="flex flex-wrap gap-3 text-sm text-gray-700 mt-2">
                         <li *ngFor="let key of chambre.equipements" class="flex items-center gap-2">
                             <lucide-icon [name]="LUCIDE_ICONS[key].icon" size="20"></lucide-icon>
-                            {{ LUCIDE_ICONS[key].label }}
+                            {{ LUCIDE_ICONS[key].labelKey | translate }}
                         </li>
                     </ul>
                 </div>
@@ -65,12 +65,12 @@
 
             <!-- Infos pratiques -->
             <div>
-                <h2 id="tarifs" class="scroll-mt-28 text-lg font-semibold mb-4">{{ 'chambre.tarifs' | translate }}</h2>
+                <h2 id="tarifs" class="scroll-mt-28 text-lg font-semibold mb-4">{{ 'chambres.tarifs' | translate }}</h2>
                 <div class="overflow-x-auto">
                     <table class="min-w-full text-sm text-gray-800 rounded-xl overflow-hidden border border-gray-300">
                         <thead class="bg-orange-100 text-left border-b border-gray-300">
                             <tr>
-                                <th class="p-2 border-r border-gray-300">{{ 'saison.saison' | translate }}</th>
+                                <th class="p-2 border-r border-gray-300">{{ 'chambres.saison' | translate }}</th>
                                 <th class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">1 pers</th>
                                 <th class="p-2 border-r border-gray-300">2 pers</th>
                                 <th class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">3 pers</th>
@@ -80,7 +80,7 @@
                         <tbody>
                             <tr class="border-b border-gray-200">
                                 <td class="p-2 border-r border-gray-300 font-semibold">
-                                    {{ 'saison.basse' | translate }}<br /><span class="text-xs text-gray-500">({{
+                                    {{ 'chambres.basse' | translate }}<br /><span class="text-xs text-gray-500">({{
                                         saisonDates.basse }})</span>
                                 </td>
                                 <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">{{
@@ -92,7 +92,7 @@
                             </tr>
                             <tr class="border-b border-gray-200">
                                 <td class="p-2 border-r border-gray-300 font-semibold">
-                                    {{ 'saison.moyenne' | translate }}<br />
+                                    {{ 'chambres.moyenne' | translate }}<br />
                                     <span class="text-xs text-gray-500">({{ saisonDates.moyenne }})</span>
                                 </td>
                                 <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">{{
@@ -104,7 +104,7 @@
                             </tr>
                             <tr>
                                 <td class="p-2 border-r border-gray-300 font-semibold">
-                                    {{ 'saison.haute' | translate }}<br /><span class="text-xs text-gray-500">({{
+                                    {{ 'chambres.haute' | translate }}<br /><span class="text-xs text-gray-500">({{
                                         saisonDates.haute }})</span>
                                 </td>
                                 <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">{{
@@ -122,7 +122,7 @@
 
         <!-- Galerie simple -->
         <div *ngIf="chambre.photos.length > 1">
-            <h2 id="galerie" class="scroll-mt-28 text-lg font-semibold mb-2 text-orange-800">{{ 'chambre.galerie' |
+            <h2 id="galerie" class="scroll-mt-28 text-lg font-semibold mb-2 text-orange-800">{{ 'chambres.galerie' |
                 translate }}</h2>
             <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4">
                 <img *ngFor="let photo of chambre.photos.slice(1); let i = index" [src]="photo" [alt]="chambre.nom"
@@ -134,7 +134,7 @@
         <div class="text-center mt-4">
             <a [routerLink]="['/reservation']" [queryParams]="{ chambre: chambre.slug }"
                 class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-xl shadow transition">
-                {{ 'chambre.reserver' | translate }}
+                {{ 'chambres.reserver' | translate }}
             </a>
         </div>
     </section>

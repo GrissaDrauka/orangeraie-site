@@ -156,10 +156,22 @@
         "family_title": "Family Rooms",
         "learn_more": "Learn more →",
         "from_price": "From €{{price}}/night",
+        "backButton": "Back to the rooms",
+        "petitDejInclus": "Breakfast included",
+        "description": "Description",
+        "couchage": "Sleeping arrangements",
+        "equipement": "Amenities",
+        "reserver": "Book this room",
+        "galerie": "Other photos of the room",
         "about_stay": {
             "title": "About your stay",
             "desc": "At L’Orangeraie, breakfast is a unique experience: served in the large lounge or in the garden, it invites you to discover a selection of <strong>around ten homemade jams</strong>, full of authentic flavors, lovingly prepared by your host.<br class='hidden sm:block' />Then enjoy the <strong>garden with free access</strong>, or take a refreshing break in the <strong>fully-equipped summer kitchen</strong>."
         },
+        "tarifs": "Rates by season and number of persons",
+        "saison": "Season",
+        "basse": "Low",
+        "moyenne": "Mid",
+        "haute": "High",
         "chambre-marine": {
             "nom": "Marine Room",
             "resume": "Let yourself be carried away by a marine atmosphere, between soft blue and seaside spirit.",
@@ -189,11 +201,23 @@
             "lit": "1 double bed (140x190cm) and 1 single bed (90x190cm)"
         },
         "chambre-coloniale": {
-            "nom": "Colonial Room",
+            "nom": "Colonial Style Room",
             "resume": "An elegant room with exotic accents, dark wood, natural materials, and colonial charm.",
             "description": "An elegant room with exotic touches, where dark wood and natural materials create a setting inspired by colonial charm. An invitation to travel in a refined and peaceful setting.",
             "etage": "1st floor",
             "lit": "1 double bed (160x200cm) and 2 single beds (90x190cm)"
+        },
+        "equipements": {
+            "lit": "Double bed",
+            "wifi": "Free wifi",
+            "clim": "Air conditioning",
+            "douche": "Bathroom",
+            "tv": "Television",
+            "wc": "Private toilet",
+            "jardin": "Garden view",
+            "petitdej": "Breakfast included",
+            "frigo": "Fridge",
+            "terrasse": "Terrace"
         }
     },
     "gite": {

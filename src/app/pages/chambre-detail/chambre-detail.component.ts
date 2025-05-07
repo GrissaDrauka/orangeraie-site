@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Chambre } from '../../models/chambre.model';
 import { ChambresService } from '../../services/chambres.service';
-import { Router } from '@angular/router';
+import { Observable, tap, take } from 'rxjs';
 
 @Component({
   selector: 'app-chambre-detail',
@@ -12,23 +12,23 @@ import { Router } from '@angular/router';
 export class ChambreDetailComponent implements OnInit {
 
   // Variables pour la chambre
-  chambre?: Chambre;
+  chambre$!: Observable<Chambre | undefined>;
   // Variables pour le zoom des images  
   selectedImageIndex: number = 0;
   showDialog: boolean = false;
 
   //Liste des icônes lucide
-  LUCIDE_ICONS: Record<string, { icon: string; label: string }> = {
-    lit: { icon: 'bed', label: 'Lit double' },
-    wifi: { icon: 'wifi', label: 'Wifi gratuit' },
-    clim: { icon: 'snowflake', label: 'Climatisation' },
-    douche: { icon: 'shower-head', label: 'Salle d’eau' },
-    tv: { icon: 'tv', label: 'Télévision' },
-    wc: { icon: 'toilet', label: 'WC privés' },
-    jardin: { icon: 'trees', label: 'Vue jardin' },
-    petitdej: { icon: 'coffee', label: 'Petit déjeuner inclus' },
-    frigo: { icon: 'fridge', label: 'Réfrigérateur' },
-    terrasse: { icon: 'sun', label: 'Terrasse' }
+  LUCIDE_ICONS: Record<string, { icon: string; labelKey: string }> = {
+    lit: { icon: 'bed', labelKey: 'chambres.equipements.lit' },
+    wifi: { icon: 'wifi', labelKey: 'chambres.equipements.wifi' },
+    clim: { icon: 'snowflake', labelKey: 'chambres.equipements.clim' },
+    douche: { icon: 'shower-head', labelKey: 'chambres.equipements.douche' },
+    tv: { icon: 'tv', labelKey: 'chambres.equipements.tv' },
+    wc: { icon: 'toilet', labelKey: 'chambres.equipements.wc' },
+    jardin: { icon: 'trees', labelKey: 'chambres.equipements.jardin' },
+    petitdej: { icon: 'coffee', labelKey: 'chambres.equipements.petitdej' },
+    frigo: { icon: 'fridge', labelKey: 'chambres.equipements.frigo' },
+    terrasse: { icon: 'sun', labelKey: 'chambres.equipements.terrasse' }
   };
 
   // Dates de saison, un seul endroit à changer si elles changent
@@ -47,7 +47,7 @@ export class ChambreDetailComponent implements OnInit {
   ngOnInit(): void {
     const slug = this.route.snapshot.paramMap.get('slug');
     if (slug) {
-      this.chambresSrv.getBySlug(slug).subscribe(c => (this.chambre = c));
+      this.chambre$ = this.chambresSrv.getBySlug(slug);
     }
 
   }
@@ -62,16 +62,19 @@ export class ChambreDetailComponent implements OnInit {
   }
 
   prevImage() {
-    if (!this.chambre) return;
-    this.selectedImageIndex =
-      (this.selectedImageIndex - 1 + this.chambre.photos.length) %
-      this.chambre.photos.length;
+    this.chambre$.pipe(take(1)).subscribe(chambre => {
+      if (!chambre) return;
+      this.selectedImageIndex =
+        (this.selectedImageIndex - 1 + chambre.photos.length) % chambre.photos.length;
+    });
   }
 
   nextImage() {
-    if (!this.chambre) return;
-    this.selectedImageIndex =
-      (this.selectedImageIndex + 1) % this.chambre.photos.length;
+    this.chambre$.pipe(take(1)).subscribe(chambre => {
+      if (!chambre) return;
+      this.selectedImageIndex =
+        (this.selectedImageIndex - 1 + chambre.photos.length) % chambre.photos.length;
+    });
   }
 
   goToImage(index: number) {
