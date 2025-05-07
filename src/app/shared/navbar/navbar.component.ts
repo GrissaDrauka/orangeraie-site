@@ -80,6 +80,10 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
             Infos Pratiques
           </a>
+          <a routerLink="/activites" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
+             class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
+            Activités
+          </a>
         </nav>
       </div>
     </header>
@@ -136,6 +140,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
           </a>
         <a routerLink="/infos-pratiques" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
           Infos Pratiques
+        </a>
+        <a routerLink="/activites" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
+          Activités
         </a>
       </nav>
     </div>

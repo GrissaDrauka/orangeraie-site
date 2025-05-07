@@ -18,6 +18,7 @@ import { LucideAngularModule, icons } from 'lucide-angular';
 import { ReservationComponent } from './pages/reservation/reservation.component';
 import { DialogModule } from 'primeng/dialog';
 import { InfosPratiquesComponent } from './pages/infos-pratiques/infos-pratiques.component';
+import { ActivitesComponent } from './pages/activites/activites.component';
 
 @NgModule({
     declarations: [
@@ -30,6 +31,7 @@ import { InfosPratiquesComponent } from './pages/infos-pratiques/infos-pratiques
         ChambreDetailComponent,
         ReservationComponent,
         InfosPratiquesComponent,
+        ActivitesComponent,
     ],
     imports: [
         BrowserModule,
