@@ -9,10 +9,8 @@ import { Component } from '@angular/core';
         class="relative w-full bg-black/50 text-white text-center px-4 pt-24 sm:pt-28 pb-16 flex flex-col items-center justify-center min-h-[80vh] bg-cover bg-center"
         style="background-image: url('assets/maison-hotes.png');"
       >
-        <h1 class="text-4xl sm:text-5xl font-bold font-playfair mb-4">Chambres d'hôtes</h1>
-        <p class="text-base sm:text-lg max-w-2xl mb-6 font-sans">
-          Laurence & Fabrice vous accueillent dans leur maison d'hôtes <br/>
-          et vous souhaitent la bienvenue.
+        <h1 class="text-4xl sm:text-5xl font-bold font-playfair mb-4">{{ 'HOME.TITLE' | translate }}</h1>
+        <p class="text-base sm:text-lg max-w-2xl mb-6 font-sans" [innerHTML]="'HOME.DESCRIPTION' | translate">
         </p>
 
         <!-- Cartouche CléVacances seul au-dessus -->

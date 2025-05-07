@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -21,4 +22,13 @@ import { Component } from '@angular/core';
   </div>
   `
 })
-export class AppComponent { }
+export class AppComponent {
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('fr'); // langue par défaut
+    this.translate.use('fr');            // langue active au démarrage
+  }
+
+  switchLang(lang: string) {
+    this.translate.use(lang);           // change la langue dynamiquement
+  }
+}

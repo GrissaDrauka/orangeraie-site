@@ -19,6 +19,13 @@ import { ReservationComponent } from './pages/reservation/reservation.component'
 import { DialogModule } from 'primeng/dialog';
 import { InfosPratiquesComponent } from './pages/infos-pratiques/infos-pratiques.component';
 import { ActivitesComponent } from './pages/activites/activites.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
     declarations: [
@@ -44,7 +51,17 @@ import { ActivitesComponent } from './pages/activites/activites.component';
         RouterModule.forRoot(routes, {
             scrollPositionRestoration: 'enabled',
             anchorScrolling: 'enabled'
-        })
+        }),
+        // Import des module pour traduction
+        HttpClientModule,
+        TranslateModule.forRoot({
+            defaultLanguage: 'fr',
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
     ],
     bootstrap: [AppComponent]
 })

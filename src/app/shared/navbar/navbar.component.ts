@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -84,6 +85,15 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
             Activités
           </a>
+          <div class="flex items-center space-x-2 ml-4">
+            <button (click)="switchLang('fr')" class="text-sm font-semibold hover:text-orangeraie" [class.text-orangeraie]="currentLang === 'fr'">
+              FR
+            </button>
+            <span class="text-gray-400">|</span>
+            <button (click)="switchLang('en')" class="text-sm font-semibold hover:text-orangeraie" [class.text-orangeraie]="currentLang === 'en'">
+              EN
+            </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -144,6 +154,14 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
         <a routerLink="/activites" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
           Activités
         </a>
+        <div class="flex justify-center gap-4 mt-4">
+          <button (click)="switchLang('fr')" class="text-sm font-semibold hover:text-[#7a583f]" [class.text-orangeraie]="currentLang === 'fr'">
+            FR
+          </button>
+          <button (click)="switchLang('en')" class="text-sm font-semibold hover:text-[#7a583f]" [class.text-orangeraie]="currentLang === 'en'">
+            EN
+          </button>
+        </div>
       </nav>
     </div>
   `,
@@ -152,6 +170,19 @@ export class NavbarComponent implements OnInit, OnDestroy {
   isOpen = false;
   isScrolled = false;
   isHebergementsOpen = false;
+
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('fr');
+    this.translate.use('fr');
+    this.currentLang = 'fr';
+  }
+
+  currentLang: string = 'fr';
+
+  switchLang(lang: string) {
+    this.translate.use(lang);
+    this.currentLang = lang;
+  }
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
