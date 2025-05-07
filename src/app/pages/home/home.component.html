@@ -1,7 +1,346 @@
-<section class="text-center mt-12 px-4">
-    <h2 class="text-4xl font-bold text-orangeraie mb-4">Bienvenue à L'Orangeraie</h2>
-    <p class="text-gray-700 max-w-xl mx-auto">
-      Laurence & Fabrice vous accueillent dans leur maison d’hôtes à Elne, dans les Pyrénées-Orientales.
-    </p>
+<!-- Hero Section -->
+<section
+  class="relative w-full bg-black/50 text-white text-center px-4 pt-24 sm:pt-28 pb-16 flex flex-col items-center justify-center min-h-[80vh] bg-cover bg-center"
+  style="background-image: url('assets/maison-hotes.png');">
+  <h1 class="text-4xl sm:text-5xl font-bold font-playfair mb-4">
+    {{ 'home.title' | translate }}
+  </h1>
+  <p class="text-base sm:text-lg max-w-2xl mb-6 font-sans" [innerHTML]="'home.description' | translate"></p>
+
+  <!-- Cartouche CléVacances seul au-dessus -->
+  <div class="flex justify-center mb-4">
+    <div class="bg-white/90 backdrop-blur-md px-6 py-3 rounded-xl shadow flex items-center gap-4">
+      <img src="assets/picto_3cles4.png" alt="Clévacances" class="h-12 sm:h-12" />
+      <span class="text-lg sm:text-xl text-orangeraie font-semibold font-sans whitespace-nowrap">CléVacances</span>
+    </div>
+  </div>
+
+  <!-- Les deux autres côte à côte -->
+  <div class="flex flex-wrap justify-center gap-3 mb-6">
+    <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
+      <img src="assets/accueil-velo.png" alt="Accueil Vélo" class="h-6" />
+      <span class="text-sm text-orangeraie font-semibold font-sans">Accueil Vélo</span>
+    </div>
+    <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
+      <img src="assets/vignobles.png" alt="Vignobles & Découvertes" class="h-6" />
+      <span class="text-sm text-orangeraie font-semibold font-sans">Vignobles & <br />Découvertes</span>
+    </div>
+  </div>
+
+  <!-- Boutons réservation -->
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+    <a routerLink="/reservation"
+      class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base cursor-pointer">
+      {{ 'home.cta' | translate }}
+    </a>
+  </div>
 </section>
-  
+
+<!-- Section Nos chambres -->
+<section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie text-center mb-12">
+      {{ 'home.rooms_section_title' | translate }}
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- Chambre 1 -->
+      <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="assets/chambres/NATURE/recto.jpg" alt="Chambre Nature" class="h-56 w-full object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">
+            {{ 'home.rooms.nature.title' | translate }}
+          </h3>
+          <p class="text-gray-700 text-sm font-sans">
+            {{ 'home.rooms.nature.desc' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Chambre 2 -->
+      <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="assets/chambres/ATELIER/recto.jpg" alt="Chambre triple" class="h-56 w-full object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">
+            {{ 'home.rooms.atelier.title' | translate }}
+          </h3>
+          <p class="text-gray-700 text-sm font-sans">
+            {{ 'home.rooms.atelier.desc' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Chambre 3 -->
+      <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="assets/chambres/COLONIALE/recto.jpg" alt="Suite familiale" class="h-56 w-full object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">
+            {{ 'home.rooms.coloniale.title' | translate }}
+          </h3>
+          <p class="text-gray-700 text-sm font-sans">
+            {{ 'home.rooms.coloniale.desc' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bouton vers la page dédiée -->
+    <div class="text-center mt-12">
+      <a routerLink="/chambres"
+        class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+        {{ 'home.rooms.see_all' | translate }}
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Section Contact teaser -->
+<section class="bg-white py-12 px-4 md:px-16">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-serif font-bold text-orangeraie mb-4">
+      {{ 'home.contact_teaser.title' | translate }}
+    </h3>
+    <p class="text-gray-700 font-sans mb-6">
+      {{ 'home.contact_teaser.text' | translate }}
+    </p>
+    <a routerLink="/infos-pratiques"
+      class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+      {{ 'home.contact_teaser.cta' | translate }}
+    </a>
+  </div>
+</section>
+
+<!-- Section Notre Gîte -->
+<section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <!-- Image du gîte -->
+    <div>
+      <img src="assets/gite.jpg" alt="Notre gîte" class="w-full h-auto rounded-2xl shadow" />
+    </div>
+
+    <!-- Texte -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-6 text-center">
+        {{ 'home.gite_section.title' | translate }}
+      </h2>
+      <p class="text-gray-700 text-base font-sans mb-6">
+        {{ 'home.gite_section.desc' | translate }}
+      </p>
+      <div class="text-center">
+        <a routerLink="/gite"
+          class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+          {{ 'home.gite_section.cta' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Services & Commodités -->
+<section class="bg-white py-16 px-4 md:px-16">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie text-center mb-12">
+      {{ 'home.services.title' | translate }}
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
+      <div class="flex flex-col items-center space-y-4">
+        <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">
+          🛏️</div>
+        <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.bed.title' | translate }}
+        </h4>
+        <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.bed.desc' | translate }}</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">
+          🍽️</div>
+        <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.breakfast.title' | translate
+          }}</h4>
+        <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.breakfast.desc' | translate }}</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">🌐
+        </div>
+        <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.wifi.title' | translate }}
+        </h4>
+        <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.wifi.desc' | translate }}</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">🚗
+        </div>
+        <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.parking.title' | translate
+          }}</h4>
+        <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.parking.desc' | translate }}</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">❄️
+        </div>
+        <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.ac.title' | translate }}
+        </h4>
+        <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.ac.desc' | translate }}</p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">🚲
+        </div>
+        <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.bike.title' | translate }}
+        </h4>
+        <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.bike.desc' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Infos pratiques -->
+<section class="bg-[#f9f4ef] py-12 px-4">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-2xl sm:text-3xl font-serif font-bold text-orangeraie mb-6">
+      {{ 'home.practical.title' | translate }}
+    </h2>
+
+    <div class="grid gap-6 sm:grid-cols-2 text-left text-sm text-gray-700 font-sans">
+      <div>
+        <h3 class="font-semibold text-orangeraie mb-2">
+          {{ 'home.practical.breakfast.title' | translate }}
+        </h3>
+        <p [innerHTML]="'home.practical.breakfast.desc' | translate"></p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-orangeraie mb-2">
+          {{ 'home.practical.arrival.title' | translate }}
+        </h3>
+        <p [innerHTML]="'home.practical.arrival.desc' | translate"></p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-orangeraie mb-2">
+          {{ 'home.practical.payment.title' | translate }}
+        </h3>
+        <p [innerHTML]="'home.practical.payment.desc' | translate"></p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-orangeraie mb-2">
+          {{ 'home.practical.others.title' | translate }}
+        </h3>
+        <ul class="list-disc list-inside">
+          <li
+            *ngFor="let item of ['home.practical.others.list.0', 'home.practical.others.list.1', 'home.practical.others.list.2', 'home.practical.others.list.3', 'home.practical.others.list.4', 'home.practical.others.list.5']">
+            {{ item | translate }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <a routerLink="/infos-pratiques"
+        class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base">
+        {{ 'home.practical.cta' | translate }}
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Section À découvrir autour -->
+<section class="bg-white py-16 px-4 md:px-16">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-12">
+      {{ 'home.discover.title' | translate }}
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
+      <div class="flex flex-col items-center space-y-4">
+        <div class="text-4xl">🏖️</div>
+        <h4 class="text-lg font-serif font-semibold text-orangeraie">
+          {{ 'home.discover.items.beach.title' | translate }}
+        </h4>
+        <p class="text-sm text-gray-600 font-sans">
+          {{ 'home.discover.items.beach.desc' | translate }}
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-4">
+        <div class="text-4xl">🏰</div>
+        <h4 class="text-lg font-serif font-semibold text-orangeraie">
+          {{ 'home.discover.items.collioure.title' | translate }}
+        </h4>
+        <p class="text-sm text-gray-600 font-sans">
+          {{ 'home.discover.items.collioure.desc' | translate }}
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-4">
+        <div class="text-4xl">🚴</div>
+        <h4 class="text-lg font-serif font-semibold text-orangeraie">
+          {{ 'home.discover.items.bike.title' | translate }}
+        </h4>
+        <p class="text-sm text-gray-600 font-sans">
+          {{ 'home.discover.items.bike.desc' | translate }}
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-4">
+        <div class="text-4xl">🌄</div>
+        <h4 class="text-lg font-serif font-semibold text-orangeraie">
+          {{ 'home.discover.items.alberes.title' | translate }}
+        </h4>
+        <p class="text-sm text-gray-600 font-sans">
+          {{ 'home.discover.items.alberes.desc' | translate }}
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-4">
+        <div class="text-4xl">🍇</div>
+        <h4 class="text-lg font-serif font-semibold text-orangeraie">
+          {{ 'home.discover.items.vineyards.title' | translate }}
+        </h4>
+        <p class="text-sm text-gray-600 font-sans">
+          {{ 'home.discover.items.vineyards.desc' | translate }}
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-4">
+        <div class="text-4xl">🛍️</div>
+        <h4 class="text-lg font-serif font-semibold text-orangeraie">
+          {{ 'home.discover.items.market.title' | translate }}
+        </h4>
+        <p class="text-sm text-gray-600 font-sans">
+          {{ 'home.discover.items.market.desc' | translate }}
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <a routerLink="/activites"
+        class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+        {{ 'home.discover.cta' | translate }}
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Section Contactez-nous -->
+<!--<section class="bg-white py-16 px-4 md:px-16">
+   <div class="max-w-4xl mx-auto text-center">
+     <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-6">
+       Contactez-nous
+     </h2>
+     <p class="text-gray-700 font-sans text-base mb-6">
+       Vous avez une question ? Besoin d'informations ou envie de réserver votre séjour ?
+       Nous sommes à votre disposition et serons ravis de vous accueillir à L'Orangeraie.
+     </p>
+
+     <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-orangeraie font-semibold text-sm font-sans mb-8">
+       <div class="flex items-center gap-2">
+         📞 <a href="tel:+33468822279" class="hover:underline">+33(0)4 68 82 22 79</a>
+       </div>
+       <div class="flex items-center gap-2">
+         📧 <a href="mailto:contact@orangeraie-elne.fr" class="hover:underline">contact&#64;orangeraie-elne.fr</a>
+       </div>
+     </div>
+
+     <a routerLink="/contact"
+       class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+       Nous écrire
+     </a>
+   </div>
+ </section>-->

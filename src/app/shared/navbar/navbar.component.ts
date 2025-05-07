@@ -90,12 +90,14 @@ import { TranslateService } from '@ngx-translate/core';
               src="assets/i18n/Flag_of_France.svg"
               alt="Français"
               class="h-4 max-w-[1.5rem] cursor-pointer"
+              [ngClass]="{ 'ring-2 ring-orange-500 rounded': currentLang === 'fr' }"
               (click)="switchLang('fr')"
             />
             <img
               src="assets/i18n/Flag_UK.svg"
               alt="English"
-              class="h-[1.1rem] max-w-[1.6rem] cursor-pointer"
+              class="h-4 max-w-[1.5rem] cursor-pointer"
+              [ngClass]="{ 'ring-2 ring-orange-500 rounded': currentLang === 'en' }"
               (click)="switchLang('en')"
             />
           </div>
@@ -119,12 +121,14 @@ import { TranslateService } from '@ngx-translate/core';
             src="assets/i18n/Flag_of_France.svg"
             alt="Français"
             class="h-5 max-w-[1.7rem] cursor-pointer"
+            [ngClass]="{ 'ring-2 ring-orange-500 rounded': currentLang === 'fr' }"
             (click)="switchLang('fr')"
           />
           <img
             src="assets/i18n/Flag_UK.svg"
             alt="English"
-            class="h-[1.2rem] max-w-[1.9rem] cursor-pointer"
+            class="h-5 max-w-[1.7rem] cursor-pointer"
+            [ngClass]="{ 'ring-2 ring-orange-500 rounded': currentLang === 'en' }"
             (click)="switchLang('en')"
           />
         </div>  
