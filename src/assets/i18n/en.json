@@ -273,5 +273,41 @@
                 "cta": "Learn more"
             }
         }
+    },
+    "activities": {
+        "title": "Activities Nearby",
+        "intro": "Elne and its region offer a wide variety of experiences: nature, culture, gastronomy, and relaxation... Here are some suggestions to enrich your stay at L'Orangeraie.",
+        "elne": {
+            "title": "🏛️ Elne, City of Art and History",
+            "desc": "As the former episcopal seat of Roussillon from <strong>568 AD</strong> until the 17<sup>th</sup> century, Elne offers visitors a <strong>magnificent Romanesque cathedral from the 11<sup>th</sup> century</strong> and a cloister in <strong>white marble veined with blue</strong>.<br><br>Also a city of art, it is the birthplace of painter <strong>Étienne Terrus</strong> (1857–1922), friend of <em>Matisse</em>, <em>Maillol</em>, and <em>Montfreid</em>.<br><br>Elne is also home to a powerful place of memory: the <strong>Swiss Maternity Hospital</strong>, bought by the city in 2005. This site honors the courage of <strong>Elisabeth Eidenbenz</strong> of the Swiss Aid to Children, who welcomed over 600 children there during the Spanish Civil War and World War II."
+        },
+        "nature": {
+            "title": "🌿 Nature, Beaches & Relaxation",
+            "p1": "Just minutes away, enjoy the Mediterranean beaches like <strong>Saint-Cyprien</strong>, <strong>Argelès-sur-Mer</strong>, or <strong>Collioure</strong>. Sunbathing, swimming, or water sports – there’s something for everyone.",
+            "p2": "Nature lovers can explore the <strong>protected ponds of Canet-Saint-Nazaire</strong> or go <strong>hiking in the Albères mountains</strong>, the first foothills of the Pyrenees.",
+            "p3": "For a quieter break, enjoy a bike ride through the orchards or along the <strong>Tech river path</strong>, between river and countryside."
+        },
+        "culture": {
+            "title": "🎭 Local Markets & Culture",
+            "p1": "All year round, stroll through the <strong>traditional Roussillon markets</strong> to discover <strong>local products</strong>, crafts, and Catalan specialties. The <strong>Elne market</strong> takes place every <strong>Friday morning from 8am to 1pm</strong>, <strong>right below our guest rooms</strong>.",
+            "p2": "In summer, enjoy <strong>traditional festivals</strong>, open-air concerts, street performances, and art exhibitions in the town or nearby villages.",
+            "p3": "Highlights include <strong>Visa pour l’image</strong> in Perpignan in September, the <strong>Saint John’s Bonfires</strong> in June, and many <strong>summer village festivals</strong> just minutes from Elne.",
+            "p4": "Ask your host for more information about ongoing events during your stay!"
+        },
+        "sports": {
+            "title": "🚴‍♂️ Outdoor Sports & Activities",
+            "p1": "Whether you're a thrill-seeker or a fan of peaceful strolls, the region offers a wide range of activities:",
+            "p2": "<strong>Tree climbing</strong> and <strong>artificial canyoning</strong> in Argelès-sur-Mer, <strong>natural canyoning</strong> in the nearby mountains, <strong>paragliding</strong> over the cliffs, <strong>hiking</strong> between sea and mountains, or <strong>kayaking</strong> and <strong>paddleboarding</strong> along the coast – all unforgettable experiences."
+        },
+        "villages": {
+            "title": "🌄 Hilltop Villages & Heritage",
+            "p1": "Discover <strong>picturesque villages</strong> like <strong>Castelnou</strong>, <strong>Eus</strong>, or <strong>Collioure</strong>, ranked among the most beautiful in France.",
+            "p2": "Cobblestone streets, artisans, citadels, and breathtaking views await you at every turn – a dive into Catalan authenticity and history."
+        },
+        "conclusion": {
+            "title": "🌅 A Region to Experience Fully",
+            "text": "Whether you seek nature, history, relaxation, or adventure, Elne and its surroundings will charm you. Enjoy a privileged setting between sea, mountains, and Catalan traditions.",
+            "cta": "Book your stay"
+        }
     }
 }
