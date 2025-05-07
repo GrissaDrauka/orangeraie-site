@@ -155,10 +155,22 @@
         "family_title": "Chambres familiales",
         "learn_more": "En savoir plus →",
         "from_price": "Tarifs dès {{price}}€/nuit",
+        "backButton": "Retour aux chambres",
+        "petitDejInclus": "Petit déjeuner inclus",
+        "description": "Description",
+        "couchage": "Literie",
+        "equipement": "Équipements",
+        "reserver": "Réserver cette chambre",
+        "galerie": "Autres vues de la chambre",
         "about_stay": {
             "title": "À propos de votre séjour",
             "desc": "À l’Orangeraie, le petit déjeuner est une expérience à part entière : servi dans le grand salon ou dans le jardin, il vous invite à découvrir <strong>une dizaine de confitures maison</strong>, aux saveurs authentiques, préparées avec soin par votre hôte.<br class='hidden sm:block' />Profitez ensuite du <strong>jardin en libre accès</strong>, ou préparez une pause fraîcheur dans la <strong>cuisine d’été mise à disposition</strong>."
         },
+        "tarifs": "Tarifs par saison et nombre de personnes",
+        "saison": "Saison",
+        "basse": "Basse",
+        "moyenne": "Moyenne",
+        "haute": "Haute",
         "chambre-marine": {
             "nom": "Chambre Marine",
             "resume": "Laissez-vous bercer par une atmosphère marine, entre bleu doux et esprit bord de mer.",
@@ -193,6 +205,18 @@
             "description": "Une chambre élégante aux accents d’ailleurs, où bois foncé et matières naturelles composent un décor inspiré du charme colonial. Une invitation au voyage dans un cadre raffiné et apaisant.",
             "etage": "1er étage",
             "lit": "1 lit double (160x200cm) et 2 lits simples (90x190cm)"
+        },
+        "equipements": {
+            "lit": "Lit double",
+            "wifi": "Wifi gratuit",
+            "clim": "Climatisation",
+            "douche": "Salle d’eau",
+            "tv": "Télévision",
+            "wc": "WC privés",
+            "jardin": "Vue jardin",
+            "petitdej": "Petit déjeuner inclus",
+            "frigo": "Réfrigérateur",
+            "terrasse": "Terrasse"
         }
     },
     "gite": {
