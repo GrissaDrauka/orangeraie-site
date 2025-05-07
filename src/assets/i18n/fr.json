@@ -139,5 +139,19 @@
             },
             "cta": "Découvrir la région"
         }
+    },
+    "chambres": {
+        "title": "Nos Chambres",
+        "intro": "Découvrez nos cinq chambres chaleureuses, confortables et décorées avec soin pour un séjour inoubliable.",
+        "labels": "Elles sont labellisées <strong>3 Clés</strong> par <strong>CléVacances</strong>, gage de qualité et de confort.",
+        "non_smoking": "Toutes nos chambres sont <strong>non-fumeur</strong>.",
+        "duo_title": "Chambres pour 2 personnes",
+        "family_title": "Chambres familiales",
+        "learn_more": "En savoir plus →",
+        "from_price": "Tarifs dès {{price}}€/nuit",
+        "about_stay": {
+            "title": "À propos de votre séjour",
+            "desc": "À l’Orangeraie, le petit déjeuner est une expérience à part entière : servi dans le grand salon ou dans le jardin, il vous invite à découvrir <strong>une dizaine de confitures maison</strong>, aux saveurs authentiques, préparées avec soin par votre hôte.<br class='hidden sm:block' />Profitez ensuite du <strong>jardin en libre accès</strong>, ou préparez une pause fraîcheur dans la <strong>cuisine d’été mise à disposition</strong>."
+        }
     }
 }

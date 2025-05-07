@@ -1,36 +1,30 @@
 <section class="w-full bg-[#fdfaf7] py-24">
     <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-8">Nos Chambres</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-8">
+            {{ 'chambres.title' | translate }}
+        </h2>
         <p class="text-center max-w-2xl mx-auto text-gray-600 font-sans text-base sm:text-lg mb-8">
-            Découvrez nos cinq chambres chaleureuses, confortables et décorées avec soin pour un séjour inoubliable.
-            <br class="hidden sm:block" />
-            Elles sont labellisées <strong>3 Clés</strong> par <strong>CléVacances</strong>, gage de qualité et de
-            confort.
-            <br class="hidden sm:block" />
-            Toutes nos chambres sont <strong>non-fumeur</strong>.
+            {{ 'chambres.intro' | translate }}<br class="hidden sm:block" />
+            <span [innerHTML]="'chambres.labels' | translate"></span><br class="hidden sm:block" />
+            <span [innerHTML]="'chambres.non_smoking' | translate"></span>
         </p>
+
 
         <!-- À propos de votre séjour (Mobile) -->
         <section
             class="bg-orange-50 border border-orange-100 rounded-2xl p-6 md:p-8 shadow-sm mb-10 text-gray-800 block custom:hidden">
             <div class="flex items-center gap-3 mb-4">
                 <lucide-icon name="coffee" size="24" class="text-orange-600"></lucide-icon>
-                <h2 class="text-xl font-semibold text-orange-800">À propos de votre séjour</h2>
+                <h2 class="text-xl font-semibold text-orange-800">
+                    {{ 'chambres.about_stay.title' | translate }}
+                </h2>
             </div>
-            <p class="text-base leading-relaxed">
-                À l’Orangeraie, le petit déjeuner est une expérience à part entière : servi dans le grand salon ou dans
-                le jardin, il vous invite à découvrir
-                <strong>une dizaine de confitures maison</strong>, aux saveurs authentiques, préparées avec soin par
-                votre hôte.
-                <br class="hidden sm:block" />
-                Profitez ensuite du <strong>jardin en libre accès</strong>, ou préparez une pause fraîcheur dans la
-                <strong>cuisine d’été mise à disposition</strong>.
-            </p>
+            <p class="text-base leading-relaxed" [innerHTML]="'chambres.about_stay.desc' | translate"></p>
         </section>
 
         <!-- Section Chambres 2 personnes -->
         <h3 class="text-xl sm:text-2xl font-semibold font-serif text-[#7a583f] text-center mb-6">
-            Chambres pour 2 personnes
+            {{ 'chambres.duo_title' | translate }}
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div *ngFor="let chambre of chambresDeux" [routerLink]="['/chambres', chambre.slug]"
@@ -51,10 +45,11 @@
 
                     <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <a class="text-orangeraie font-semibold hover:underline text-sm">
-                            En savoir plus →
+                            {{ 'chambres.learn_more' | translate }}
                         </a>
-                        <span class="text-sm text-gray-600 italic font-sans">Tarifs dès
-                            {{ chambre.tarifs.basse[0] }}€/nuit</span>
+                        <span class="text-sm text-gray-600 italic font-sans">
+                            {{ 'chambres.from_price' | translate:{ price: chambre.tarifs.basse[0] } }}
+                        </span>
                     </div>
                 </div>
             </div>
@@ -65,22 +60,16 @@
             class="bg-orange-50 border border-orange-100 rounded-2xl p-6 md:p-8 shadow-sm mb-10 text-gray-800 hidden custom:block">
             <div class="flex items-center gap-3 mb-4">
                 <lucide-icon name="coffee" size="24" class="text-orange-600"></lucide-icon>
-                <h2 class="text-xl font-semibold text-orange-800">À propos de votre séjour</h2>
+                <h2 class="text-xl font-semibold text-orange-800">
+                    {{ 'chambres.about_stay.title' | translate }}
+                </h2>
             </div>
-            <p class="text-base leading-relaxed">
-                À l’Orangeraie, le petit déjeuner est une expérience à part entière : servi dans le grand salon ou dans
-                le jardin, il vous invite à découvrir
-                <strong>une dizaine de confitures maison</strong>, aux saveurs authentiques, préparées avec soin par
-                votre hôte.
-                <br class="hidden sm:block" />
-                Profitez ensuite du <strong>jardin en libre accès</strong>, ou préparez une pause fraîcheur dans la
-                <strong>cuisine d’été mise à disposition</strong>.
-            </p>
+            <p class="text-base leading-relaxed" [innerHTML]="'chambres.about_stay.desc' | translate"></p>
         </section>
 
         <!-- Section Chambres familiales -->
         <h3 class="text-xl sm:text-2xl font-semibold font-serif text-[#7a583f] text-center mb-6">
-            Chambres familiales
+            {{ 'chambres.family_title' | translate }}
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div *ngFor="let chambre of chambresFamiliales" [routerLink]="['/chambres', chambre.slug]"
@@ -101,10 +90,11 @@
 
                     <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <a class="text-orangeraie font-semibold hover:underline text-sm">
-                            En savoir plus →
+                            {{ 'chambres.learn_more' | translate }}
                         </a>
-                        <span class="text-sm text-gray-600 italic font-sans">Tarifs dès
-                            {{ chambre.tarifs.basse[0] }}€/nuit</span>
+                        <span class="text-sm text-gray-600 italic font-sans">
+                            {{ 'chambres.from_price' | translate:{ price: chambre.tarifs.basse[0] } }}
+                        </span>
                     </div>
                 </div>
             </div>

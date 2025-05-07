@@ -139,5 +139,19 @@
             },
             "cta": "Explore the region"
         }
+    },
+    "chambres": {
+        "title": "Our Rooms",
+        "intro": "Discover our five warm, comfortable rooms, lovingly decorated for an unforgettable stay.",
+        "labels": "They are labeled with <strong>3 Clés</strong> by <strong>CléVacances</strong>, a guarantee of quality and comfort.",
+        "non_smoking": "All our rooms are <strong>non-smoking</strong>.",
+        "duo_title": "Rooms for 2 people",
+        "family_title": "Family Rooms",
+        "learn_more": "Learn more →",
+        "from_price": "From €{{price}}/night",
+        "about_stay": {
+            "title": "About your stay",
+            "desc": "At L’Orangeraie, breakfast is a unique experience: served in the large lounge or in the garden, it invites you to discover a selection of <strong>around ten homemade jams</strong>, full of authentic flavors, lovingly prepared by your host.<br class='hidden sm:block' />Then enjoy the <strong>garden with free access</strong>, or take a refreshing break in the <strong>fully-equipped summer kitchen</strong>."
+        }
     }
 }
