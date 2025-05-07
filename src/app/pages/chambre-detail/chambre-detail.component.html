@@ -6,7 +6,7 @@
             <a routerLink="/chambres"
                 class="inline-flex items-center gap-2 text-orange-700 hover:text-orange-900 text-base md:text-lg font-medium transition">
                 <mat-icon>arrow_back</mat-icon>
-                Retour aux chambres
+                {{ 'chambre.backButton' | translate }}
             </a>
         </div>
 
@@ -21,7 +21,7 @@
                 <span
                     class="bg-orange-50 text-gray-800 items-center text-s px-3 py-1 rounded-full font-medium inline-flex gap-1">
                     <mat-icon style="font-size: 24px;">apartment</mat-icon>
-                    {{ chambre.etage}}
+                    {{ chambre.etage }}
                 </span>
             </div>
         </div>
@@ -36,16 +36,16 @@
         <div class="bg-orange-50 p-4 md:p-6 rounded-2xl shadow-md grid md:grid-cols-2 gap-4 font-sans">
             <!-- Description -->
             <div class="space-y-4 text-sm">
-
                 <div>
-                    <h2 id="description" class="scroll-mt-28 text-xl font-semibold mb-2">Description</h2>
+                    <h2 id="description" class="scroll-mt-28 text-xl font-semibold mb-2">{{ 'chambre.description' |
+                        translate }}</h2>
                     <p class="leading-relaxed text-base">{{ chambre.description }}</p>
                 </div>
 
                 <div class="bg-orange-50 px-4 py-3 mb-4 text-sm text-gray-800">
                     <div class="flex items-center gap-2 font-medium mb-1">
                         <lucide-icon name="bed" size="20"></lucide-icon>
-                        Couchage
+                        {{ 'chambre.couchage' | translate }}
                     </div>
                     <div class="pl-7">
                         {{ chambre.lit }}
@@ -53,7 +53,7 @@
                 </div>
 
                 <div>
-                    <strong>Équipements :</strong>
+                    <strong>{{ 'chambre.equipements' | translate }} :</strong>
                     <ul class="flex flex-wrap gap-3 text-sm text-gray-700 mt-2">
                         <li *ngFor="let key of chambre.equipements" class="flex items-center gap-2">
                             <lucide-icon [name]="LUCIDE_ICONS[key].icon" size="20"></lucide-icon>
@@ -65,13 +65,12 @@
 
             <!-- Infos pratiques -->
             <div>
-                <h2 id="tarifs" class="scroll-mt-28 text-lg font-semibold mb-4">Tarifs par saison et nombre de
-                    personnes</h2>
+                <h2 id="tarifs" class="scroll-mt-28 text-lg font-semibold mb-4">{{ 'chambre.tarifs' | translate }}</h2>
                 <div class="overflow-x-auto">
                     <table class="min-w-full text-sm text-gray-800 rounded-xl overflow-hidden border border-gray-300">
                         <thead class="bg-orange-100 text-left border-b border-gray-300">
                             <tr>
-                                <th class="p-2 border-r border-gray-300">Saison</th>
+                                <th class="p-2 border-r border-gray-300">{{ 'saison.saison' | translate }}</th>
                                 <th class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">1 pers</th>
                                 <th class="p-2 border-r border-gray-300">2 pers</th>
                                 <th class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">3 pers</th>
@@ -81,10 +80,11 @@
                         <tbody>
                             <tr class="border-b border-gray-200">
                                 <td class="p-2 border-r border-gray-300 font-semibold">
-                                    Basse<br /><span class="text-xs text-gray-500">({{ saisonDates.basse }})</span>
+                                    {{ 'saison.basse' | translate }}<br /><span class="text-xs text-gray-500">({{
+                                        saisonDates.basse }})</span>
                                 </td>
-                                <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">
-                                    {{ chambre.tarifs.basse[0] }} €</td>
+                                <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">{{
+                                    chambre.tarifs.basse[0] }} €</td>
                                 <td class="p-2 border-r border-gray-300">{{ chambre.tarifs.basse[1] }} €</td>
                                 <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">{{
                                     chambre.tarifs.basse[2] }} €</td>
@@ -92,22 +92,23 @@
                             </tr>
                             <tr class="border-b border-gray-200">
                                 <td class="p-2 border-r border-gray-300 font-semibold">
-                                    Moyenne<br />
+                                    {{ 'saison.moyenne' | translate }}<br />
                                     <span class="text-xs text-gray-500">({{ saisonDates.moyenne }})</span>
                                 </td>
-                                <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">
-                                    {{ chambre.tarifs.moyenne[0] }} €</td>
+                                <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">{{
+                                    chambre.tarifs.moyenne[0] }} €</td>
                                 <td class="p-2 border-r border-gray-300">{{ chambre.tarifs.moyenne[1] }} €</td>
-                                <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">
-                                    {{ chambre.tarifs.moyenne[2] }} €</td>
+                                <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">{{
+                                    chambre.tarifs.moyenne[2] }} €</td>
                                 <td class="p-2" *ngIf="chambre.personnes > 3">{{ chambre.tarifs.moyenne[3] }} €</td>
                             </tr>
                             <tr>
                                 <td class="p-2 border-r border-gray-300 font-semibold">
-                                    Haute<br /><span class="text-xs text-gray-500">({{ saisonDates.haute }})</span>
+                                    {{ 'saison.haute' | translate }}<br /><span class="text-xs text-gray-500">({{
+                                        saisonDates.haute }})</span>
                                 </td>
-                                <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">
-                                    {{ chambre.tarifs.haute[0] }} €</td>
+                                <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes <= 3">{{
+                                    chambre.tarifs.haute[0] }} €</td>
                                 <td class="p-2 border-r border-gray-300">{{ chambre.tarifs.haute[1] }} €</td>
                                 <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">{{
                                     chambre.tarifs.haute[2] }} €</td>
@@ -121,11 +122,11 @@
 
         <!-- Galerie simple -->
         <div *ngIf="chambre.photos.length > 1">
-            <h2 id="galerie" class="scroll-mt-28 text-lg font-semibold mb-2 text-orange-800">Autres vues</h2>
+            <h2 id="galerie" class="scroll-mt-28 text-lg font-semibold mb-2 text-orange-800">{{ 'chambre.galerie' |
+                translate }}</h2>
             <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4">
                 <img *ngFor="let photo of chambre.photos.slice(1); let i = index" [src]="photo" [alt]="chambre.nom"
                     (click)="openZoom(i + 1)" class="w-full h-60 object-cover rounded-xl shadow cursor-zoom-in" />
-
             </div>
         </div>
 
@@ -133,7 +134,7 @@
         <div class="text-center mt-4">
             <a [routerLink]="['/reservation']" [queryParams]="{ chambre: chambre.slug }"
                 class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-xl shadow transition">
-                Réserver cette chambre
+                {{ 'chambre.reserver' | translate }}
             </a>
         </div>
     </section>
@@ -166,13 +167,13 @@
         }" />
         </div>
     </p-dialog>
-
 </ng-container>
 
 <!-- Chambre non trouvée -->
 <ng-template #notFound>
     <section class="container mx-auto px-4 py-16 text-center">
-        <h2 class="text-2xl font-bold mb-4 text-orange-800">Chambre introuvable 😢</h2>
-        <a routerLink="/chambres" class="text-orange-600 underline">Retour à la liste des chambres</a>
+        <h2 class="text-2xl font-bold mb-4 text-orange-800">{{ 'chambre.chambreIntrouvable' | translate }}</h2>
+        <a routerLink="/chambres" class="text-orange-600 underline">{{ 'chambre.chambreIntrouvableLink' | translate
+            }}</a>
     </section>
 </ng-template>
