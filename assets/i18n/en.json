@@ -37,15 +37,15 @@
         "rooms_section_title": "Our Rooms",
         "rooms": {
             "nature": {
-                "title": "Nature",
+                "title": "The Nature Room",
                 "desc": "Double room with private bathroom, air conditioning and TV. Perfect for a stay for two."
             },
             "atelier": {
-                "title": "Atelier",
+                "title": "The Workshop Room",
                 "desc": "Spacious triple room with a double and a single bed. Ideal for small groups or families."
             },
             "coloniale": {
-                "title": "Coloniale",
+                "title": "The Colonial Style Room",
                 "desc": "Connecting suite for 4 people with two bedrooms, ideal for family stays."
             },
             "see_all": "See all rooms"
@@ -383,5 +383,11 @@
         "online_booking_text": "Choose your stay dates and book directly online:",
         "footer_text_1": "If you have any questions or special requests, feel free to contact us. We are here to assist you!",
         "footer_text_2": "Thank you for your trust, and we look forward to welcoming you to L'Orangeraie!"
+    },
+    "seo": {
+        "home": {
+            "title": "L'Orangeraie – Guesthouse in Elne, France",
+            "description": "Stay at L'Orangeraie in Elne: comfortable rooms, certified cottage, homemade jams, lush garden and warm hospitality in the heart of Roussillon."
+        }
     }
 }

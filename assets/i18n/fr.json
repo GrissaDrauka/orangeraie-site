@@ -36,15 +36,15 @@
         "rooms_section_title": "Nos Chambres",
         "rooms": {
             "nature": {
-                "title": "Nature",
+                "title": "Chambre Nature",
                 "desc": "Chambre double avec salle d’eau privative, climatisation et TV. Idéale pour un séjour à deux."
             },
             "atelier": {
-                "title": "Atelier",
+                "title": "Chambre Atelier",
                 "desc": "Chambre triple spacieuse avec lit double et lit simple. Idéale pour petit groupe ou famille."
             },
             "coloniale": {
-                "title": "Coloniale",
+                "title": "Chambre Coloniale",
                 "desc": "Suite communicante pour 4 personnes avec deux chambres, idéale pour les séjours en famille."
             },
             "see_all": "Voir toutes les chambres"
@@ -382,5 +382,11 @@
         "online_booking_text": "Choisissez vos dates de séjour et réservez directement en ligne :",
         "footer_text_1": "Pour toute question ou demande particulière, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !",
         "footer_text_2": "Nous vous remercions de votre confiance et avons hâte de vous accueillir à l'Orangeraie !"
+    },
+    "seo": {
+        "home": {
+            "title": "L'Orangeraie – Chambres d'hôtes à Elne",
+            "description": "Séjournez à L'Orangeraie à Elne : chambres confortables, gîte classé, confitures maison, jardin verdoyant et accueil chaleureux au cœur du Roussillon."
+        }
     }
 }
