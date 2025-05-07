@@ -1,4 +1,28 @@
 {
+    "navbar": {
+        "home": "Home",
+        "accommodation": "Our Accommodations",
+        "rooms": "Our Rooms",
+        "gite": "Our Cottage",
+        "reservation": "Booking",
+        "infos": "Useful Info",
+        "activities": "Nearby Activities"
+    },
+    "footer": {
+        "title": "L'Orangeraie",
+        "subtitle": "Guest rooms & Cottage in Elne",
+        "nav_title": "Navigation",
+        "nav": {
+            "home": "Home",
+            "rooms": "Our rooms",
+            "gite": "Our cottage",
+            "contact": "Contact"
+        },
+        "contact_title": "Contact",
+        "address": "29 Avenue Paul Reig, 66200 Elne",
+        "email": "contact@orangeraie-elne.fr",
+        "rights": "All rights reserved."
+    },
     "HOME": {
         "TITLE": "Welcome to L'Orangeraie",
         "DESCRIPTION": "Laurence & Fabrice welcome you to their guesthouse <br/> and wish you a pleasant stay."

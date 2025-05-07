@@ -31,4 +31,9 @@ export class AppComponent {
   switchLang(lang: string) {
     this.translate.use(lang);           // change la langue dynamiquement
   }
+
+  ngOnInit(): void {
+    const savedLang = localStorage.getItem('lang') || 'fr'; // par défaut français
+    this.switchLang(savedLang);
+  }
 }

@@ -1,4 +1,28 @@
 {
+    "navbar": {
+        "home": "Accueil",
+        "accommodation": "Nos Hébergements",
+        "rooms": "Nos Chambres",
+        "gite": "Notre Gîte",
+        "reservation": "Réserver",
+        "infos": "Infos Pratiques",
+        "activities": "Activités"
+    },
+    "footer": {
+        "title": "L'Orangeraie",
+        "subtitle": "Chambres d’hôtes & Gîte à Elne",
+        "nav_title": "Navigation",
+        "nav": {
+            "home": "Accueil",
+            "rooms": "Nos chambres",
+            "gite": "Notre gîte",
+            "contact": "Contact"
+        },
+        "contact_title": "Contact",
+        "address": "29 Avenue Paul Reig, 66200 Elne",
+        "email": "contact@orangeraie-elne.fr",
+        "rights": "Tous droits réservés."
+    },
     "HOME": {
         "TITLE": "Bienvenue à L'Orangeraie",
         "DESCRIPTION": "Laurence & Fabrice vous accueillent dans leur maison d'hôtes <br/> et vous souhaitent la bienvenue."

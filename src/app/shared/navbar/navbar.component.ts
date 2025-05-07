@@ -37,7 +37,7 @@ import { TranslateService } from '@ngx-translate/core';
         <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide">
           <a routerLink="/" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
-            Accueil
+            {{ 'navbar.home' | translate }}
           </a>
           <!-- Menu déroulant Nos Hébergements -->
           <div class="relative group">
@@ -45,7 +45,7 @@ import { TranslateService } from '@ngx-translate/core';
             <button
               class="hover:text-orangeraie relative transition-all duration-300 font-semibold text-sm tracking-wide flex items-center gap-1"
             >
-              Nos Hébergements
+              {{ 'navbar.accommodation' | translate }}
               <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
@@ -61,7 +61,7 @@ import { TranslateService } from '@ngx-translate/core';
                 [routerLinkActiveOptions]="{ exact: true }"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 transition"
               >
-                Nos Chambres
+                {{ 'navbar.rooms' | translate }}
               </a>
               <a
                 routerLink="/gite"
@@ -69,30 +69,35 @@ import { TranslateService } from '@ngx-translate/core';
                 [routerLinkActiveOptions]="{ exact: true }"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 transition"
               >
-                Notre Gîte
+                {{ 'navbar.gite' | translate }}
               </a>
             </div>
           </div>
           <a routerLink="/reservation" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
               class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
-            Réserver
+            {{ 'navbar.reservation' | translate }}
           </a>
           <a routerLink="/infos-pratiques" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
-            Infos Pratiques
+            {{ 'navbar.infos' | translate }}
           </a>
           <a routerLink="/activites" routerLinkActive="text-orangeraie" [routerLinkActiveOptions]="{ exact: true }"
              class="hover:text-orangeraie relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-orangeraie after:transition-all after:duration-300 hover:after:w-full">
-            Activités
+            {{ 'navbar.activities' | translate }}
           </a>
-          <div class="flex items-center space-x-2 ml-4">
-            <button (click)="switchLang('fr')" class="text-sm font-semibold hover:text-orangeraie" [class.text-orangeraie]="currentLang === 'fr'">
-              FR
-            </button>
-            <span class="text-gray-400">|</span>
-            <button (click)="switchLang('en')" class="text-sm font-semibold hover:text-orangeraie" [class.text-orangeraie]="currentLang === 'en'">
-              EN
-            </button>
+          <div class="flex items-center gap-2">
+            <img
+              src="assets/i18n/Flag_of_France.svg"
+              alt="Français"
+              class="h-4 max-w-[1.5rem] cursor-pointer"
+              (click)="switchLang('fr')"
+            />
+            <img
+              src="assets/i18n/Flag_UK.svg"
+              alt="English"
+              class="h-[1.1rem] max-w-[1.6rem] cursor-pointer"
+              (click)="switchLang('en')"
+            />
           </div>
         </nav>
       </div>
@@ -105,18 +110,33 @@ import { TranslateService } from '@ngx-translate/core';
         'scale-y-100 opacity-100': isOpen,
         'scale-y-0 opacity-0 pointer-events-none': !isOpen
       }"
-      class="fixed top-16 left-0 w-full z-50 origin-top transition-all duration-300 transform bg-[#f9f4ef]/95 backdrop-blur-md shadow-xl px-4 pb-4 md:hidden"
-    >
+      class="fixed top-[5.5rem] left-0 w-full z-50 origin-top transition-all duration-300 transform bg-[#f9f4ef]/95 backdrop-blur-md shadow-xl px-4 pb-4 md:hidden"
+      >
       <nav class="flex flex-col space-y-3 text-sm font-semibold text-orangeraie tracking-wide mt-2">
-        <a routerLink="/" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
-          Accueil
+        <!-- Drapeaux langue (mobile only) -->
+        <div class="flex md:hidden items-center gap-2 ml-2">
+          <img
+            src="assets/i18n/Flag_of_France.svg"
+            alt="Français"
+            class="h-5 max-w-[1.7rem] cursor-pointer"
+            (click)="switchLang('fr')"
+          />
+          <img
+            src="assets/i18n/Flag_UK.svg"
+            alt="English"
+            class="h-[1.2rem] max-w-[1.9rem] cursor-pointer"
+            (click)="switchLang('en')"
+          />
+        </div>  
+      <a routerLink="/" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
+          {{ 'navbar.home' | translate }}
         </a>
         <!-- Bouton cliquable pour ouvrir/cacher les sous-liens -->
         <button
           (click)="isHebergementsOpen = !isHebergementsOpen"
           class="flex justify-between items-center pl-3 pr-4 py-2 w-full font-bold text-orangeraie hover:text-[#7a583f] border-l-4 border-transparent hover:border-orangeraie transition"
         >
-          Nos Hébergements
+          {{ 'navbar.accommodation' | translate }}
           <svg
             class="w-4 h-4 transform transition-transform duration-300"
             [ngClass]="{ 'rotate-180': isHebergementsOpen }"
@@ -135,33 +155,25 @@ import { TranslateService } from '@ngx-translate/core';
             (click)="closeHebergementsMenu()"
             class="border-l-4 border-transparent hover:border-orangeraie hover:text-[#7a583f] transition pl-3 py-1"
           >
-            Nos Chambres
+            {{ 'navbar.rooms' | translate }}
           </a>
           <a
             routerLink="/gite"
             (click)="closeHebergementsMenu()"
             class="border-l-4 border-transparent hover:border-orangeraie hover:text-[#7a583f] transition pl-3 py-1"
           >
-            Notre Gîte
+            {{ 'navbar.gite' | translate }}
           </a>
         </div>
         <a routerLink="/reservation" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
-            Réserver
+            {{ 'navbar.reservation' | translate }}
           </a>
         <a routerLink="/infos-pratiques" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
-          Infos Pratiques
+          {{ 'navbar.infos' | translate }}
         </a>
         <a routerLink="/activites" (click)="closeMenu()" class="hover:text-[#7a583f] pl-3 border-l-4 border-transparent hover:border-orangeraie transition-all duration-300">
-          Activités
+          {{ 'navbar.activities' | translate }}
         </a>
-        <div class="flex justify-center gap-4 mt-4">
-          <button (click)="switchLang('fr')" class="text-sm font-semibold hover:text-[#7a583f]" [class.text-orangeraie]="currentLang === 'fr'">
-            FR
-          </button>
-          <button (click)="switchLang('en')" class="text-sm font-semibold hover:text-[#7a583f]" [class.text-orangeraie]="currentLang === 'en'">
-            EN
-          </button>
-        </div>
       </nav>
     </div>
   `,
@@ -182,6 +194,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   switchLang(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
+    localStorage.setItem('lang', lang);
   }
 
   toggleMenu() {

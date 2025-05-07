@@ -3,37 +3,63 @@
 
         <!-- Nom / logo -->
         <div>
-            <h3 class="text-xl font-serif font-bold text-orangeraie mb-3">L'Orangeraie</h3>
-            <p class="text-gray-600">Chambres d’hôtes & Gîte à Elne</p>
+            <h3 class="text-xl font-serif font-bold text-orangeraie mb-3">
+                {{ 'footer.title' | translate }}
+            </h3>
+            <p class="text-gray-600">
+                {{ 'footer.subtitle' | translate }}
+            </p>
         </div>
 
         <!-- Navigation -->
         <div class="space-y-2">
-            <h4 class="font-semibold text-orangeraie">Navigation</h4>
+            <h4 class="font-semibold text-orangeraie">
+                {{ 'footer.nav_title' | translate }}
+            </h4>
             <ul class="space-y-1">
-                <li><a routerLink="/" class="hover:underline cursor-pointer">Accueil</a></li>
-                <li><a routerLink="/chambres" class="hover:underline cursor-pointer">Nos chambres</a></li>
-                <li><a routerLink="/gite" class="hover:underline cursor-pointer">Notre gîte</a></li>
-                <li><a routerLink="/contact" class="hover:underline cursor-pointer">Contact</a></li>
+                <li>
+                    <a routerLink="/" class="hover:underline cursor-pointer">
+                        {{ 'footer.nav.home' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/chambres" class="hover:underline cursor-pointer">
+                        {{ 'footer.nav.rooms' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/gite" class="hover:underline cursor-pointer">
+                        {{ 'footer.nav.gite' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/contact" class="hover:underline cursor-pointer">
+                        {{ 'footer.nav.contact' | translate }}
+                    </a>
+                </li>
             </ul>
         </div>
 
         <!-- Contact -->
         <div class="space-y-4">
-            <h4 class="font-semibold text-orangeraie">Contact</h4>
+            <h4 class="font-semibold text-orangeraie">
+                {{ 'footer.contact_title' | translate }}
+            </h4>
 
             <div class="flex items-center gap-2 group">
                 <lucide-icon name="map-pin" size="20"
-                    class="text-orangeraie transition-colors duration-200 group-hover:text-orange-600"></lucide-icon>
+                    class="text-orangeraie transition-colors duration-200 group-hover:text-orange-600">
+                </lucide-icon>
                 <a href="https://www.google.com/maps?q=29+Avenue+Paul+Reig,+66200+Elne" target="_blank"
                     rel="noopener noreferrer" class="hover:underline">
-                    29 Avenue Paul Reig, 66200 Elne
+                    {{ 'footer.address' | translate }}
                 </a>
             </div>
 
             <div class="flex items-center gap-2 group">
                 <lucide-icon name="phone" size="20"
-                    class="text-orangeraie transition-colors duration-200 group-hover:text-orange-600"></lucide-icon>
+                    class="text-orangeraie transition-colors duration-200 group-hover:text-orange-600">
+                </lucide-icon>
                 <div class="flex flex-col leading-tight">
                     <a href="tel:+33468822279" class="hover:underline">+33(0)4 68 82 22 79</a>
                     <a href="tel:+33608062193" class="hover:underline">+33(0)6 08 06 21 93</a>
@@ -42,30 +68,18 @@
 
             <div class="flex items-center gap-2 group">
                 <lucide-icon name="mail" size="20"
-                    class="text-orangeraie transition-colors duration-200 group-hover:text-orange-600"></lucide-icon>
+                    class="text-orangeraie transition-colors duration-200 group-hover:text-orange-600">
+                </lucide-icon>
                 <a href="mailto:contact@orangeraie-elne.fr" class="hover:underline">
-                    contact&#64;orangeraie-elne.fr
+                    {{ 'footer.email' | translate }}
                 </a>
             </div>
         </div>
-
     </div>
 
     <!-- Mentions -->
-    <footer class="bg-[#f9f4ef] text-gray-700 pt-6 pb-6 px-4 md:px-16">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-
-            <!-- (Ton bloc Nom + Navigation + Contact reste inchangé) -->
-
-        </div>
-
-        <!-- Mentions -->
-        <div class="flex flex-col items-center mt-2 pt-2 text-center text-xs text-gray-500">
-            <!-- Petite barre courte -->
-            <div class="w-52 h-[1px] bg-[#7B5E57]/30 mb-4"></div>
-
-            &copy; {{ currentYear }} L'Orangeraie — Tous droits réservés.
-        </div>
-    </footer>
-
+    <div class="flex flex-col items-center mt-2 pt-2 text-center text-xs text-gray-500">
+        <div class="w-52 h-[1px] bg-[#7B5E57]/30 mb-4"></div>
+        &copy; {{ currentYear }} L'Orangeraie — {{ 'footer.rights' | translate }}
+    </div>
 </footer>
