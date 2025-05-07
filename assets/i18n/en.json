@@ -388,6 +388,46 @@
         "home": {
             "title": "L'Orangeraie – Guesthouse in Elne, France",
             "description": "Stay at L'Orangeraie in Elne: comfortable rooms, certified cottage, homemade jams, lush garden and warm hospitality in the heart of Roussillon."
+        },
+        "gite": {
+            "title": "Our Holiday Cottage in Elne – L'Orangeraie",
+            "description": "Stay in our rated holiday cottage in Elne: 3 Clés CléVacances, modern comfort, garden, full kitchen and complete independence in the heart of Roussillon."
+        },
+        "infos": {
+            "title": "Practical Info – L'Orangeraie in Elne",
+            "description": "Address, check-in times, services, dinner options and local products: all the practical info to prepare your stay at L'Orangeraie in Elne."
+        },
+        "activites": {
+            "title": "Things to do near L'Orangeraie – Elne & Roussillon",
+            "description": "Explore the best activities around Elne: heritage, beaches, nature, markets, hilltop villages and outdoor sports for all tastes."
+        },
+        "reservation": {
+            "title": "Book Your Stay – L'Orangeraie in Elne",
+            "description": "Choose how to book at L'Orangeraie: by phone, email or directly online. Cottage and guest rooms in Elne, southern France."
+        },
+        "chambres": {
+            "title": "Our Guest Rooms in Elne – L'Orangeraie",
+            "description": "Discover our 5 comfortable and tastefully decorated guest rooms in Elne, southern France. Breakfast included and lush surroundings.",
+            "chambre-marine": {
+                "title": "Chambre Marine – Seaside Charm in Elne",
+                "description": "Let yourself be carried away by the soothing marine atmosphere of the Chambre Marine at L'Orangeraie. Light blue tones and seaside spirit for a peaceful stay in the South of France."
+            },
+            "chambre-nature": {
+                "title": "Chambre Nature – Natural Elegance in Elne",
+                "description": "Enjoy a soft and natural ambiance in the Chambre Nature. Wrought iron, light and comfort await you for a refined and relaxing experience."
+            },
+            "chambre-bambouseraie": {
+                "title": "Chambre Bambouseraie – Zen and Serenity",
+                "description": "Inspired by bamboo and nature, the Chambre Bambouseraie invites you to relax in a tranquil and minimalist setting. Perfect for a peaceful getaway in Elne."
+            },
+            "chambre-atelier": {
+                "title": "Chambre Atelier – Industrial Loft Style",
+                "description": "Wood, metal and character come together in the Chambre Atelier. Enjoy a creative and original stay in a chic and bold setting."
+            },
+            "chambre-coloniale": {
+                "title": "Chambre Coloniale – Exotic and Refined",
+                "description": "A touch of colonial charm in Elne. The Chambre Coloniale combines dark wood, natural materials and elegant decor for a trip to distant lands."
+            }
         }
     }
 }
