@@ -1,6 +1,363 @@
 {
-    "HOME": {
-        "TITLE": "Welcome to L'Orangeraie",
-        "DESCRIPTION": "Laurence & Fabrice welcome you to their guesthouse <br/> and wish you a pleasant stay."
+    "commun": {
+        "phone_numbers": [
+            "+33(0)4 68 82 22 79",
+            "+33(0)6 08 06 21 93"
+        ],
+        "email": "contact@orangeraie-elne.fr"
+    },
+    "navbar": {
+        "home": "Home",
+        "accommodation": "Our Accommodations",
+        "rooms": "Our Rooms",
+        "gite": "Our Cottage",
+        "reservation": "Booking",
+        "infos": "Useful Info",
+        "activities": "Nearby Activities"
+    },
+    "footer": {
+        "title": "L'Orangeraie",
+        "subtitle": "Guest rooms & Cottage in Elne",
+        "nav_title": "Navigation",
+        "nav": {
+            "home": "Home",
+            "rooms": "Our rooms",
+            "gite": "Our cottage",
+            "contact": "Contact"
+        },
+        "contact_title": "Contact",
+        "address": "29 Avenue Paul Reig, 66200 Elne",
+        "email": "contact@orangeraie-elne.fr",
+        "rights": "All rights reserved."
+    },
+    "home": {
+        "title": "Welcome to L'Orangeraie",
+        "description": "Laurence & Fabrice welcome you to their guesthouse <br/> and wish you a pleasant stay.",
+        "cta": "📝 Book now →",
+        "rooms_section_title": "Our Rooms",
+        "rooms": {
+            "nature": {
+                "title": "Nature",
+                "desc": "Double room with private bathroom, air conditioning and TV. Perfect for a stay for two."
+            },
+            "atelier": {
+                "title": "Atelier",
+                "desc": "Spacious triple room with a double and a single bed. Ideal for small groups or families."
+            },
+            "coloniale": {
+                "title": "Coloniale",
+                "desc": "Connecting suite for 4 people with two bedrooms, ideal for family stays."
+            },
+            "see_all": "See all rooms"
+        },
+        "contact_teaser": {
+            "title": "A question about our rooms?",
+            "text": "Feel free to contact us — we reply quickly and gladly.",
+            "cta": "Contact us"
+        },
+        "gite_section": {
+            "title": "Our Cottage",
+            "desc": "Discover our independent, comfortable and fully-equipped cottage, perfect for couples, families or groups of friends. Located in a peaceful setting with a terrace and garden view — ideal for a longer stay in the Pyrénées-Orientales.",
+            "cta": "Learn more"
+        },
+        "services": {
+            "title": "Services & Amenities",
+            "list": {
+                "bed": {
+                    "title": "Comfortable bedding",
+                    "desc": "Linens provided, beds made upon arrival"
+                },
+                "breakfast": {
+                    "title": "Breakfast",
+                    "desc": "Fresh, local & homemade products"
+                },
+                "wifi": {
+                    "title": "Free Wi-Fi",
+                    "desc": "Available in all rooms"
+                },
+                "parking": {
+                    "title": "Private parking",
+                    "desc": "Free and secure on-site (limited access)"
+                },
+                "ac": {
+                    "title": "Air conditioning",
+                    "desc": "Cool rooms in summer"
+                },
+                "bike": {
+                    "title": "Bike garage",
+                    "desc": "Secure storage for bicycles"
+                }
+            }
+        },
+        "practical": {
+            "title": "Useful Info",
+            "breakfast": {
+                "title": "🍽️ Breakfast",
+                "desc": "Traditional French breakfast with coffee, tea, hot chocolate, pastries, bread, yogurt, orange juice and our <strong>10 homemade jams</strong>, served in the garden or dining room."
+            },
+            "arrival": {
+                "title": "🕒 Check-in & Check-out",
+                "desc": "Check-in from <strong>5:30 PM</strong>. Rooms must be vacated by <strong>10:00 AM</strong>."
+            },
+            "payment": {
+                "title": "💳 Payment methods",
+                "desc": "Checks, cash, <strong>ANCV holiday vouchers</strong> and <strong>ANCV Connect</strong> accepted."
+            },
+            "others": {
+                "title": "📍 Other services",
+                "list": [
+                    "Patio and garden with furniture",
+                    "Equipped summer kitchen",
+                    "Self-service refrigerators",
+                    "Hair dryer on request",
+                    "Table d’hôtes",
+                    "..."
+                ]
+            },
+            "cta": "➕ Learn more"
+        },
+        "discover": {
+            "title": "To discover nearby",
+            "items": {
+                "beach": {
+                    "title": "The beaches",
+                    "desc": "Just 10 min away — enjoy fine sand and the Mediterranean sea."
+                },
+                "collioure": {
+                    "title": "Collioure",
+                    "desc": "The jewel of the Vermilion Coast — colorful alleys & its iconic port."
+                },
+                "bike": {
+                    "title": "Cycling paths",
+                    "desc": "Plenty of scenic bike trails between sea and mountains."
+                },
+                "alberes": {
+                    "title": "Les Albères",
+                    "desc": "Hiking and stunning views over the Mediterranean coastline."
+                },
+                "vineyards": {
+                    "title": "Vineyards",
+                    "desc": "Winery visits and tastings of local wines."
+                },
+                "market": {
+                    "title": "Elne Market",
+                    "desc": "Local products and Catalan atmosphere — every Wednesday morning."
+                }
+            },
+            "cta": "Explore the region"
+        }
+    },
+    "chambres": {
+        "title": "Our Rooms",
+        "intro": "Discover our five warm, comfortable rooms, lovingly decorated for an unforgettable stay.",
+        "labels": "They are labeled with <strong>3 Clés</strong> by <strong>CléVacances</strong>, a guarantee of quality and comfort.",
+        "non_smoking": "All our rooms are <strong>non-smoking</strong>.",
+        "duo_title": "Rooms for 2 people",
+        "family_title": "Family Rooms",
+        "learn_more": "Learn more →",
+        "from_price": "From €{{price}}/night",
+        "about_stay": {
+            "title": "About your stay",
+            "desc": "At L’Orangeraie, breakfast is a unique experience: served in the large lounge or in the garden, it invites you to discover a selection of <strong>around ten homemade jams</strong>, full of authentic flavors, lovingly prepared by your host.<br class='hidden sm:block' />Then enjoy the <strong>garden with free access</strong>, or take a refreshing break in the <strong>fully-equipped summer kitchen</strong>."
+        },
+        "chambre-marine": {
+            "nom": "Marine Room",
+            "resume": "Let yourself be carried away by a marine atmosphere, between soft blue and seaside spirit.",
+            "description": "Immerse yourself in a briny atmosphere, where soft blue hues evoke the horizon and sea breeze. Every detail reflects the calm of the coast, for a relaxing getaway between sky, sea, and light.",
+            "etage": "2nd floor",
+            "lit": "1 double bed (140x190cm)"
+        },
+        "chambre-nature": {
+            "nom": "Nature Room",
+            "resume": "A room adorned with wrought iron and plant motifs for an elegant touch of nature.",
+            "description": "A bright room where wrought iron draws delicate plant patterns, offering a natural and elegant ambiance. The subtle charm of the materials blends with soft tones for a peaceful and refined break.",
+            "etage": "1st floor",
+            "lit": "1 double bed (140x190cm)"
+        },
+        "chambre-bambouseraie": {
+            "nom": "Bamboo Room",
+            "resume": "A soothing room with a zen atmosphere, inspired by the softness of bamboo.",
+            "description": "Zen spirit, natural materials, plant touches: this room inspired by bamboo offers a peaceful atmosphere, perfect for recharging in simplicity.",
+            "etage": "1st floor",
+            "lit": "1 double bed (140x190cm)"
+        },
+        "chambre-atelier": {
+            "nom": "The Workshop Room",
+            "resume": "A room with a strong character, blending wood, metal, and workshop spirit for an inspired stay.",
+            "description": "A room with a strong character, where raw wood and metal meet in a chic workshop atmosphere. A unique ambiance, inspired by lofts, for a resolutely creative stay.",
+            "etage": "2nd floor",
+            "lit": "1 double bed (140x190cm) and 1 single bed (90x190cm)"
+        },
+        "chambre-coloniale": {
+            "nom": "Colonial Room",
+            "resume": "An elegant room with exotic accents, dark wood, natural materials, and colonial charm.",
+            "description": "An elegant room with exotic touches, where dark wood and natural materials create a setting inspired by colonial charm. An invitation to travel in a refined and peaceful setting.",
+            "etage": "1st floor",
+            "lit": "1 double bed (160x200cm) and 2 single beds (90x190cm)"
+        }
+    },
+    "gite": {
+        "title": "Our Cottage",
+        "intro1": "Nestled in the heart of Elne, our independent cottage welcomes you in a warm and comfortable atmosphere. Perfect for families or longer stays, it offers all the necessary comfort in an authentic setting.",
+        "intro2": "The cottage includes a living room, a fully equipped kitchen, spacious bedrooms, and direct access to the garden.",
+        "classification": "Classified no. 06605 066 065 19 0093",
+        "equipments": {
+            "title": "Cottage amenities",
+            "list": [
+                "🍳 Equipped kitchen",
+                "🛎️ 1 spacious bedroom and 2 beds in the living room",
+                "🚱 Modern bathroom",
+                "🌐 Free Wi-Fi",
+                "📺 Television",
+                "🌳 Private garden access",
+                "🚗 Free parking nearby",
+                "🐾 Pets allowed"
+            ]
+        },
+        "pricing": {
+            "title": "Cottage Rates",
+            "table": {
+                "headers": {
+                    "season": "Season",
+                    "week": "Week",
+                    "animal": "Pet"
+                },
+                "rows": [
+                    {
+                        "season": "Low",
+                        "dates": "(01/09 – 01/07)",
+                        "price": "€480",
+                        "animal": "+€7.50"
+                    },
+                    {
+                        "season": "Mid",
+                        "dates": "(02/07 – 14/07)",
+                        "price": "€560",
+                        "animal": "+€15"
+                    },
+                    {
+                        "season": "High",
+                        "dates": "(14/07 – 31/08)",
+                        "price": "€630",
+                        "animal": "+€18"
+                    }
+                ]
+            },
+            "note": "Indicative rates, contact us for a personalized quote.",
+            "details": [
+                "🗓️ Cottage rental: weekly, from Saturday 5:30 pm to Saturday 10:00 am.",
+                "💶 Payment methods: cheques, cash, holiday vouchers, digital holiday vouchers and bank transfer.",
+                "🚭️ The cottage is non-smoking.",
+                "📎 Tourist tax: €1.15 / person / day extra."
+            ]
+        },
+        "cta": "Book now"
+    },
+    "infos": {
+        "title": "Practical Information",
+        "contact": "Contact Us",
+        "adresse": {
+            "label": "Address",
+            "value": "29 Avenue Paul Reig<br>66200 Elne"
+        },
+        "telephone": {
+            "label": "Phone"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "horaires": {
+            "label": "Check-in / Check-out",
+            "value": "Check-in: 5:30 PM – 7:30 PM<br>Check-out: before 10 AM"
+        },
+        "itineraire": "🧭 Directions",
+        "map.alt": "Map: L'Orangeraie in Elne",
+        "map.noscript": {
+            "text": "JavaScript disabled.",
+            "link": "Open the map"
+        },
+        "sections": {
+            "petit_dej": {
+                "title": "🍽️ Breakfast",
+                "desc": "Served in the garden or in the dining room. Pastries, hot drinks, orange juice, yogurt, bread, and our <strong>10 homemade jams</strong>."
+            },
+            "paiement": {
+                "title": "💳 Payment Methods",
+                "desc": "Checks, cash, <strong>ANCV holiday vouchers</strong>, <strong>Connect holiday vouchers</strong>, and bank transfer."
+            },
+            "autres": {
+                "title": "📍 Other Services",
+                "list": [
+                    "Patio and garden with furniture",
+                    "Equipped summer kitchen",
+                    "Shared refrigerators",
+                    "Hair dryer on request",
+                    "Free Wi-Fi access (throughout the house)",
+                    "Private gated parking (limited access)",
+                    "Bed linen and towels provided",
+                    "Bus lines nearby"
+                ]
+            },
+            "tables": {
+                "title": "🍽️ Table d'hôtes",
+                "desc": "Enjoy a family-style dinner featuring <strong>regional dishes</strong> made with <strong>fresh local products</strong>.",
+                "dispo": "<strong>📅 Availability:</strong> Sunday, Monday and Thursday evenings, by reservation <strong>24 hours in advance</strong> (minimum 2 people).",
+                "tarifs": "<strong>💰 Prices:</strong> €25 per adult · €15 per child under 12."
+            },
+            "produits": {
+                "title": "🛍️ Local Products",
+                "desc": "Also discover the <strong>artisan pasta</strong> and <strong>local beer</strong> made by your host!",
+                "cta": "Learn more"
+            }
+        }
+    },
+    "activities": {
+        "title": "Activities Nearby",
+        "intro": "Elne and its region offer a wide variety of experiences: nature, culture, gastronomy, and relaxation... Here are some suggestions to enrich your stay at L'Orangeraie.",
+        "elne": {
+            "title": "🏛️ Elne, City of Art and History",
+            "desc": "As the former episcopal seat of Roussillon from <strong>568 AD</strong> until the 17<sup>th</sup> century, Elne offers visitors a <strong>magnificent Romanesque cathedral from the 11<sup>th</sup> century</strong> and a cloister in <strong>white marble veined with blue</strong>.<br><br>Also a city of art, it is the birthplace of painter <strong>Étienne Terrus</strong> (1857–1922), friend of <em>Matisse</em>, <em>Maillol</em>, and <em>Montfreid</em>.<br><br>Elne is also home to a powerful place of memory: the <strong>Swiss Maternity Hospital</strong>, bought by the city in 2005. This site honors the courage of <strong>Elisabeth Eidenbenz</strong> of the Swiss Aid to Children, who welcomed over 600 children there during the Spanish Civil War and World War II."
+        },
+        "nature": {
+            "title": "🌿 Nature, Beaches & Relaxation",
+            "p1": "Just minutes away, enjoy the Mediterranean beaches like <strong>Saint-Cyprien</strong>, <strong>Argelès-sur-Mer</strong>, or <strong>Collioure</strong>. Sunbathing, swimming, or water sports – there’s something for everyone.",
+            "p2": "Nature lovers can explore the <strong>protected ponds of Canet-Saint-Nazaire</strong> or go <strong>hiking in the Albères mountains</strong>, the first foothills of the Pyrenees.",
+            "p3": "For a quieter break, enjoy a bike ride through the orchards or along the <strong>Tech river path</strong>, between river and countryside."
+        },
+        "culture": {
+            "title": "🎭 Local Markets & Culture",
+            "p1": "All year round, stroll through the <strong>traditional Roussillon markets</strong> to discover <strong>local products</strong>, crafts, and Catalan specialties. The <strong>Elne market</strong> takes place every <strong>Friday morning from 8am to 1pm</strong>, <strong>right below our guest rooms</strong>.",
+            "p2": "In summer, enjoy <strong>traditional festivals</strong>, open-air concerts, street performances, and art exhibitions in the town or nearby villages.",
+            "p3": "Highlights include <strong>Visa pour l’image</strong> in Perpignan in September, the <strong>Saint John’s Bonfires</strong> in June, and many <strong>summer village festivals</strong> just minutes from Elne.",
+            "p4": "Ask your host for more information about ongoing events during your stay!"
+        },
+        "sports": {
+            "title": "🚴‍♂️ Outdoor Sports & Activities",
+            "p1": "Whether you're a thrill-seeker or a fan of peaceful strolls, the region offers a wide range of activities:",
+            "p2": "<strong>Tree climbing</strong> and <strong>artificial canyoning</strong> in Argelès-sur-Mer, <strong>natural canyoning</strong> in the nearby mountains, <strong>paragliding</strong> over the cliffs, <strong>hiking</strong> between sea and mountains, or <strong>kayaking</strong> and <strong>paddleboarding</strong> along the coast – all unforgettable experiences."
+        },
+        "villages": {
+            "title": "🌄 Hilltop Villages & Heritage",
+            "p1": "Discover <strong>picturesque villages</strong> like <strong>Castelnou</strong>, <strong>Eus</strong>, or <strong>Collioure</strong>, ranked among the most beautiful in France.",
+            "p2": "Cobblestone streets, artisans, citadels, and breathtaking views await you at every turn – a dive into Catalan authenticity and history."
+        },
+        "conclusion": {
+            "title": "🌅 A Region to Experience Fully",
+            "text": "Whether you seek nature, history, relaxation, or adventure, Elne and its surroundings will charm you. Enjoy a privileged setting between sea, mountains, and Catalan traditions.",
+            "cta": "Book your stay"
+        }
+    },
+    "reservation": {
+        "title": "Book your stay",
+        "subtitle": "Choose your booking method",
+        "phone_title": "Book by phone",
+        "phone_text": "Call us:",
+        "email_title": "Book by email",
+        "email_text": "Send us a message:",
+        "gite_message": "<strong>For the cottage</strong>, reservations cannot be made online. Please contact us by phone or email.",
+        "online_booking_title": "Book online",
+        "online_booking_text": "Choose your stay dates and book directly online:",
+        "footer_text_1": "If you have any questions or special requests, feel free to contact us. We are here to assist you!",
+        "footer_text_2": "Thank you for your trust, and we look forward to welcoming you to L'Orangeraie!"
     }
 }
