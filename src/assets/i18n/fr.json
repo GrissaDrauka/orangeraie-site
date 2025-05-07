@@ -1,4 +1,11 @@
 {
+    "commun": {
+        "phone_numbers": [
+            "+33(0)4 68 82 22 79",
+            "+33(0)6 08 06 21 93"
+        ],
+        "email": "contact@orangeraie-elne.fr"
+    },
     "navbar": {
         "home": "Accueil",
         "accommodation": "Nos Hébergements",
@@ -20,7 +27,6 @@
         },
         "contact_title": "Contact",
         "address": "29 Avenue Paul Reig, 66200 Elne",
-        "email": "contact@orangeraie-elne.fr",
         "rights": "Tous droits réservés."
     },
     "home": {
@@ -219,15 +225,10 @@
             "value": "29 Avenue Paul Reig<br>66200 Elne"
         },
         "telephone": {
-            "label": "Téléphone",
-            "numbers": [
-                "+33 (0)4 68 82 22 79",
-                "+33 (0)6 08 06 21 93"
-            ]
+            "label": "Téléphone"
         },
         "email": {
-            "label": "Email",
-            "value": "contact@orangeraie-elne.fr"
+            "label": "Email"
         },
         "horaires": {
             "label": "Horaires",
@@ -309,5 +310,18 @@
             "text": "Que vous soyez en quête de nature, d’histoire, de détente ou d’aventures, Elne et ses alentours sauront vous séduire. Profitez d’un cadre privilégié entre mer, montagne et traditions catalanes.",
             "cta": "Réserver votre séjour"
         }
+    },
+    "reservation": {
+        "title": "Réserver votre séjour",
+        "subtitle": "Choisissez votre mode de réservation",
+        "phone_title": "Réserver par téléphone",
+        "phone_text": "Appelez-nous :",
+        "email_title": "Réserver par email",
+        "email_text": "Envoyez-nous un message :",
+        "gite_message": "<strong>Pour le gîte</strong>, la réservation ne peut s'effectuer en ligne. Merci de nous contacter par téléphone ou email.",
+        "online_booking_title": "Réserver en ligne",
+        "online_booking_text": "Choisissez vos dates de séjour et réservez directement en ligne :",
+        "footer_text_1": "Pour toute question ou demande particulière, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !",
+        "footer_text_2": "Nous vous remercions de votre confiance et avons hâte de vous accueillir à l'Orangeraie !"
     }
 }

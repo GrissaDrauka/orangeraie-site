@@ -1,4 +1,11 @@
 {
+    "commun": {
+        "phone_numbers": [
+            "+33(0)4 68 82 22 79",
+            "+33(0)6 08 06 21 93"
+        ],
+        "email": "contact@orangeraie-elne.fr"
+    },
     "navbar": {
         "home": "Home",
         "accommodation": "Our Accommodations",
@@ -309,5 +316,23 @@
             "text": "Whether you seek nature, history, relaxation, or adventure, Elne and its surroundings will charm you. Enjoy a privileged setting between sea, mountains, and Catalan traditions.",
             "cta": "Book your stay"
         }
+    },
+    "reservation": {
+        "title": "Book your stay",
+        "subtitle": "Choose your booking method",
+        "phone_title": "Book by phone",
+        "phone_text": "Call us:",
+        "phone_numbers": [
+            "+33(0)4 68 82 22 79",
+            "+33(0)6 08 06 21 93"
+        ],
+        "email_title": "Book by email",
+        "email_text": "Send us a message:",
+        "email": "contact&#64;orangeraie-elne.fr",
+        "gite_message": "<strong>For the cottage</strong>, reservations cannot be made online. Please contact us by phone or email.",
+        "online_booking_title": "Book online",
+        "online_booking_text": "Choose your stay dates and book directly online:",
+        "footer_text_1": "If you have any questions or special requests, feel free to contact us. We are here to assist you!",
+        "footer_text_2": "Thank you for your trust, and we look forward to welcoming you to L'Orangeraie!"
     }
 }

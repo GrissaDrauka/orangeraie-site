@@ -1,5 +1,5 @@
 <section class="pt-24 pb-16 px-4 max-w-6xl mx-auto">
-    <h1 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-10">
+    <h1 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-8 pt-6">
         {{ 'infos.title' | translate }}
     </h1>
 
@@ -35,10 +35,10 @@
                     <h3 class="text-base font-serif font-semibold text-orangeraie mb-0.5">{{ 'infos.telephone.label' |
                         translate }}</h3>
                     <a href="tel:+33468822279" class="text-orangeraie hover:underline font-semibold">
-                        {{ 'infos.telephone.numbers.0' | translate }}
+                        {{ 'commun.phone_numbers.0' | translate }}
                     </a><br>
                     <a href="tel:+33608062193" class="text-orangeraie hover:underline font-semibold">
-                        {{ 'infos.telephone.numbers.1' | translate }}
+                        {{ 'commun.phone_numbers.1' | translate }}
                     </a>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                         translate }}</h3>
                     <a href="mailto:contact@orangeraie-elne.fr"
                         class="text-orangeraie hover:underline font-semibold whitespace-nowrap">
-                        {{ 'infos.email.value' | translate }}
+                        {{ 'commun.email' | translate }}
                     </a>
                 </div>
             </div>
@@ -113,7 +113,7 @@
         </div>
 
         <div class="md:col-span-2">
-            <h3 class="font-semibold text-orangeraie mb-4 text-center text-lg">{{ 'infos.sections.autres.title' |
+            <h3 class="font-semibold text-orangeraie mt-8 text-center text-lg">{{ 'infos.sections.autres.title' |
                 translate }}</h3>
             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 text-sm text-gray-700 text-center">
                 <li *ngFor="let i of [0,1,2,3,4,5,6,7]">{{ ('infos.sections.autres.list.' + i) | translate }}</li>

@@ -1,4 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-reservation',
@@ -6,6 +7,12 @@ import { AfterViewInit, Component } from '@angular/core';
   styleUrls: ['./reservation.component.scss']
 })
 export class ReservationComponent implements AfterViewInit {
+
+  constructor(private translate: TranslateService) {
+    this.translate.onLangChange.subscribe((event) => {
+      this.updateWidgetLanguage(event.lang);
+    });
+  }
 
   ngAfterViewInit(): void {
     // Charge le script de base
@@ -23,7 +30,7 @@ export class ReservationComponent implements AfterViewInit {
       const widget = (window as any).AllianceReseaux.Widget.Instance('Produit', {
         idPanier: 'pImkpKQ',
         idIntegration: 1185,
-        langue: 'fr',
+        langue: this.translate.currentLang === 'fr' ? 'fr' : 'uk',
         ui: 'OSCH-61770'
       });
 
@@ -32,5 +39,18 @@ export class ReservationComponent implements AfterViewInit {
       widget.Initialise();
     };
     document.body.appendChild(script);
+  }
+
+  private updateWidgetLanguage(lang: string): void {
+    const widget = (window as any).AllianceReseaux.Widget.Instance('Produit', {
+      idPanier: 'pImkpKQ',
+      idIntegration: 1185,
+      langue: lang === 'fr' ? 'fr' : 'uk',
+      ui: 'OSCH-61770'
+    });
+
+    widget.PreApp('planning.actif', true);
+    widget.PreApp('planning.nbMaxProduits', 100);
+    widget.Initialise();
   }
 }

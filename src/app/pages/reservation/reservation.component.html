@@ -1,7 +1,7 @@
 <section class="w-full bg-[#fdfaf7] py-24 px-4">
-    <div class="max-w-4xl mx-auto text-center space-y-8">
-        <h1 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie">Réserver votre séjour</h1>
-        <p class="text-gray-700 font-sans text-base sm:text-lg">Choisissez votre mode de réservation</p>
+    <div class="max-w-4xl mx-auto text-center space-y-8 mb-8 pt-6">
+        <h1 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie">{{ 'reservation.title' | translate }}</h1>
+        <p class="text-gray-700 font-sans text-base sm:text-lg">{{ 'reservation.subtitle' | translate }}</p>
 
         <!-- Ligne contenant téléphone + email, centrée -->
         <div class="flex flex-col md:flex-row justify-center gap-6 w-full max-w-3xl mx-auto">
@@ -9,18 +9,20 @@
             <div class="bg-white border border-orange-100 rounded-xl shadow p-4 w-full md:w-1/2 text-left space-y-3">
                 <h2 class="text-lg font-semibold text-orangeraie flex items-center gap-2">
                     <lucide-icon name="phone" size="20" class="text-orange-600"></lucide-icon>
-                    Réserver par téléphone
+                    {{ 'reservation.phone_title' | translate }}
                 </h2>
-                <p class="text-gray-600 text-sm">Appelez-nous :</p>
+                <p class="text-gray-600 text-sm">{{ 'reservation.phone_text' | translate }}</p>
                 <ul class="space-y-1 text-sm">
                     <li>
-                        <a href="tel:+33468822279" class="text-orangeraie hover:underline font-medium">
-                            +33(0)4 68 82 22 79
+                        <a href="tel:{{ 'commun.phone_numbers.0' | translate }}"
+                            class="text-orangeraie hover:underline font-medium">
+                            {{ 'commun.phone_numbers.0' | translate }}
                         </a>
                     </li>
                     <li>
-                        <a href="tel:+33608062193" class="text-orangeraie hover:underline font-medium">
-                            +33(0)6 08 06 21 93
+                        <a href="tel:{{ 'commun.phone_numbers.1' | translate }}"
+                            class="text-orangeraie hover:underline font-medium">
+                            {{ 'commun.phone_numbers.1' | translate }}
                         </a>
                     </li>
                 </ul>
@@ -30,11 +32,12 @@
             <div class="bg-white border border-orange-100 rounded-xl shadow p-4 w-full md:w-1/2 text-left space-y-3">
                 <h2 class="text-lg font-semibold text-orangeraie flex items-center gap-2">
                     <lucide-icon name="mail" size="20" class="text-orange-600"></lucide-icon>
-                    Réserver par email
+                    {{ 'reservation.email_title' | translate }}
                 </h2>
-                <p class="text-gray-600 text-sm">Envoyez-nous un message :</p>
-                <a href="mailto:contact@orangeraie-elne.fr" class="text-orangeraie hover:underline font-medium text-sm">
-                    contact&#64;orangeraie-elne.fr
+                <p class="text-gray-600 text-sm">{{ 'reservation.email_text' | translate }}</p>
+                <a href="mailto:{{ 'reservation.email' | translate }}"
+                    class="text-orangeraie hover:underline font-medium text-sm">
+                    {{ 'commun.email' | translate }}
                 </a>
             </div>
         </div>
@@ -43,8 +46,7 @@
     <!-- Message réservation gîte -->
     <div
         class="bg-yellow-50 text-yellow-800 border border-yellow-200 rounded-lg p-4 text-m mx-auto mt-12 mb-4 max-w-[767px]">
-        <strong>Pour le gîte,</strong> la réservation ne peut s'effectuer en ligne. Merci de nous
-        contacter par téléphone ou email.
+        <p [innerHTML]="'reservation.gite_message' | translate "></p>
     </div>
 
     <!-- Widget centrée et largeur limitée -->
@@ -53,11 +55,9 @@
             class="bg-orange-50 border border-orange-100 rounded-xl shadow-md px-4 py-6 md:px-8 md:py-8 max-w-5xl mx-auto">
             <h2 class="text-xl font-semibold text-orangeraie flex items-center gap-2 mb-2">
                 <lucide-icon name="calendar" size="20" class="text-orange-600"></lucide-icon>
-                Réserver en ligne
+                {{ 'reservation.online_booking_title' | translate }}
             </h2>
-            <p class="text-gray-600 mb-4">
-                Choisissez vos dates de séjour et réservez directement en ligne :
-            </p>
+            <p class="text-gray-600 mb-4">{{ 'reservation.online_booking_text' | translate }}</p>
 
             <div class="bg-white p-4 md:p-6 rounded-xl border border-dashed border-gray-300 shadow-inner">
                 <div id="widget-produit-OSCH-61770" class="w-full"></div>
@@ -67,8 +67,7 @@
 
     <!-- Texte bas de page -->
     <div class="mt-10 max-w-2xl mx-auto text-center space-y-2 text-sm text-gray-600">
-        <p>Pour toute question ou demande particulière, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !
-        </p>
-        <p>Nous vous remercions de votre confiance et avons hâte de vous accueillir à l'Orangeraie !</p>
+        <p>{{ 'reservation.footer_text_1' | translate }}</p>
+        <p>{{ 'reservation.footer_text_2' | translate }}</p>
     </div>
 </section>
