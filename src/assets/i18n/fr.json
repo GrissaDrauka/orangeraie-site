@@ -23,8 +23,121 @@
         "email": "contact@orangeraie-elne.fr",
         "rights": "Tous droits réservés."
     },
-    "HOME": {
-        "TITLE": "Bienvenue à L'Orangeraie",
-        "DESCRIPTION": "Laurence & Fabrice vous accueillent dans leur maison d'hôtes <br/> et vous souhaitent la bienvenue."
+    "home": {
+        "title": "Bienvenue à L'Orangeraie",
+        "description": "Laurence & Fabrice vous accueillent dans leur maison d'hôtes <br/> et vous souhaitent la bienvenue.",
+        "cta": "📝 Réserver →",
+        "rooms_section_title": "Nos Chambres",
+        "rooms": {
+            "nature": {
+                "title": "Nature",
+                "desc": "Chambre double avec salle d’eau privative, climatisation et TV. Idéale pour un séjour à deux."
+            },
+            "atelier": {
+                "title": "Atelier",
+                "desc": "Chambre triple spacieuse avec lit double et lit simple. Idéale pour petit groupe ou famille."
+            },
+            "coloniale": {
+                "title": "Coloniale",
+                "desc": "Suite communicante pour 4 personnes avec deux chambres, idéale pour les séjours en famille."
+            },
+            "see_all": "Voir toutes les chambres"
+        },
+        "contact_teaser": {
+            "title": "Une question sur nos chambres ?",
+            "text": "N’hésitez pas à nous contacter, nous répondons rapidement et avec plaisir.",
+            "cta": "Nous contacter"
+        },
+        "gite_section": {
+            "title": "Notre Gîte",
+            "desc": "Découvrez notre gîte indépendant, confortable et parfaitement équipé pour accueillir couples, familles ou groupes d’amis. Situé au calme, avec terrasse et vue sur le jardin, c’est le lieu idéal pour un séjour prolongé dans les Pyrénées-Orientales.",
+            "cta": "En savoir plus"
+        },
+        "services": {
+            "title": "Services & commodités",
+            "list": {
+                "bed": {
+                    "title": "Literie confortable",
+                    "desc": "Linge fourni, lits faits à l’arrivée"
+                },
+                "breakfast": {
+                    "title": "Petit-déjeuner",
+                    "desc": "Produits frais, locaux & maison"
+                },
+                "wifi": {
+                    "title": "Wi-Fi gratuit",
+                    "desc": "Disponible dans toutes les chambres"
+                },
+                "parking": {
+                    "title": "Parking privé",
+                    "desc": "Gratuit et sécurisé sur place (accès limité)"
+                },
+                "ac": {
+                    "title": "Climatisation",
+                    "desc": "Chambres fraîches en été"
+                },
+                "bike": {
+                    "title": "Garage à vélos",
+                    "desc": "Espace sécurisé pour deux-roues"
+                }
+            }
+        },
+        "practical": {
+            "title": "Infos pratiques",
+            "breakfast": {
+                "title": "🍽️ Petit déjeuner",
+                "desc": "Petit déjeuner à la française avec café, thé, chocolat, viennoiseries, pain, yaourt, jus d’orange et nos <strong>10 confitures maison</strong>, servi dans le jardin ou la salle à manger."
+            },
+            "arrival": {
+                "title": "🕒 Arrivées & Départs",
+                "desc": "Accueil à partir de <strong>17h30</strong>. Les chambres doivent être libérées à <strong>10h</strong>."
+            },
+            "payment": {
+                "title": "💳 Moyens de paiement",
+                "desc": "Chèques, espèces, <strong>chèques vacances ANCV</strong> et <strong>chèques vacances connect</strong>."
+            },
+            "others": {
+                "title": "📍 Autres services",
+                "list": [
+                    "Patio et jardin avec mobilier",
+                    "Cuisine d'été équipée",
+                    "Réfrigérateurs en libre service",
+                    "Sèche-cheveux sur demande",
+                    "Table d'hôtes",
+                    "..."
+                ]
+            },
+            "cta": "➕ Tout savoir"
+        },
+        "discover": {
+            "title": "À découvrir autour",
+            "items": {
+                "beach": {
+                    "title": "Les plages",
+                    "desc": "À seulement 10 min, profitez du sable fin et de la Méditerranée."
+                },
+                "collioure": {
+                    "title": "Collioure",
+                    "desc": "Le joyau de la côte vermeille, ses ruelles colorées & son port mythique."
+                },
+                "bike": {
+                    "title": "Balades à vélo",
+                    "desc": "Nombreux itinéraires cyclables entre mer et montagne."
+                },
+                "alberes": {
+                    "title": "Les Albères",
+                    "desc": "Randonnées et vues imprenables sur le littoral méditerranéen."
+                },
+                "vineyards": {
+                    "title": "Vignobles",
+                    "desc": "Visites de domaines viticoles, dégustations de vins locaux."
+                },
+                "market": {
+                    "title": "Marché d'Elne",
+                    "desc": "Produits locaux, ambiance catalane, tous les mercredis matin."
+                }
+            },
+            "cta": "Découvrir la région"
+        }
     }
 }

@@ -23,8 +23,121 @@
         "email": "contact@orangeraie-elne.fr",
         "rights": "All rights reserved."
     },
-    "HOME": {
-        "TITLE": "Welcome to L'Orangeraie",
-        "DESCRIPTION": "Laurence & Fabrice welcome you to their guesthouse <br/> and wish you a pleasant stay."
+    "home": {
+        "title": "Welcome to L'Orangeraie",
+        "description": "Laurence & Fabrice welcome you to their guesthouse <br/> and wish you a pleasant stay.",
+        "cta": "📝 Book now →",
+        "rooms_section_title": "Our Rooms",
+        "rooms": {
+            "nature": {
+                "title": "Nature",
+                "desc": "Double room with private bathroom, air conditioning and TV. Perfect for a stay for two."
+            },
+            "atelier": {
+                "title": "Atelier",
+                "desc": "Spacious triple room with a double and a single bed. Ideal for small groups or families."
+            },
+            "coloniale": {
+                "title": "Coloniale",
+                "desc": "Connecting suite for 4 people with two bedrooms, ideal for family stays."
+            },
+            "see_all": "See all rooms"
+        },
+        "contact_teaser": {
+            "title": "A question about our rooms?",
+            "text": "Feel free to contact us — we reply quickly and gladly.",
+            "cta": "Contact us"
+        },
+        "gite_section": {
+            "title": "Our Cottage",
+            "desc": "Discover our independent, comfortable and fully-equipped cottage, perfect for couples, families or groups of friends. Located in a peaceful setting with a terrace and garden view — ideal for a longer stay in the Pyrénées-Orientales.",
+            "cta": "Learn more"
+        },
+        "services": {
+            "title": "Services & Amenities",
+            "list": {
+                "bed": {
+                    "title": "Comfortable bedding",
+                    "desc": "Linens provided, beds made upon arrival"
+                },
+                "breakfast": {
+                    "title": "Breakfast",
+                    "desc": "Fresh, local & homemade products"
+                },
+                "wifi": {
+                    "title": "Free Wi-Fi",
+                    "desc": "Available in all rooms"
+                },
+                "parking": {
+                    "title": "Private parking",
+                    "desc": "Free and secure on-site (limited access)"
+                },
+                "ac": {
+                    "title": "Air conditioning",
+                    "desc": "Cool rooms in summer"
+                },
+                "bike": {
+                    "title": "Bike garage",
+                    "desc": "Secure storage for bicycles"
+                }
+            }
+        },
+        "practical": {
+            "title": "Useful Info",
+            "breakfast": {
+                "title": "🍽️ Breakfast",
+                "desc": "Traditional French breakfast with coffee, tea, hot chocolate, pastries, bread, yogurt, orange juice and our <strong>10 homemade jams</strong>, served in the garden or dining room."
+            },
+            "arrival": {
+                "title": "🕒 Check-in & Check-out",
+                "desc": "Check-in from <strong>5:30 PM</strong>. Rooms must be vacated by <strong>10:00 AM</strong>."
+            },
+            "payment": {
+                "title": "💳 Payment methods",
+                "desc": "Checks, cash, <strong>ANCV holiday vouchers</strong> and <strong>ANCV Connect</strong> accepted."
+            },
+            "others": {
+                "title": "📍 Other services",
+                "list": [
+                    "Patio and garden with furniture",
+                    "Equipped summer kitchen",
+                    "Self-service refrigerators",
+                    "Hair dryer on request",
+                    "Table d’hôtes",
+                    "..."
+                ]
+            },
+            "cta": "➕ Learn more"
+        },
+        "discover": {
+            "title": "To discover nearby",
+            "items": {
+                "beach": {
+                    "title": "The beaches",
+                    "desc": "Just 10 min away — enjoy fine sand and the Mediterranean sea."
+                },
+                "collioure": {
+                    "title": "Collioure",
+                    "desc": "The jewel of the Vermilion Coast — colorful alleys & its iconic port."
+                },
+                "bike": {
+                    "title": "Cycling paths",
+                    "desc": "Plenty of scenic bike trails between sea and mountains."
+                },
+                "alberes": {
+                    "title": "Les Albères",
+                    "desc": "Hiking and stunning views over the Mediterranean coastline."
+                },
+                "vineyards": {
+                    "title": "Vineyards",
+                    "desc": "Winery visits and tastings of local wines."
+                },
+                "market": {
+                    "title": "Elne Market",
+                    "desc": "Local products and Catalan atmosphere — every Wednesday morning."
+                }
+            },
+            "cta": "Explore the region"
+        }
     }
 }

@@ -5,13 +5,14 @@ import { Component } from '@angular/core';
   standalone: false,
   template: `
      <!-- Hero Section -->
-     <section
+      <section
         class="relative w-full bg-black/50 text-white text-center px-4 pt-24 sm:pt-28 pb-16 flex flex-col items-center justify-center min-h-[80vh] bg-cover bg-center"
         style="background-image: url('assets/maison-hotes.png');"
       >
-        <h1 class="text-4xl sm:text-5xl font-bold font-playfair mb-4">{{ 'HOME.TITLE' | translate }}</h1>
-        <p class="text-base sm:text-lg max-w-2xl mb-6 font-sans" [innerHTML]="'HOME.DESCRIPTION' | translate">
-        </p>
+        <h1 class="text-4xl sm:text-5xl font-bold font-playfair mb-4">
+          {{ 'home.title' | translate }}
+        </h1>
+        <p class="text-base sm:text-lg max-w-2xl mb-6 font-sans" [innerHTML]="'home.description' | translate"></p>
 
         <!-- Cartouche CléVacances seul au-dessus -->
         <div class="flex justify-center mb-4">
@@ -29,92 +30,93 @@ import { Component } from '@angular/core';
           </div>
           <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
             <img src="assets/vignobles.png" alt="Vignobles & Découvertes" class="h-6" />
-            <span class="text-sm text-orangeraie font-semibold font-sans">Vignobles & <br/>
-              Découvertes</span>
+            <span class="text-sm text-orangeraie font-semibold font-sans">Vignobles & <br />Découvertes</span>
           </div>
         </div>
 
         <!-- Boutons réservation -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            routerLink="/reservation"
-            class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base cursor-pointer"
-          >
-            📝 Réserver →
+          <a routerLink="/reservation" class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base cursor-pointer">
+            {{ 'home.cta' | translate }}
           </a>
         </div>
       </section>
 
+      <!-- Section Nos chambres -->
+      <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie text-center mb-12">
+            {{ 'home.rooms_section_title' | translate }}
+          </h2>
 
-    <!-- Section Nos chambres -->
-    <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie text-center mb-12">
-          Nos Chambres
-        </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Chambre 1 -->
+            <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+              <img src="assets/chambres/NATURE/recto.jpg" alt="Chambre Nature" class="h-56 w-full object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">
+                  {{ 'home.rooms.nature.title' | translate }}
+                </h3>
+                <p class="text-gray-700 text-sm font-sans">
+                  {{ 'home.rooms.nature.desc' | translate }}
+                </p>
+              </div>
+            </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <!-- Chambre 1 -->
-          <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/chambres/NATURE/recto.jpg" alt="Chambre Nature" class="h-56 w-full object-cover" />
-            <div class="p-6">
-              <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Chambre Nature</h3>
-              <p class="text-gray-700 text-sm font-sans">
-                Chambre double avec salle d’eau privative, climatisation et TV. Idéale pour un séjour à deux.
-              </p>
+            <!-- Chambre 2 -->
+            <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+              <img src="assets/chambres/ATELIER/recto.jpg" alt="Chambre triple" class="h-56 w-full object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">
+                  {{ 'home.rooms.atelier.title' | translate }}
+                </h3>
+                <p class="text-gray-700 text-sm font-sans">
+                  {{ 'home.rooms.atelier.desc' | translate }}
+                </p>
+              </div>
+            </div>
+
+            <!-- Chambre 3 -->
+            <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+              <img src="assets/chambres/COLONIALE/recto.jpg" alt="Suite familiale" class="h-56 w-full object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">
+                  {{ 'home.rooms.coloniale.title' | translate }}
+                </h3>
+                <p class="text-gray-700 text-sm font-sans">
+                  {{ 'home.rooms.coloniale.desc' | translate }}
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Chambre 2 -->
-          <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/chambres/ATELIER/recto.jpg" alt="Chambre triple" class="h-56 w-full object-cover" />
-            <div class="p-6">
-              <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Chambre Atelier</h3>
-              <p class="text-gray-700 text-sm font-sans">
-                Chambre triple spacieuse avec lit double et lit simple. Idéale pour petit groupe ou famille.
-              </p>
-            </div>
-          </div>
-
-          <!-- Chambre 3 -->
-          <div routerLink="/chambres" class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/chambres/COLONIALE/recto.jpg" alt="Suite familiale" class="h-56 w-full object-cover" />
-            <div class="p-6">
-              <h3 class="text-xl font-serif font-semibold text-orangeraie mb-2">Suite Familiale "Coloniale"</h3>
-              <p class="text-gray-700 text-sm font-sans">
-                Suite communicante pour 4 personnes avec deux chambres, idéale pour les séjours en famille.
-              </p>
-            </div>
+          <!-- Bouton vers la page dédiée -->
+          <div class="text-center mt-12">
+            <a routerLink="/chambres" class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+              {{ 'home.rooms.see_all' | translate }}
+            </a>
           </div>
         </div>
+      </section>
 
-        <!-- Bouton vers la page dédiée -->
-        <div class="text-center mt-12">
-          <a routerLink="/chambres" class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
-            Voir toutes les chambres
+      <!-- Section Contact teaser -->
+      <section class="bg-white py-12 px-4 md:px-16">
+        <div class="max-w-4xl mx-auto text-center">
+          <h3 class="text-2xl font-serif font-bold text-orangeraie mb-4">
+            {{ 'home.contact_teaser.title' | translate }}
+          </h3>
+          <p class="text-gray-700 font-sans mb-6">
+            {{ 'home.contact_teaser.text' | translate }}
+          </p>
+          <a routerLink="/infos-pratiques" class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+            {{ 'home.contact_teaser.cta' | translate }}
           </a>
         </div>
-      </div>
-    </section>
-
-    <!-- Section Contact teaser -->
-    <section class="bg-white py-12 px-4 md:px-16">
-      <div class="max-w-4xl mx-auto text-center">
-        <h3 class="text-2xl font-serif font-bold text-orangeraie mb-4">Une question sur nos chambres ?</h3>
-        <p class="text-gray-700 font-sans mb-6">
-          N’hésitez pas à nous contacter, nous répondons rapidement et avec plaisir.
-        </p>
-        <a routerLink="/infos-pratiques"
-          class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
-          Nous contacter
-        </a>
-      </div>
-    </section>
+      </section>
 
     <!-- Section Notre Gîte -->
     <section class="bg-[#f9f4ef] py-16 px-4 md:px-16">
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
         <!-- Image du gîte -->
         <div>
           <img src="assets/gite.jpg" alt="Notre gîte" class="w-full h-auto rounded-2xl shadow" />
@@ -123,18 +125,17 @@ import { Component } from '@angular/core';
         <!-- Texte -->
         <div>
           <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-6 text-center">
-            Notre Gîte
+            {{ 'home.gite_section.title' | translate }}
           </h2>
           <p class="text-gray-700 text-base font-sans mb-6">
-            Découvrez notre gîte indépendant, confortable et parfaitement équipé pour accueillir couples, familles ou groupes d’amis. Situé au calme, avec terrasse et vue sur le jardin, c’est le lieu idéal pour un séjour prolongé dans les Pyrénées-Orientales.
+            {{ 'home.gite_section.desc' | translate }}
           </p>
           <div class="text-center">
             <a routerLink="/gite" class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
-              En savoir plus
+              {{ 'home.gite_section.cta' | translate }}
             </a>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -142,173 +143,164 @@ import { Component } from '@angular/core';
     <section class="bg-white py-16 px-4 md:px-16">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie text-center mb-12">
-          Services & commodités
+          {{ 'home.services.title' | translate }}
         </h2>
-
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
-          <!-- Service 1 -->
           <div class="flex flex-col items-center space-y-4">
-            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">
-              🛏️
-            </div>
-            <h4 class="font-serif font-semibold text-orangeraie text-lg">Literie confortable</h4>
-            <p class="text-gray-600 text-sm font-sans">Linge fourni, lits faits à l’arrivée</p>
+            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">🛏️</div>
+            <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.bed.title' | translate }}</h4>
+            <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.bed.desc' | translate }}</p>
           </div>
-
-          <!-- Service 2 -->
           <div class="flex flex-col items-center space-y-4">
-            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">
-              🍽️
-            </div>
-            <h4 class="font-serif font-semibold text-orangeraie text-lg">Petit-déjeuner</h4>
-            <p class="text-gray-600 text-sm font-sans">Produits frais, locaux & maison</p>
+            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">🍽️</div>
+            <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.breakfast.title' | translate }}</h4>
+            <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.breakfast.desc' | translate }}</p>
           </div>
-
-          <!-- Service 3 -->
           <div class="flex flex-col items-center space-y-4">
-            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">
-              🌐
-            </div>
-            <h4 class="font-serif font-semibold text-orangeraie text-lg">Wi-Fi gratuit</h4>
-            <p class="text-gray-600 text-sm font-sans">Disponible dans toutes les chambres</p>
+            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">🌐</div>
+            <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.wifi.title' | translate }}</h4>
+            <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.wifi.desc' | translate }}</p>
           </div>
-
-          <!-- Service 4 -->
           <div class="flex flex-col items-center space-y-4">
-            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">
-              🚗
-            </div>
-            <h4 class="font-serif font-semibold text-orangeraie text-lg">Parking privé</h4>
-            <p class="text-gray-600 text-sm font-sans">Gratuit et sécurisé sur place (accès limité)</p>
+            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">🚗</div>
+            <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.parking.title' | translate }}</h4>
+            <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.parking.desc' | translate }}</p>
           </div>
-
-          <!-- Service 5 -->
           <div class="flex flex-col items-center space-y-4">
-            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">
-              ❄️
-            </div>
-            <h4 class="font-serif font-semibold text-orangeraie text-lg">Climatisation</h4>
-            <p class="text-gray-600 text-sm font-sans">Chambres fraîches en été</p>
+            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">❄️</div>
+            <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.ac.title' | translate }}</h4>
+            <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.ac.desc' | translate }}</p>
           </div>
-
-          <!-- Service 6 -->
           <div class="flex flex-col items-center space-y-4">
-            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">
-              🚲
-            </div>
-            <h4 class="font-serif font-semibold text-orangeraie text-lg">Garage à vélos</h4>
-            <p class="text-gray-600 text-sm font-sans">Espace sécurisé pour deux-roues</p>
+            <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">🚲</div>
+            <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.bike.title' | translate }}</h4>
+            <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.bike.desc' | translate }}</p>
           </div>
         </div>
       </div>
     </section>
 
-     <!-- Essai 2 pour les services et commodités -->
-     <section class="bg-[#f9f4ef] py-12 px-4">
+    <!-- Section Infos pratiques -->
+    <section class="bg-[#f9f4ef] py-12 px-4">
       <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-orangeraie mb-6">Infos pratiques</h2>
-        
+        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-orangeraie mb-6">
+          {{ 'home.practical.title' | translate }}
+        </h2>
+
         <div class="grid gap-6 sm:grid-cols-2 text-left text-sm text-gray-700 font-sans">
           <div>
-            <h3 class="font-semibold text-orangeraie mb-2">🍽️ Petit déjeuner</h3>
-            <p>
-              Petit déjeuner à la française avec café, thé, chocolat, viennoiseries, pain, yaourt, jus d’orange
-              et nos <strong>10 confitures maison</strong>, servi dans le jardin ou la salle à manger.
-            </p>
+            <h3 class="font-semibold text-orangeraie mb-2">
+              {{ 'home.practical.breakfast.title' | translate }}
+            </h3>
+            <p [innerHTML]="'home.practical.breakfast.desc' | translate"></p>
           </div>
 
           <div>
-            <h3 class="font-semibold text-orangeraie mb-2">🕒 Arrivées & Départs</h3>
-            <p>
-              Accueil à partir de <strong>17h30</strong>. Les chambres doivent être libérées à <strong>10h</strong>.
-            </p>
+            <h3 class="font-semibold text-orangeraie mb-2">
+              {{ 'home.practical.arrival.title' | translate }}
+            </h3>
+            <p [innerHTML]="'home.practical.arrival.desc' | translate"></p>
           </div>
 
           <div>
-            <h3 class="font-semibold text-orangeraie mb-2">💳 Moyens de paiement</h3>
-            <p>
-              Chèques, espèces, <strong>chèques vacances ANCV</strong> et <strong>chèques vacances connect</strong>.
-            </p>
+            <h3 class="font-semibold text-orangeraie mb-2">
+              {{ 'home.practical.payment.title' | translate }}
+            </h3>
+            <p [innerHTML]="'home.practical.payment.desc' | translate"></p>
           </div>
 
           <div>
-            <h3 class="font-semibold text-orangeraie mb-2">📍 Autres services</h3>
+            <h3 class="font-semibold text-orangeraie mb-2">
+              {{ 'home.practical.others.title' | translate }}
+            </h3>
             <ul class="list-disc list-inside">
-              <li>Patio et jardin avec mobilier</li>
-              <li>Cuisine d'été équipée</li>
-              <li>Réfrigérateurs en libre service</li>
-              <li>Sèche-cheveux sur demande</li>
-              <li>Table d'hôtes</li>
-              <li>...</li>
+              <li *ngFor="let item of ['home.practical.others.list.0', 'home.practical.others.list.1', 'home.practical.others.list.2', 'home.practical.others.list.3', 'home.practical.others.list.4', 'home.practical.others.list.5']">
+                {{ item | translate }}
+              </li>
             </ul>
           </div>
         </div>
 
         <div class="mt-8">
-          <a routerLink="/infos-pratiques"
-            class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base">
-            ➕ Tout savoir
+          <a routerLink="/infos-pratiques" class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base">
+            {{ 'home.practical.cta' | translate }}
           </a>
         </div>
       </div>
     </section>
 
-     <!-- Section À découvrir autour -->
-     <section class="bg-white py-16 px-4 md:px-16">
+    <!-- Section À découvrir autour -->
+    <section class="bg-white py-16 px-4 md:px-16">
       <div class="max-w-6xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-12">
-          À découvrir autour
+          {{ 'home.discover.title' | translate }}
         </h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
-
-          <!-- Activité 1 -->
           <div class="flex flex-col items-center space-y-4">
             <div class="text-4xl">🏖️</div>
-            <h4 class="text-lg font-serif font-semibold text-orangeraie">Les plages</h4>
-            <p class="text-sm text-gray-600 font-sans">À seulement 10 min, profitez du sable fin et de la Méditerranée.</p>
+            <h4 class="text-lg font-serif font-semibold text-orangeraie">
+              {{ 'home.discover.items.beach.title' | translate }}
+            </h4>
+            <p class="text-sm text-gray-600 font-sans">
+              {{ 'home.discover.items.beach.desc' | translate }}
+            </p>
           </div>
 
-          <!-- Activité 2 -->
           <div class="flex flex-col items-center space-y-4">
             <div class="text-4xl">🏰</div>
-            <h4 class="text-lg font-serif font-semibold text-orangeraie">Collioure</h4>
-            <p class="text-sm text-gray-600 font-sans">Le joyau de la côte vermeille, ses ruelles colorées & son port mythique.</p>
+            <h4 class="text-lg font-serif font-semibold text-orangeraie">
+              {{ 'home.discover.items.collioure.title' | translate }}
+            </h4>
+            <p class="text-sm text-gray-600 font-sans">
+              {{ 'home.discover.items.collioure.desc' | translate }}
+            </p>
           </div>
 
-          <!-- Activité 3 -->
           <div class="flex flex-col items-center space-y-4">
             <div class="text-4xl">🚴</div>
-            <h4 class="text-lg font-serif font-semibold text-orangeraie">Balades à vélo</h4>
-            <p class="text-sm text-gray-600 font-sans">Nombreux itinéraires cyclables entre mer et montagne.</p>
+            <h4 class="text-lg font-serif font-semibold text-orangeraie">
+              {{ 'home.discover.items.bike.title' | translate }}
+            </h4>
+            <p class="text-sm text-gray-600 font-sans">
+              {{ 'home.discover.items.bike.desc' | translate }}
+            </p>
           </div>
 
-          <!-- Activité 4 -->
           <div class="flex flex-col items-center space-y-4">
             <div class="text-4xl">🌄</div>
-            <h4 class="text-lg font-serif font-semibold text-orangeraie">Les Albères</h4>
-            <p class="text-sm text-gray-600 font-sans">Randonnées et vues imprenables sur le littoral méditerranéen.</p>
+            <h4 class="text-lg font-serif font-semibold text-orangeraie">
+              {{ 'home.discover.items.alberes.title' | translate }}
+            </h4>
+            <p class="text-sm text-gray-600 font-sans">
+              {{ 'home.discover.items.alberes.desc' | translate }}
+            </p>
           </div>
 
-          <!-- Activité 5 -->
           <div class="flex flex-col items-center space-y-4">
             <div class="text-4xl">🍇</div>
-            <h4 class="text-lg font-serif font-semibold text-orangeraie">Vignobles</h4>
-            <p class="text-sm text-gray-600 font-sans">Visites de domaines viticoles, dégustations de vins locaux.</p>
+            <h4 class="text-lg font-serif font-semibold text-orangeraie">
+              {{ 'home.discover.items.vineyards.title' | translate }}
+            </h4>
+            <p class="text-sm text-gray-600 font-sans">
+              {{ 'home.discover.items.vineyards.desc' | translate }}
+            </p>
           </div>
 
-          <!-- Activité 6 -->
           <div class="flex flex-col items-center space-y-4">
             <div class="text-4xl">🛍️</div>
-            <h4 class="text-lg font-serif font-semibold text-orangeraie">Marché d'Elne</h4>
-            <p class="text-sm text-gray-600 font-sans">Produits locaux, ambiance catalane, tous les mercredis matin.</p>
+            <h4 class="text-lg font-serif font-semibold text-orangeraie">
+              {{ 'home.discover.items.market.title' | translate }}
+            </h4>
+            <p class="text-sm text-gray-600 font-sans">
+              {{ 'home.discover.items.market.desc' | translate }}
+            </p>
           </div>
-
         </div>
 
         <div class="mt-12">
           <a routerLink="/activites" class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
-            Découvrir la région
+            {{ 'home.discover.cta' | translate }}
           </a>
         </div>
       </div>
