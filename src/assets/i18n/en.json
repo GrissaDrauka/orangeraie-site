@@ -226,15 +226,10 @@
             "value": "29 Avenue Paul Reig<br>66200 Elne"
         },
         "telephone": {
-            "label": "Phone",
-            "numbers": [
-                "+33 (0)4 68 82 22 79",
-                "+33 (0)6 08 06 21 93"
-            ]
+            "label": "Phone"
         },
         "email": {
             "label": "Email",
-            "value": "contact@orangeraie-elne.fr"
         },
         "horaires": {
             "label": "Check-in / Check-out",
@@ -322,13 +317,8 @@
         "subtitle": "Choose your booking method",
         "phone_title": "Book by phone",
         "phone_text": "Call us:",
-        "phone_numbers": [
-            "+33(0)4 68 82 22 79",
-            "+33(0)6 08 06 21 93"
-        ],
         "email_title": "Book by email",
         "email_text": "Send us a message:",
-        "email": "contact&#64;orangeraie-elne.fr",
         "gite_message": "<strong>For the cottage</strong>, reservations cannot be made online. Please contact us by phone or email.",
         "online_booking_title": "Book online",
         "online_booking_text": "Choose your stay dates and book directly online:",
