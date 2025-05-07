@@ -1,0 +1,166 @@
+<section class="pt-24 pb-16 px-4 max-w-6xl mx-auto">
+    <h1 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-10">
+        Infos pratiques
+    </h1>
+
+    <h3 class="text-2xl sm:text-xl font-serif font-bold text-orangeraie text-center mb-12">
+        Nous contacter
+    </h3>
+
+    <!-- Coordonnées -->
+    <!-- Conteneur : empilé en mobile, deux colonnes alignées dès md -->
+    <div class="flex flex-col md:flex-row gap-10 items-stretch pb-16">
+
+        <!-- ───────── Bloc coordonnées ───────── -->
+        <div class="order-1 md:basis-1/5 md:flex-none
+            bg-[#f9f4ef]/90 backdrop-blur-sm rounded-2xl shadow-lg p-8
+            flex flex-col justify-center text-gray-700 space-y-6 text-sm sm:text-base">
+            <!-- Adresse -->
+            <div class="flex items-start space-x-3">
+                <span
+                    class="inline-flex items-center justify-center w-9 h-9 rounded-full ring-1 ring-orangeraie text-lg">📍</span>
+                <div>
+                    <h3 class="text-base font-serif font-semibold text-orangeraie mb-0.5">Adresse</h3>
+                    <p>29&nbsp;avenue Paul Reig<br>66200 Elne</p>
+                </div>
+            </div>
+
+            <!-- Téléphones -->
+            <div class="flex items-start space-x-3">
+                <span
+                    class="inline-flex items-center justify-center w-9 h-9 rounded-full ring-1 ring-orangeraie text-lg">📞</span>
+                <div>
+                    <h3 class="text-base font-serif font-semibold text-orangeraie mb-0.5">Téléphone</h3>
+                    <a href="tel:+33468822279" class="text-orangeraie hover:underline font-semibold">
+                        +33&nbsp;(0)4&nbsp;68&nbsp;82&nbsp;22&nbsp;79
+                    </a><br>
+                    <a href="tel:+33608062193" class="text-orangeraie hover:underline font-semibold">
+                        +33&nbsp;(0)6&nbsp;08&nbsp;06&nbsp;21&nbsp;93
+                    </a>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-start space-x-3">
+                <span
+                    class="inline-flex items-center justify-center w-9 h-9 rounded-full ring-1 ring-orangeraie text-lg">📧</span>
+                <div>
+                    <h3 class="text-base font-serif font-semibold text-orangeraie mb-0.5">Email</h3>
+                    <a href="mailto:contact@orangeraie-elne.fr" class="text-orangeraie hover:underline font-semibold">
+                        contact&#64;orangeraie‑elne.fr
+                    </a>
+                </div>
+            </div>
+
+            <!-- Horaires -->
+            <div class="flex items-start space-x-3">
+                <span
+                    class="inline-flex items-center justify-center w-9 h-9 rounded-full ring-1 ring-orangeraie text-lg">🕒</span>
+                <div>
+                    <h3 class="text-base font-serif font-semibold text-orangeraie mb-0.5">Horaires</h3>
+                    <p>Accueil : 17 h 30 – 19 h 30<br>Départ : avant 10 h</p>
+                </div>
+            </div>
+
+            <!-- Bouton itinéraire -->
+            <div>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=29+Avenue+Paul+Reig,+66200+Elne,+France"
+                    aria-label="Itinéraire vers L’Orangeraie" target="_blank" rel="noopener" class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold text-sm
+                hover:bg-[#7a583f] hover:scale-105 transition-transform duration-200">
+                    🧭 Itinéraire
+                </a>
+            </div>
+        </div>
+
+        <!-- Carte Google Maps -->
+        <div class="order-2 relative rounded-2xl overflow-hidden shadow-lg
+        h-96 md:h-auto md:flex-1 md:basis-4/5">
+
+            <iframe title="Carte : L'Orangeraie à Elne"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.0243670943128!2d2.9721885772851997!3d42.59722652008331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b07a2c3eae2019%3A0xa1cb7c2c8550405a!2sChambres%20d&#39;h%C3%B4tes%20%26%20G%C3%AEte%20L&#39;Orangeraie!5e0!3m2!1sfr!2sfr!4v1745329522688!5m2!1sfr!2sfr"
+                class="absolute inset-0 w-full h-full border-0" loading="lazy" allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <noscript>
+                <div
+                    class="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-700 p-4 text-center">
+                    JavaScript désactivé.
+                    <a href="https://www.google.com/maps/place/29+Avenue+Paul+Reig,+66200+Elne"
+                        class="text-orangeraie underline font-semibold ml-1" target="_blank">
+                        Ouvrir la carte
+                    </a>.
+                </div>
+            </noscript>
+        </div>
+
+    </div>
+
+    <hr class="pb-16 border-t border-orange-100 w-80 mx-auto" />
+
+    <!-- Infos pratiques -->
+    <div class="grid gap-8 md:grid-cols-2 text-sm text-gray-700 font-sans mb-16">
+        <div>
+            <h3 class="font-semibold text-orangeraie mb-2">🍽️ Petit-déjeuner</h3>
+            <p>
+                Servi dans le jardin ou dans la salle à manger. Viennoiseries, boissons chaudes, jus d’orange, yaourt,
+                pain et
+                nos <strong>10 confitures maison</strong>.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="font-semibold text-orangeraie mb-2">💳 Moyens de paiement</h3>
+            <p>Chèques, espèces, <strong>chèques vacances ANCV</strong>, <strong>chèques vacances connect</strong> et
+                virement.</p>
+        </div>
+
+        <div class="md:col-span-2">
+            <h3 class="font-semibold text-orangeraie mb-4 text-center text-lg">📍 Autres services</h3>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 text-sm text-gray-700 text-center">
+                <li>Patio et jardin avec mobilier</li>
+                <li>Cuisine d'été équipée</li>
+                <li>Réfrigérateurs en libre service</li>
+                <li>Sèche-cheveux sur demande</li>
+                <li>Accès WIFI gratuit (dans toute la maison)</li>
+                <li>Parking privatif fermé (accès limité)</li>
+                <li>Draps et linge de toilette fournis</li>
+                <li>Lignes de bus à proximité</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="pb-16 border-t border-orange-100 w-80 mx-auto" />
+
+    <div class="text-center mb-16">
+        <h3 class="font-semibold text-orangeraie mb-2">🍽️ Tables d'hôtes</h3>
+        <p>
+            Un repas vous est servi à notre table dans une ambiance familiale et chaleureuse,
+            afin de déguster des <strong>plats régionaux</strong> préparés avec des <strong>produits frais du
+                terroir</strong>.
+        </p>
+        <p class="mt-2">
+            <strong>📅 Disponibilité :</strong> les <strong>dimanches</strong>, <strong>lundis</strong> et
+            <strong>jeudis soir</strong>,
+            sur réservation <strong>24&nbsp;h à l'avance</strong> (minimum 2 personnes).
+        </p>
+        <p class="mt-2">
+            <strong>💰 Tarifs :</strong> 25&nbsp;€ par adulte · 15&nbsp;€ par enfant de moins de 12 ans.
+        </p>
+    </div>
+
+    <hr class="pb-16 border-t border-orange-100 w-80 mx-auto" />
+
+    <!-- Produits locaux -->
+    <div class="text-center">
+        <h2 class="text-xl font-semibold font-serif text-orangeraie mb-4">🛍️ Produits locaux</h2>
+        <p class="text-gray-700 font-sans mb-6">
+            Découvrez aussi les <strong>pâtes artisanales</strong> et la <strong>bière locale</strong> fabriquées par
+            votre hôte !
+        </p>
+        <a href="https://lafabrik66.fr/" target="_blank" rel="noopener"
+            class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+            En savoir plus
+        </a>
+    </div>
+</section>

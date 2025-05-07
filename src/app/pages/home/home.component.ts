@@ -106,7 +106,7 @@ import { Component } from '@angular/core';
         <p class="text-gray-700 font-sans mb-6">
           N’hésitez pas à nous contacter, nous répondons rapidement et avec plaisir.
         </p>
-        <a routerLink="/contact"
+        <a routerLink="/infos-pratiques"
           class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
           Nous contacter
         </a>
@@ -240,6 +240,8 @@ import { Component } from '@angular/core';
               <li>Cuisine d'été équipée</li>
               <li>Réfrigérateurs en libre service</li>
               <li>Sèche-cheveux sur demande</li>
+              <li>Table d'hôtes</li>
+              <li>...</li>
             </ul>
           </div>
         </div>
