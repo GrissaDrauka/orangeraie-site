@@ -26,34 +26,36 @@
         <h3 class="text-xl sm:text-2xl font-semibold font-serif text-[#7a583f] text-center mb-6">
             {{ 'chambres.duo_title' | translate }}
         </h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <div *ngFor="let chambre of chambresDeux" [routerLink]="['/chambres', chambre.slug]"
-                class="bg-white rounded-2xl shadow hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] overflow-hidden relative cursor-pointer">
+        <ng-container *ngIf="chambresDeux$ | async as chambresDeux">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div *ngFor="let chambre of chambresDeux" [routerLink]="['/chambres', chambre.slug]"
+                    class="bg-white rounded-2xl shadow hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] overflow-hidden relative cursor-pointer">
 
-                <div class="relative">
-                    <img *ngIf="chambre.photos[0]" [src]="chambre.photos[0]" [alt]="chambre.nom"
-                        class="w-full h-48 object-cover" />
-                    <span
-                        class="absolute bottom-2 left-2 inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold shadow">
-                        {{ chambre.personnes }} pers.
-                    </span>
-                </div>
-
-                <div class="p-4">
-                    <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
-                    <p class="text-sm text-gray-700 font-sans">{{ chambre.resume }}</p>
-
-                    <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                        <a class="text-orangeraie font-semibold hover:underline text-sm">
-                            {{ 'chambres.learn_more' | translate }}
-                        </a>
-                        <span class="text-sm text-gray-600 italic font-sans">
-                            {{ 'chambres.from_price' | translate:{ price: chambre.tarifs.basse[0] } }}
+                    <div class="relative">
+                        <img *ngIf="chambre.photos[0]" [src]="chambre.photos[0]" [alt]="chambre.nom"
+                            class="w-full h-48 object-cover" />
+                        <span
+                            class="absolute bottom-2 left-2 inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold shadow">
+                            {{ chambre.personnes }} pers.
                         </span>
+                    </div>
+
+                    <div class="p-4">
+                        <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
+                        <p class="text-sm text-gray-700 font-sans">{{ chambre.resume }}</p>
+
+                        <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <a class="text-orangeraie font-semibold hover:underline text-sm">
+                                {{ 'chambres.learn_more' | translate }}
+                            </a>
+                            <span class="text-sm text-gray-600 italic font-sans">
+                                {{ 'chambres.from_price' | translate:{ price: chambre.tarifs.basse[0] } }}
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </ng-container>
 
         <!-- À propos de votre séjour (Desktop) -->
         <section
@@ -71,33 +73,35 @@
         <h3 class="text-xl sm:text-2xl font-semibold font-serif text-[#7a583f] text-center mb-6">
             {{ 'chambres.family_title' | translate }}
         </h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div *ngFor="let chambre of chambresFamiliales" [routerLink]="['/chambres', chambre.slug]"
-                class="bg-white rounded-2xl shadow hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] overflow-hidden relative cursor-pointer">
+        <ng-container *ngIf="chambresFamiliales$ | async as chambresFamiliales">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div *ngFor="let chambre of chambresFamiliales" [routerLink]="['/chambres', chambre.slug]"
+                    class="bg-white rounded-2xl shadow hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] overflow-hidden relative cursor-pointer">
 
-                <div class="relative">
-                    <img *ngIf="chambre.photos" [src]="chambre.photos[0]" [alt]="chambre.nom"
-                        class="w-full h-48 object-cover" />
-                    <span
-                        class="absolute bottom-2 left-2 inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold shadow">
-                        {{ chambre.personnes }} pers.
-                    </span>
-                </div>
-
-                <div class="p-4">
-                    <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
-                    <p class="text-sm text-gray-700 font-sans">{{ chambre.resume }}</p>
-
-                    <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                        <a class="text-orangeraie font-semibold hover:underline text-sm">
-                            {{ 'chambres.learn_more' | translate }}
-                        </a>
-                        <span class="text-sm text-gray-600 italic font-sans">
-                            {{ 'chambres.from_price' | translate:{ price: chambre.tarifs.basse[0] } }}
+                    <div class="relative">
+                        <img *ngIf="chambre.photos" [src]="chambre.photos[0]" [alt]="chambre.nom"
+                            class="w-full h-48 object-cover" />
+                        <span
+                            class="absolute bottom-2 left-2 inline-block text-xs bg-[#f9f4ef] text-[#7a583f] px-2 py-1 rounded-full font-semibold shadow">
+                            {{ chambre.personnes }} pers.
                         </span>
+                    </div>
+
+                    <div class="p-4">
+                        <h3 class="text-xl font-serif text-orangeraie font-semibold mb-2">{{ chambre.nom }}</h3>
+                        <p class="text-sm text-gray-700 font-sans">{{ chambre.resume }}</p>
+
+                        <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <a class="text-orangeraie font-semibold hover:underline text-sm">
+                                {{ 'chambres.learn_more' | translate }}
+                            </a>
+                            <span class="text-sm text-gray-600 italic font-sans">
+                                {{ 'chambres.from_price' | translate:{ price: chambre.tarifs.basse[0] } }}
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </ng-container>
     </div>
 </section>

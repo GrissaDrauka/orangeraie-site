@@ -173,21 +173,21 @@
         "moyenne": "Mid",
         "haute": "High",
         "chambre-marine": {
-            "nom": "Marine Room",
+            "nom": "The Marine Room",
             "resume": "Let yourself be carried away by a marine atmosphere, between soft blue and seaside spirit.",
             "description": "Immerse yourself in a briny atmosphere, where soft blue hues evoke the horizon and sea breeze. Every detail reflects the calm of the coast, for a relaxing getaway between sky, sea, and light.",
             "etage": "2nd floor",
             "lit": "1 double bed (140x190cm)"
         },
         "chambre-nature": {
-            "nom": "Nature Room",
+            "nom": "The Nature Room",
             "resume": "A room adorned with wrought iron and plant motifs for an elegant touch of nature.",
             "description": "A bright room where wrought iron draws delicate plant patterns, offering a natural and elegant ambiance. The subtle charm of the materials blends with soft tones for a peaceful and refined break.",
             "etage": "1st floor",
             "lit": "1 double bed (140x190cm)"
         },
         "chambre-bambouseraie": {
-            "nom": "Bamboo Room",
+            "nom": "The Bamboo Room",
             "resume": "A soothing room with a zen atmosphere, inspired by the softness of bamboo.",
             "description": "Zen spirit, natural materials, plant touches: this room inspired by bamboo offers a peaceful atmosphere, perfect for recharging in simplicity.",
             "etage": "1st floor",
@@ -201,7 +201,7 @@
             "lit": "1 double bed (140x190cm) and 1 single bed (90x190cm)"
         },
         "chambre-coloniale": {
-            "nom": "Colonial Style Room",
+            "nom": "The Colonial Style Room",
             "resume": "An elegant room with exotic accents, dark wood, natural materials, and colonial charm.",
             "description": "An elegant room with exotic touches, where dark wood and natural materials create a setting inspired by colonial charm. An invitation to travel in a refined and peaceful setting.",
             "etage": "1st floor",

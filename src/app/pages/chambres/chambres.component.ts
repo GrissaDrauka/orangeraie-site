@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ChambresService } from '../../services/chambres.service';
 import { Chambre } from '../../models/chambre.model';
+import { Observable, map } from 'rxjs';
 
 @Component({
   selector: 'app-chambres',
@@ -8,13 +9,14 @@ import { Chambre } from '../../models/chambre.model';
   templateUrl: './chambres.component.html'
 })
 export class ChambresComponent {
-  chambresDeux: Chambre[] = [];
-  chambresFamiliales: Chambre[] = [];
+  chambresDeux$!: Observable<Chambre[]>;
+  chambresFamiliales$!: Observable<Chambre[]>;
 
   constructor(private chambresSrv: ChambresService) { }
 
   ngOnInit(): void {
-    this.chambresSrv.getChambresDeux().subscribe(data => (this.chambresDeux = data));
-    this.chambresSrv.getChambresFamiliales().subscribe(data => (this.chambresFamiliales = data));
+    const all$ = this.chambresSrv.getAllTranslated();
+    this.chambresDeux$ = all$.pipe(map(chambres => chambres.filter(c => c.personnes === 2)));
+    this.chambresFamiliales$ = all$.pipe(map(chambres => chambres.filter(c => c.personnes > 2)));
   }
 }

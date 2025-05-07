@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { CHAMBRES } from '../data/chambres.data';
 import { Chambre } from '../models/chambre.model';
 import { TranslateService } from '@ngx-translate/core';
-import { Observable, of, map, switchMap, startWith } from 'rxjs';
+import { Observable, of, map, switchMap, startWith, combineLatest } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class ChambresService {
@@ -125,6 +125,34 @@ export class ChambresService {
 
     getChambresFamiliales(): Observable<Chambre[]> {
         return of(CHAMBRES.filter(c => c.personnes > 2));
+    }
+
+    getAllTranslated(): Observable<Chambre[]> {
+        return combineLatest([
+            this.translate.onLangChange.pipe(startWith({ lang: this.translate.currentLang })),
+            of(this.rawChambres)
+        ]).pipe(
+            switchMap(([_, rawChambres]) =>
+                this.translate.get([
+                    ...rawChambres.flatMap(c => [
+                        `chambres.${c.slug}.nom`,
+                        `chambres.${c.slug}.resume`,
+                        `chambres.${c.slug}.description`,
+                        `chambres.${c.slug}.etage`,
+                        `chambres.${c.slug}.lit`
+                    ])
+                ]).pipe(
+                    map(translations => rawChambres.map(c => ({
+                        ...c,
+                        nom: translations[`chambres.${c.slug}.nom`],
+                        resume: translations[`chambres.${c.slug}.resume`],
+                        description: translations[`chambres.${c.slug}.description`],
+                        etage: translations[`chambres.${c.slug}.etage`],
+                        lit: translations[`chambres.${c.slug}.lit`]
+                    })))
+                )
+            )
+        );
     }
 
 }
