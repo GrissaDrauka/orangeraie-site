@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { GiteComponent } from './gite.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { RouterModule } from '@angular/router';
-import { DialogModule } from 'primeng/dialog'
+import { DialogModule } from 'primeng/dialog';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
     declarations: [GiteComponent],
@@ -11,7 +12,8 @@ import { DialogModule } from 'primeng/dialog'
         CommonModule,
         GalleriaModule,
         DialogModule,
-        RouterModule
+        RouterModule,
+        TranslateModule
     ],
     exports: [GiteComponent]
 })

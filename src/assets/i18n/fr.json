@@ -153,5 +153,62 @@
             "title": "À propos de votre séjour",
             "desc": "À l’Orangeraie, le petit déjeuner est une expérience à part entière : servi dans le grand salon ou dans le jardin, il vous invite à découvrir <strong>une dizaine de confitures maison</strong>, aux saveurs authentiques, préparées avec soin par votre hôte.<br class='hidden sm:block' />Profitez ensuite du <strong>jardin en libre accès</strong>, ou préparez une pause fraîcheur dans la <strong>cuisine d’été mise à disposition</strong>."
         }
+    },
+    "gite": {
+        "title": "Notre Gîte",
+        "intro1": "Niché au cœur d’Elne, notre gîte indépendant vous accueille dans une ambiance chaleureuse et confortable. Idéal pour les familles ou les séjours prolongés, il dispose de tout le confort nécessaire dans un cadre authentique.",
+        "intro2": "Le gîte comprend une pièce à vivre, une cuisine équipée, des chambres spacieuses et un accès direct au jardin.",
+        "classification": "Classé n° 06605 066 065 19 0093",
+        "equipments": {
+            "title": "Équipements du gîte",
+            "list": [
+                "🍳 Cuisine équipée",
+                "🛎️ 1 chambre spacieuse et 2 lits dans le salon",
+                "🚱 Salle de bain moderne",
+                "🌐 Wi-Fi gratuit",
+                "📺 Télévision",
+                "🌳 Accès jardin privé",
+                "🚗 Parking gratuit à proximité",
+                "🐾 Animaux acceptés"
+            ]
+        },
+        "pricing": {
+            "title": "Tarifs du Gîte",
+            "table": {
+                "headers": {
+                    "season": "Saison",
+                    "week": "Semaine",
+                    "animal": "Animal"
+                },
+                "rows": [
+                    {
+                        "season": "Basse",
+                        "dates": "(01/09 – 01/07)",
+                        "price": "480 €",
+                        "animal": "+7,50 €"
+                    },
+                    {
+                        "season": "Moyenne",
+                        "dates": "(02/07 – 14/07)",
+                        "price": "560 €",
+                        "animal": "+15 €"
+                    },
+                    {
+                        "season": "Haute",
+                        "dates": "(14/07 – 31/08)",
+                        "price": "630 €",
+                        "animal": "+18 €"
+                    }
+                ]
+            },
+            "note": "Tarifs indicatifs, contactez-nous pour un devis personnalisé.",
+            "details": [
+                "🗓️ Location du gîte : à la semaine, du samedi 17h30 au samedi 10h.",
+                "💶 Moyens de paiement : chèques, espèces, chèques vacances, chèques vacances connect et virement.",
+                "🚭️ Le gîte est non-fumeur.",
+                "📎 Taxe de séjour : 1,15 € / personne / jour en supplément."
+            ]
+        },
+        "cta": "Réserver maintenant"
     }
 }

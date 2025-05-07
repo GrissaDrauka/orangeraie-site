@@ -153,5 +153,62 @@
             "title": "About your stay",
             "desc": "At L’Orangeraie, breakfast is a unique experience: served in the large lounge or in the garden, it invites you to discover a selection of <strong>around ten homemade jams</strong>, full of authentic flavors, lovingly prepared by your host.<br class='hidden sm:block' />Then enjoy the <strong>garden with free access</strong>, or take a refreshing break in the <strong>fully-equipped summer kitchen</strong>."
         }
+    },
+    "gite": {
+        "title": "Our Cottage",
+        "intro1": "Nestled in the heart of Elne, our independent cottage welcomes you in a warm and comfortable atmosphere. Perfect for families or longer stays, it offers all the necessary comfort in an authentic setting.",
+        "intro2": "The cottage includes a living room, a fully equipped kitchen, spacious bedrooms, and direct access to the garden.",
+        "classification": "Classified no. 06605 066 065 19 0093",
+        "equipments": {
+            "title": "Cottage amenities",
+            "list": [
+                "🍳 Equipped kitchen",
+                "🛎️ 1 spacious bedroom and 2 beds in the living room",
+                "🚱 Modern bathroom",
+                "🌐 Free Wi-Fi",
+                "📺 Television",
+                "🌳 Private garden access",
+                "🚗 Free parking nearby",
+                "🐾 Pets allowed"
+            ]
+        },
+        "pricing": {
+            "title": "Cottage Rates",
+            "table": {
+                "headers": {
+                    "season": "Season",
+                    "week": "Week",
+                    "animal": "Pet"
+                },
+                "rows": [
+                    {
+                        "season": "Low",
+                        "dates": "(01/09 – 01/07)",
+                        "price": "€480",
+                        "animal": "+€7.50"
+                    },
+                    {
+                        "season": "Mid",
+                        "dates": "(02/07 – 14/07)",
+                        "price": "€560",
+                        "animal": "+€15"
+                    },
+                    {
+                        "season": "High",
+                        "dates": "(14/07 – 31/08)",
+                        "price": "€630",
+                        "animal": "+€18"
+                    }
+                ]
+            },
+            "note": "Indicative rates, contact us for a personalized quote.",
+            "details": [
+                "🗓️ Cottage rental: weekly, from Saturday 5:30 pm to Saturday 10:00 am.",
+                "💶 Payment methods: cheques, cash, holiday vouchers, digital holiday vouchers and bank transfer.",
+                "🚭️ The cottage is non-smoking.",
+                "📎 Tourist tax: €1.15 / person / day extra."
+            ]
+        },
+        "cta": "Book now"
     }
 }

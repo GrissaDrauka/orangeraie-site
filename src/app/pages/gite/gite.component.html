@@ -1,7 +1,9 @@
 <section class="pt-24 pb-16 px-4 max-w-7xl mx-auto">
-    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-8">
-        Notre Gîte
+    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-orangeraie text-center mb-8 pt-6">
+        {{ 'gite.title' | translate }}
     </h2>
+
+    <!-- Galleria inchangée -->
     <p-galleria [value]="album" [showThumbnails]="false" [showIndicators]="true" [responsiveOptions]="responsiveOptions"
         [circular]="true" [autoPlay]="true" [transitionInterval]="4000"
         [style]="{ 'max-width': '100%', 'margin': 'auto' }" [showItemNavigators]="true"
@@ -12,129 +14,108 @@
         </ng-template>
     </p-galleria>
 
+    <!-- Dialog zoom inchangé -->
     <p-dialog [(visible)]="showDialog" [modal]="true" [dismissableMask]="true"
         [style]="{ width: '60vw', 'max-width': '60vw' }" [contentStyle]="{ padding: '0' }" [draggable]="false"
         [closable]="true" (onHide)="closeZoom()" styleClass="rounded-xl shadow-2xl">
         <div class="relative flex justify-center items-center py-6 px-2">
-            <!-- Bouton précédent -->
             <button (click)="prevImage()"
                 class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-orangeraie transition z-10">
                 ‹
             </button>
 
-            <!-- Image zoomée -->
             <img *ngIf="selectedImage" [src]="selectedImage.image"
                 class="max-h-[70vh] max-w-full object-contain rounded-xl shadow z-0" />
 
-            <!-- Bouton suivant -->
             <button (click)="nextImage()"
                 class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-orangeraie transition z-10">
                 ›
             </button>
         </div>
-        <!-- Miniatures -->
         <div class="flex gap-2 justify-center mt-4 flex-wrap">
             <img *ngFor="let thumb of album" [src]="thumb.image" (click)="goToImage(thumb)"
                 class="w-16 h-16 object-cover rounded cursor-pointer transition border-2" [ngClass]="{
-                   'border-orangeraie': thumb === selectedImage,
-                   'border-transparent hover:border-orangeraie': thumb !== selectedImage
-                 }" />
+             'border-orangeraie': thumb === selectedImage,
+             'border-transparent hover:border-orangeraie': thumb !== selectedImage
+           }" />
         </div>
-
     </p-dialog>
 
     <!-- Texte & boutons -->
     <div class="flex flex-col items-center text-center mt-10">
         <div class="order-2 md:order-1 items-center">
             <p class="text-base sm:text-lg font-sans text-gray-700 mb-4">
-                Niché au cœur d’Elne, notre gîte indépendant vous accueille dans une ambiance chaleureuse et
-                confortable.
-                Idéal pour les familles ou les séjours prolongés, il dispose de tout le confort nécessaire dans un cadre
-                authentique.
+                {{ 'gite.intro1' | translate }}
             </p>
 
             <p class="text-base sm:text-lg font-sans text-gray-700 mb-6">
-                Le gîte comprend une pièce à vivre, une cuisine équipée, des chambres spacieuses et un accès direct au
-                jardin.
+                {{ 'gite.intro2' | translate }}
             </p>
 
             <p class="text-base sm:text-lg font-sans text-gray-700 mb-6">
-                Classé n° 06605 066 065 19 0093
+                {{ 'gite.classification' | translate }}
             </p>
-
 
             <div class="mt-10 bg-[#f9f4ef] rounded-xl shadow px-6 py-6 max-w-3xl mx-auto text-center">
-                <h3 class="text-2xl font-semibold font-serif text-orangeraie mb-4">Équipements du gîte</h3>
+                <h3 class="text-2xl font-semibold font-serif text-orangeraie mb-4">
+                    {{ 'gite.equipments.title' | translate }}
+                </h3>
                 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 text-sm font-sans">
-                    <li>🍳 Cuisine équipée</li>
-                    <li>🛏️ 1 chambre spacieuse et 2 lits dans le salon</li>
-                    <li>🛁 Salle de bain moderne</li>
-                    <li>🌐 Wi-Fi gratuit</li>
-                    <li>📺 Télévision</li>
-                    <li>🌳 Accès jardin privé</li>
-                    <li>🚗 Parking gratuit à proximité</li>
-                    <li>🐾 Animaux acceptés</li>
+                    <li *ngFor="let i of [0,1,2,3,4,5,6,7]">
+                        {{ ('gite.equipments.list.' + i) | translate }}
+                    </li>
                 </ul>
             </div>
 
             <!-- Tableau des tarifs -->
             <div class="mt-10 bg-orange-50 rounded-xl shadow px-6 py-6 max-w-3xl mx-auto text-center">
-                <h3 class="text-2xl font-semibold font-serif text-orangeraie mb-4">Tarifs du Gîte</h3>
+                <h3 class="text-2xl font-semibold font-serif text-orangeraie mb-4">
+                    {{ 'gite.pricing.title' | translate }}
+                </h3>
 
                 <table class="w-full text-sm sm:text-base text-left text-gray-700 font-sans border-collapse">
                     <thead>
                         <tr class="bg-orangeraie text-white">
-                            <th class="px-4 py-2 text-center">Saison</th>
-                            <th class="px-4 py-2 text-center">Semaine</th>
-                            <th class="px-4 py-2 text-center">Animal</th>
+                            <th class="px-4 py-2 text-center">{{ 'gite.pricing.table.headers.season' | translate }}</th>
+                            <th class="px-4 py-2 text-center">{{ 'gite.pricing.table.headers.week' | translate }}</th>
+                            <th class="px-4 py-2 text-center">{{ 'gite.pricing.table.headers.animal' | translate }}</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="border-t">
-                            <td class="px-4 py-2 font-medium text-center">Basse <br />
-                                <span class="text-xs text-gray-500">(01/09 – 01/07)</span>
+                        <tr class="border-t" *ngFor="let row of ['0', '1', '2']; let i = index">
+                            <td class="px-4 py-2 font-medium text-center">
+                                {{ ('gite.pricing.table.rows.' + row + '.season') | translate }}<br />
+                                <span class="text-xs text-gray-500">
+                                    {{ ('gite.pricing.table.rows.' + row + '.dates') | translate }}
+                                </span>
                             </td>
-                            <td class="px-4 py-2 text-center">480 €</td>
-                            <td class="px-4 py-2 text-center">+7,50 €</td>
-                        </tr>
-                        <tr class="border-t bg-[#fdfaf7]">
-                            <td class="px-4 py-2 font-medium text-center">Moyenne <br />
-                                <span class="text-xs text-gray-500">(02/07 – 14/07)</span>
+                            <td class="px-4 py-2 text-center">
+                                {{ ('gite.pricing.table.rows.' + row + '.price') | translate }}
                             </td>
-                            <td class="px-4 py-2 text-center">560 €</td>
-                            <td class="px-4 py-2 text-center">+15 €</td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="px-4 py-2 font-medium text-center">Haute <br />
-                                <span class="text-xs text-gray-500">(14/07 – 31/08)</span>
+                            <td class="px-4 py-2 text-center">
+                                {{ ('gite.pricing.table.rows.' + row + '.animal') | translate }}
                             </td>
-                            <td class="px-4 py-2 text-center">630 €</td>
-                            <td class="px-4 py-2 text-center">+18 €</td>
                         </tr>
                     </tbody>
                 </table>
 
                 <p class="text-sm text-gray-500 mt-4 italic">
-                    Tarifs indicatifs, contactez-nous pour un devis personnalisé.
+                    {{ 'gite.pricing.note' | translate }}
                 </p>
 
                 <div class="text-left mt-6 text-sm text-gray-700 font-sans space-y-2">
-                    <p><strong>🗓️ Location du gîte :</strong> à la semaine, du samedi 17h30 au samedi 10h.</p>
-                    <p><strong>💶 Moyens de paiement :</strong> chèques, espèces, chèques vacances, chèques vacances
-                        connect et virement.</p>
-                    <p><strong>🚭 Le gîte est non-fumeur.</strong></p>
-                    <p><strong>🧾 Taxe de séjour :</strong> 1,15 € / personne / jour en supplément.</p>
+                    <p *ngFor="let i of [0,1,2,3]">
+                        {{ ('gite.pricing.details.' + i) | translate }}
+                    </p>
                 </div>
             </div>
-
 
             <div class="flex flex-col sm:flex-row gap-4 items-center justify-center w-full mt-10">
                 <a [routerLink]="['/reservation']"
                     class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-xl shadow transition">
-                    Réserver maintenant
+                    {{ 'gite.cta' | translate }}
                 </a>
             </div>
         </div>
     </div>
-
 </section>
