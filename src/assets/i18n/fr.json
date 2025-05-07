@@ -210,5 +210,68 @@
             ]
         },
         "cta": "Réserver maintenant"
+    },
+    "infos": {
+        "title": "Infos pratiques",
+        "contact": "Nous contacter",
+        "adresse": {
+            "label": "Adresse",
+            "value": "29 Avenue Paul Reig<br>66200 Elne"
+        },
+        "telephone": {
+            "label": "Téléphone",
+            "numbers": [
+                "+33 (0)4 68 82 22 79",
+                "+33 (0)6 08 06 21 93"
+            ]
+        },
+        "email": {
+            "label": "Email",
+            "value": "contact@orangeraie-elne.fr"
+        },
+        "horaires": {
+            "label": "Horaires",
+            "value": "Accueil : 17 h 30 – 19 h 30<br>Départ : avant 10 h"
+        },
+        "itineraire": "🧭 Itinéraire",
+        "map.alt": "Carte : L'Orangeraie à Elne",
+        "map.noscript": {
+            "text": "JavaScript désactivé.",
+            "link": "Ouvrir la carte"
+        },
+        "sections": {
+            "petit_dej": {
+                "title": "🍽️ Petit-déjeuner",
+                "desc": "Servi dans le jardin ou dans la salle à manger. Viennoiseries, boissons chaudes, jus d’orange, yaourt, pain et nos <strong>10 confitures maison</strong>."
+            },
+            "paiement": {
+                "title": "💳 Moyens de paiement",
+                "desc": "Chèques, espèces, <strong>chèques vacances ANCV</strong>, <strong>chèques vacances connect</strong> et virement."
+            },
+            "autres": {
+                "title": "📍 Autres services",
+                "list": [
+                    "Patio et jardin avec mobilier",
+                    "Cuisine d'été équipée",
+                    "Réfrigérateurs en libre service",
+                    "Sèche-cheveux sur demande",
+                    "Accès WIFI gratuit (dans toute la maison)",
+                    "Parking privatif fermé (accès limité)",
+                    "Draps et linge de toilette fournis",
+                    "Lignes de bus à proximité"
+                ]
+            },
+            "tables": {
+                "title": "🍽️ Tables d'hôtes",
+                "desc": "Un repas vous est servi à notre table dans une ambiance familiale et chaleureuse, afin de déguster des <strong>plats régionaux</strong> préparés avec des <strong>produits frais du terroir</strong>.",
+                "dispo": "<strong>📅 Disponibilité :</strong> les <strong>dimanches</strong>, <strong>lundis</strong> et <strong>jeudis soir</strong>, sur réservation <strong>24 h à l'avance</strong> (minimum 2 personnes).",
+                "tarifs": "<strong>💰 Tarifs :</strong> 25 € par adulte · 15 € par enfant de moins de 12 ans."
+            },
+            "produits": {
+                "title": "🛍️ Produits locaux",
+                "desc": "Découvrez aussi les <strong>pâtes artisanales</strong> et la <strong>bière locale</strong> fabriquées par votre hôte !",
+                "cta": "En savoir plus"
+            }
+        }
     }
 }

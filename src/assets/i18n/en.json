@@ -210,5 +210,68 @@
             ]
         },
         "cta": "Book now"
+    },
+    "infos": {
+        "title": "Practical Information",
+        "contact": "Contact Us",
+        "adresse": {
+            "label": "Address",
+            "value": "29 Avenue Paul Reig<br>66200 Elne"
+        },
+        "telephone": {
+            "label": "Phone",
+            "numbers": [
+                "+33 (0)4 68 82 22 79",
+                "+33 (0)6 08 06 21 93"
+            ]
+        },
+        "email": {
+            "label": "Email",
+            "value": "contact@orangeraie-elne.fr"
+        },
+        "horaires": {
+            "label": "Check-in / Check-out",
+            "value": "Check-in: 5:30 PM – 7:30 PM<br>Check-out: before 10 AM"
+        },
+        "itineraire": "🧭 Directions",
+        "map.alt": "Map: L'Orangeraie in Elne",
+        "map.noscript": {
+            "text": "JavaScript disabled.",
+            "link": "Open the map"
+        },
+        "sections": {
+            "petit_dej": {
+                "title": "🍽️ Breakfast",
+                "desc": "Served in the garden or in the dining room. Pastries, hot drinks, orange juice, yogurt, bread, and our <strong>10 homemade jams</strong>."
+            },
+            "paiement": {
+                "title": "💳 Payment Methods",
+                "desc": "Checks, cash, <strong>ANCV holiday vouchers</strong>, <strong>Connect holiday vouchers</strong>, and bank transfer."
+            },
+            "autres": {
+                "title": "📍 Other Services",
+                "list": [
+                    "Patio and garden with furniture",
+                    "Equipped summer kitchen",
+                    "Shared refrigerators",
+                    "Hair dryer on request",
+                    "Free Wi-Fi access (throughout the house)",
+                    "Private gated parking (limited access)",
+                    "Bed linen and towels provided",
+                    "Bus lines nearby"
+                ]
+            },
+            "tables": {
+                "title": "🍽️ Table d'hôtes",
+                "desc": "Enjoy a family-style dinner featuring <strong>regional dishes</strong> made with <strong>fresh local products</strong>.",
+                "dispo": "<strong>📅 Availability:</strong> Sunday, Monday and Thursday evenings, by reservation <strong>24 hours in advance</strong> (minimum 2 people).",
+                "tarifs": "<strong>💰 Prices:</strong> €25 per adult · €15 per child under 12."
+            },
+            "produits": {
+                "title": "🛍️ Local Products",
+                "desc": "Also discover the <strong>artisan pasta</strong> and <strong>local beer</strong> made by your host!",
+                "cta": "Learn more"
+            }
+        }
     }
 }
