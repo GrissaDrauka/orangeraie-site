@@ -1,5 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-reservation',
@@ -8,10 +9,21 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ReservationComponent implements AfterViewInit {
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    private translate: TranslateService) {
     this.translate.onLangChange.subscribe((event) => {
       this.updateWidgetLanguage(event.lang);
     });
+  }
+
+  ngOnInit(): void {
+    this.translate.get(['seo.reservation.title', 'seo.reservation.description'])
+      .subscribe(translations => {
+        this.titleService.setTitle(translations['seo.reservation.title']);
+        this.metaService.updateTag({ name: 'description', content: translations['seo.reservation.description'] });
+      });
   }
 
   ngAfterViewInit(): void {

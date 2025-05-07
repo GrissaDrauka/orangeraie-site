@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-gite',
@@ -7,6 +9,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./gite.component.scss']
 })
 export class GiteComponent {
+
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    private translate: TranslateService
+  ) { }
+
+  ngOnInit(): void {
+    this.translate.get([
+      'seo.gite.title',
+      'seo.gite.description'
+    ]).subscribe(translations => {
+      this.titleService.setTitle(translations['seo.gite.title']);
+      this.metaService.updateTag({
+        name: 'description',
+        content: translations['seo.gite.description']
+      });
+    });
+  }
 
   album = [
     {

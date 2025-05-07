@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-activites',
@@ -6,5 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./activites.component.scss']
 })
 export class ActivitesComponent {
+
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    private translate: TranslateService
+  ) { }
+
+  ngOnInit(): void {
+    this.translate.get([
+      'seo.activites.title',
+      'seo.activites.description'
+    ]).subscribe(translations => {
+      this.titleService.setTitle(translations['seo.activites.title']);
+      this.metaService.updateTag({ name: 'description', content: translations['seo.activites.description'] });
+    });
+  }
 
 }

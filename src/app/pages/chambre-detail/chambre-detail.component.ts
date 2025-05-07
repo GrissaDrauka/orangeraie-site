@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Chambre } from '../../models/chambre.model';
 import { ChambresService } from '../../services/chambres.service';
-import { Observable, tap, take } from 'rxjs';
+import { Observable, take } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-chambre-detail',
@@ -41,15 +43,23 @@ export class ChambreDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private chambresSrv: ChambresService,
-    public router: Router
+    public router: Router,
+    private title: Title,
+    private meta: Meta,
+    private translate: TranslateService
   ) { }
 
   ngOnInit(): void {
     const slug = this.route.snapshot.paramMap.get('slug');
     if (slug) {
       this.chambre$ = this.chambresSrv.getBySlug(slug);
-    }
 
+      const seoKey = `seo.chambres.${slug}`;
+      this.translate.get([`${seoKey}.title`, `${seoKey}.description`]).subscribe(t => {
+        this.title.setTitle(t[`${seoKey}.title`]);
+        this.meta.updateTag({ name: 'description', content: t[`${seoKey}.description`] });
+      });
+    }
   }
 
   openZoom(index: number) {

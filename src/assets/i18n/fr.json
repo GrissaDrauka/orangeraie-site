@@ -387,6 +387,46 @@
         "home": {
             "title": "L'Orangeraie – Chambres d'hôtes à Elne",
             "description": "Séjournez à L'Orangeraie à Elne : chambres confortables, gîte classé, confitures maison, jardin verdoyant et accueil chaleureux au cœur du Roussillon."
+        },
+        "gite": {
+            "title": "Notre gîte à Elne – L'Orangeraie",
+            "description": "Séjournez dans notre gîte classé à Elne : 3 Clés CléVacances, confort moderne, jardin, cuisine équipée et indépendance totale au cœur du Roussillon."
+        },
+        "infos": {
+            "title": "Infos pratiques – L'Orangeraie à Elne",
+            "description": "Adresse, horaires, services, tables d’hôtes et produits locaux : toutes les infos pratiques pour préparer votre séjour à L'Orangeraie à Elne."
+        },
+        "activites": {
+            "title": "Activités autour de L'Orangeraie – Elne & Roussillon",
+            "description": "Découvrez les meilleures activités autour d’Elne : patrimoine, plages, nature, marchés, villages perchés et sports de plein air pour tous les goûts."
+        },
+        "reservation": {
+            "title": "Réserver votre séjour – L'Orangeraie à Elne",
+            "description": "Choisissez votre mode de réservation à L'Orangeraie : téléphone, email ou directement en ligne. Gîte et chambres d'hôtes à Elne, Roussillon."
+        },
+        "chambres": {
+            "title": "Nos chambres d'hôtes à Elne – L'Orangeraie",
+            "description": "Découvrez nos 5 chambres d’hôtes confortables et décorées avec soin à Elne, dans les Pyrénées-Orientales. Petit déjeuner inclus et cadre verdoyant.",
+            "chambre-marine": {
+                "title": "Chambre Marine – L'Orangeraie à Elne",
+                "description": "Chambre Marine : atmosphère marine, bleu doux, esprit bord de mer. Séjour paisible et relaxant à Elne."
+            },
+            "chambre-nature": {
+                "title": "Chambre Nature – L'Orangeraie à Elne",
+                "description": "Chambre Nature : fer forgé et motifs végétaux. Ambiance naturelle et élégante pour une pause raffinée."
+            },
+            "chambre-bambouseraie": {
+                "title": "Chambre Bambouseraie – L'Orangeraie à Elne",
+                "description": "Chambre Bambouseraie : zen et douceur des bambous. Ressourcez-vous dans une ambiance apaisante."
+            },
+            "chambre-atelier": {
+                "title": "Chambre l'Atelier – L'Orangeraie à Elne",
+                "description": "Chambre l’Atelier : bois, métal, esprit loft. Pour un séjour inspiré et original dans un cadre créatif."
+            },
+            "chambre-coloniale": {
+                "title": "Chambre Coloniale – L'Orangeraie à Elne",
+                "description": "Chambre Coloniale : bois foncé, charme d’ailleurs et matériaux nobles. Élégance et voyage garanti."
+            }
         }
     }
 }
