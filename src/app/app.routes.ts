@@ -28,4 +28,8 @@ export const routes: Routes = [
     path: 'activites',
     loadChildren: () => import('./pages/activites/activites.module').then(m => m.ActivitesModule)
   },
+  {
+    path: 'mentions-legales',
+    loadChildren: () => import('./shared/mentions-legales/mentions-legales.module').then(m => m.MentionsLegalesModule)
+  }
 ];

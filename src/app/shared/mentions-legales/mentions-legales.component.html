@@ -1,0 +1,37 @@
+<section class="container mx-auto px-4 py-16 mt-20 max-w-4xl">
+    <h1 class="text-3xl sm:text-4xl font-bold font-serif text-orangeraie text-center mb-12">
+        {{ 'legal.title' | translate }}
+    </h1>
+
+    <div class="space-y-8 text-sm sm:text-base text-gray-800 leading-relaxed">
+        <div>
+            <h2 class="font-semibold text-orangeraie mb-2">{{ 'legal.editor.title' | translate }}</h2>
+            <p [innerHTML]="'legal.editor.content' | translate"></p>
+        </div>
+
+        <div>
+            <h2 class="font-semibold text-orangeraie mb-2">{{ 'legal.host.title' | translate }}</h2>
+            <p [innerHTML]="'legal.host.content' | translate"></p>
+        </div>
+
+        <div>
+            <h2 class="font-semibold text-orangeraie mb-2">{{ 'legal.ip.title' | translate }}</h2>
+            <p>{{ 'legal.ip.content' | translate }}</p>
+        </div>
+
+        <div>
+            <h2 class="font-semibold text-orangeraie mb-2">{{ 'legal.data.title' | translate }}</h2>
+            <p>{{ 'legal.data.content' | translate }}</p>
+        </div>
+
+        <div>
+            <h2 class="font-semibold text-orangeraie mb-2">{{ 'legal.terms.title' | translate }}</h2>
+            <p>{{ 'legal.terms.content' | translate }}</p>
+        </div>
+
+        <div>
+            <h2 class="font-semibold text-orangeraie mb-2">{{ 'legal.liability.title' | translate }}</h2>
+            <p>{{ 'legal.liability.content' | translate }}</p>
+        </div>
+    </div>
+</section>

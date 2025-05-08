@@ -31,23 +31,35 @@ export class GiteComponent {
 
   album = [
     {
-      image: 'assets/chambres/MARINE/recto.jpg',
-      thumbnail: 'assets/chambres/MARINE/recto.jpg',
-      alt: 'Photo 1',
-      title: 'Salon'
-    },
-    {
-      image: 'assets/chambres/BAMBOUSERAIE/recto.jpg',
-      thumbnail: 'assets/chambres/BAMBOUSERAIE/recto.jpg',
-      alt: 'Photo 2',
-      title: 'Cuisine'
-    },
-    {
-      image: 'assets/chambres/ATELIER/recto.jpg',
-      thumbnail: 'assets/chambres/ATELIER/recto.jpg',
-      alt: 'Photo 3',
+      image: 'assets/gite/gite.jpg',
+      thumbnail: 'assets/gite/gite.jpg',
+      alt: 'Chambre',
       title: 'Chambre'
-    }
+    },
+    {
+      image: 'assets/gite/salon.jpg',
+      thumbnail: 'assets/gite/salon.jpg',
+      alt: 'Salon - Cuisine',
+      title: 'Salon - Cuisine'
+    },
+    {
+      image: 'assets/gite/salledebain.jpg',
+      thumbnail: 'assets/gite/salledebain.jpg',
+      alt: 'Salle de bain',
+      title: 'Salle de bain'
+    },
+    {
+      image: 'assets/gite/ext1.jpg',
+      thumbnail: 'assets/gite/ext1.jpg',
+      alt: 'Extérieur 1',
+      title: 'Extérieur 1'
+    },
+    {
+      image: 'assets/gite/ext2.jpg',
+      thumbnail: 'assets/gite/ext2.jpg',
+      alt: 'Extérieur 2',
+      title: 'Extérieur 2'
+    },
   ];
 
   responsiveOptions = [

@@ -9,14 +9,6 @@
             <p class="text-gray-600">
                 {{ 'footer.subtitle' | translate }}
             </p>
-            <br>
-            <br>
-            <p class="text-gray-600">
-                {{ 'commun.entreprise' | translate }}
-            </p>
-            <p class="text-gray-600">
-                {{ 'commun.siret' | translate }}
-            </p>
         </div>
 
         <!-- Navigation -->
@@ -88,6 +80,11 @@
     <!-- Mentions -->
     <div class="flex flex-col items-center mt-2 pt-2 text-center text-xs text-gray-500">
         <div class="w-52 h-[1px] bg-[#7B5E57]/30 mb-4"></div>
-        &copy; {{ currentYear }} L'Orangeraie — {{ 'footer.rights' | translate }}
+        <div class="space-x-1">
+            <a routerLink="/mentions-legales" class="underline hover:text-orangeraie transition">
+                {{ 'footer.mentions' | translate }}
+            </a>
+            · &copy; {{ currentYear }} L'Orangeraie — {{ 'footer.rights' | translate }}
+        </div>
     </div>
 </footer>

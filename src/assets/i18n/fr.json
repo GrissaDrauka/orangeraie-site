@@ -21,6 +21,7 @@
         "title": "L'Orangeraie",
         "subtitle": "Chambres d’hôtes & Gîte à Elne",
         "nav_title": "Navigation",
+        "mentions": "Mentions Légales",
         "nav": {
             "home": "Accueil",
             "rooms": "Nos chambres",
@@ -389,6 +390,33 @@
         "online_booking_text": "Choisissez vos dates de séjour et réservez directement en ligne :",
         "footer_text_1": "Pour toute question ou demande particulière, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !",
         "footer_text_2": "Nous vous remercions de votre confiance et avons hâte de vous accueillir à l'Orangeraie !"
+    },
+    "legal": {
+        "title": "Mentions légales",
+        "editor": {
+            "title": "1. Éditeur du site",
+            "content": "<strong>Nom de l’entreprise :</strong> Laurence et Fabrice E.I.<br><strong>Adresse :</strong> 29 Avenue Paul Reig, 66200 Elne – France<br><strong>Téléphone :</strong> +33(0)4 68 82 22 79 / +33(0)6 08 06 21 93<br><strong>Email :</strong> contact@orangeraie-elne.fr<br><strong>Numéro SIRET :</strong> 797 528 940 00019<br><strong>Directeur de la publication :</strong> Laurence et Fabrice"
+        },
+        "host": {
+            "title": "2. Hébergement du site",
+            "content": "<strong>Nom de l’hébergeur :</strong> OVH<br><strong>Adresse :</strong> 2 rue Kellermann – 59100 Roubaix – France<br><strong>Téléphone :</strong> 09 72 10 10 07"
+        },
+        "ip": {
+            "title": "3. Propriété intellectuelle",
+            "content": "Tous les contenus présents sur ce site (textes, images, graphismes, logo, icônes...) sont la propriété exclusive de leurs auteurs ou de L'Orangeraie, sauf mention contraire. Toute reproduction est interdite sans autorisation écrite préalable."
+        },
+        "data": {
+            "title": "4. Protection des données personnelles",
+            "content": "Conformément à la loi Informatique et Libertés et au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression de vos données personnelles. Pour toute demande, contactez-nous à l’adresse email ci-dessus."
+        },
+        "terms": {
+            "title": "5. Conditions d’utilisation",
+            "content": "L’utilisateur reconnaît avoir pris connaissance des présentes conditions et les accepter. Il s’engage à utiliser ce site conformément à sa destination et dans le respect de la législation en vigueur."
+        },
+        "liability": {
+            "title": "6. Limitation de responsabilité",
+            "content": "L'Orangeraie ou Laurence et Fabrice ne sauraient être tenus responsable de dommages directs ou indirects liés à l’utilisation de ce site, ou à l’interprétation des informations qu’il contient."
+        }
     },
     "seo": {
         "home": {
