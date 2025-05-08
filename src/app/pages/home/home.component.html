@@ -169,7 +169,7 @@
         </div>
         <h4 class="font-serif font-semibold text-orangeraie text-lg">{{ 'home.services.list.parking.title' | translate
           }}</h4>
-        <p class="text-gray-600 text-sm font-sans">{{ 'home.services.list.parking.desc' | translate }}</p>
+        <p class="text-gray-600 text-sm font-sans" [innerHTML]="'home.services.list.parking.desc' | translate"></p>
       </div>
       <div class="flex flex-col items-center space-y-4">
         <div class="bg-orangeraie text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow">❄️

@@ -75,8 +75,8 @@
                     "desc": "Disponible dans toutes les chambres"
                 },
                 "parking": {
-                    "title": "Parking privé",
-                    "desc": "Gratuit et sécurisé sur place (accès limité)"
+                    "title": "Parking Gratuit",
+                    "desc": "Privé et sécurisé (accès limité) <br>Public à proximité"
                 },
                 "ac": {
                     "title": "Climatisation",
@@ -200,8 +200,8 @@
             "lit": "1 lit double (140x190cm) et 1 lit simple (90x190cm)"
         },
         "chambre-coloniale": {
-            "nom": "Chambre Coloniale",
-            "resume": "Une chambre élégante aux accents d’ailleurs, bois foncé, matières naturelles et charme colonial.",
+            "nom": "Suite Coloniale",
+            "resume": "Une suite communicante élégante aux accents d’ailleurs, bois foncé, matières naturelles et charme colonial.",
             "description": "Une chambre élégante aux accents d’ailleurs, où bois foncé et matières naturelles composent un décor inspiré du charme colonial. Une invitation au voyage dans un cadre raffiné et apaisant.",
             "etage": "1er étage",
             "lit": "1 lit double (160x200cm) et 2 lits simples (90x190cm)"
@@ -249,19 +249,19 @@
                     {
                         "season": "Basse",
                         "dates": "(01/09 – 01/07)",
-                        "price": "480 €",
+                        "price": "338 €",
                         "animal": "+7,50 €"
                     },
                     {
                         "season": "Moyenne",
                         "dates": "(02/07 – 14/07)",
-                        "price": "560 €",
+                        "price": "494 €",
                         "animal": "+15 €"
                     },
                     {
                         "season": "Haute",
                         "dates": "(14/07 – 31/08)",
-                        "price": "630 €",
+                        "price": "509 €",
                         "animal": "+18 €"
                     }
                 ]
@@ -322,14 +322,14 @@
                 ]
             },
             "tables": {
-                "title": "🍽️ Tables d'hôtes",
+                "title": "🍽️ Tables d'hôtes - Sur réservation",
                 "desc": "Un repas vous est servi à notre table dans une ambiance familiale et chaleureuse, afin de déguster des <strong>plats régionaux</strong> préparés avec des <strong>produits frais du terroir</strong>.",
                 "dispo": "<strong>📅 Disponibilité :</strong> les <strong>dimanches</strong>, <strong>lundis</strong> et <strong>jeudis soir</strong>, sur réservation <strong>24 h à l'avance</strong> (minimum 2 personnes).",
                 "tarifs": "<strong>💰 Tarifs :</strong> 25 € par adulte · 15 € par enfant de moins de 12 ans."
             },
             "produits": {
                 "title": "🛍️ Produits locaux",
-                "desc": "Découvrez aussi les <strong>pâtes artisanales</strong> et la <strong>bière locale</strong> fabriquées par votre hôte !",
+                "desc": "Découvrez aussi les <strong>pâtes artisanales</strong>, la <strong>bière locale</strong> ainsi que les <strong>crackers apéritifs à la drêche de brasserie</strong> fabriquées par votre hôte !",
                 "cta": "En savoir plus"
             }
         }

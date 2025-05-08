@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +25,8 @@ import { TranslateService } from '@ngx-translate/core';
   `
 })
 export class AppComponent {
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService,
+    private router: Router) {
     this.translate.setDefaultLang('fr'); // langue par défaut
     this.translate.use('fr');            // langue active au démarrage
   }
@@ -35,5 +38,10 @@ export class AppComponent {
   ngOnInit(): void {
     const savedLang = localStorage.getItem('lang') || 'fr'; // par défaut français
     this.switchLang(savedLang);
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      });
   }
 }
