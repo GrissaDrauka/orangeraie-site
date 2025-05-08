@@ -1,5 +1,7 @@
 {
     "commun": {
+        "siret": "SIRET : 797 528 940 00019",
+        "entreprise": "Laurence et Fabrice E.I.",
         "phone_numbers": [
             "+33(0)4 68 82 22 79",
             "+33(0)6 08 06 21 93"
@@ -210,7 +212,7 @@
             "lit": "Lit double",
             "wifi": "Wifi gratuit",
             "clim": "Climatisation",
-            "douche": "Salle d’eau",
+            "douche": "Salle d’eau privée",
             "tv": "Télévision",
             "wc": "WC privés",
             "jardin": "Vue jardin",
@@ -222,7 +224,7 @@
     "gite": {
         "title": "Notre Gîte",
         "intro1": "Niché au cœur d’Elne, notre gîte indépendant vous accueille dans une ambiance chaleureuse et confortable. Idéal pour les familles ou les séjours prolongés, il dispose de tout le confort nécessaire dans un cadre authentique.",
-        "intro2": "Le gîte comprend une pièce à vivre, une cuisine équipée, des chambres spacieuses et un accès direct au jardin.",
+        "intro2": "Le gîte comprend une pièce à vivre, une cuisine équipée, 1 chambre spacieuse et un accès direct au jardin.",
         "classification": "Classé n° 06605 066 065 19 0093",
         "equipments": {
             "title": "Équipements du gîte",
@@ -313,6 +315,8 @@
                 "list": [
                     "Patio et jardin avec mobilier",
                     "Cuisine d'été équipée",
+                    "Salon extérieur avec mobilier de détente",
+                    "Table de ping-pong et billard à disposition",
                     "Réfrigérateurs en libre service",
                     "Sèche-cheveux sur demande",
                     "Accès WIFI gratuit (dans toute la maison)",

@@ -1,5 +1,7 @@
 {
     "commun": {
+        "siret": "SIRET : 797 528 940 00019",
+        "entreprise": "Laurence et Fabrice E.I.",
         "phone_numbers": [
             "+33(0)4 68 82 22 79",
             "+33(0)6 08 06 21 93"
@@ -211,7 +213,7 @@
             "lit": "Double bed",
             "wifi": "Free wifi",
             "clim": "Air conditioning",
-            "douche": "Bathroom",
+            "douche": "Private bathroom",
             "tv": "Television",
             "wc": "Private toilet",
             "jardin": "Garden view",
@@ -223,7 +225,7 @@
     "gite": {
         "title": "Our Cottage",
         "intro1": "Nestled in the heart of Elne, our independent cottage welcomes you in a warm and comfortable atmosphere. Perfect for families or longer stays, it offers all the necessary comfort in an authentic setting.",
-        "intro2": "The cottage includes a living room, a fully equipped kitchen, spacious bedrooms, and direct access to the garden.",
+        "intro2": "The cottage includes a living room, a fully equipped kitchen, a spacious bedroom, and direct access to the garden.",
         "classification": "Classified no. 06605 066 065 19 0093",
         "equipments": {
             "title": "Cottage amenities",
@@ -314,6 +316,8 @@
                 "list": [
                     "Patio and garden with furniture",
                     "Equipped summer kitchen",
+                    "Outdoor lounge area with comfortable furniture",
+                    "Ping pong and pool table available",
                     "Shared refrigerators",
                     "Hair dryer on request",
                     "Free Wi-Fi access (throughout the house)",
