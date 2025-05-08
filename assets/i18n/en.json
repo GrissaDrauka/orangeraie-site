@@ -101,7 +101,7 @@
             },
             "payment": {
                 "title": "💳 Payment methods",
-                "desc": "Checks, cash, <strong>ANCV holiday vouchers</strong> and <strong>ANCV Connect</strong> accepted."
+                "desc": "Checks, cash, <strong>ANCV holiday vouchers</strong>, <strong>ANCV Connect</strong> and bank transfer accepted."
             },
             "others": {
                 "title": "📍 Other services",
@@ -307,7 +307,7 @@
             },
             "paiement": {
                 "title": "💳 Payment Methods",
-                "desc": "Checks, cash, <strong>ANCV holiday vouchers</strong>, <strong>Connect holiday vouchers</strong>, and bank transfer."
+                "desc": "Checks, cash, <strong>ANCV holiday vouchers</strong>, <strong>Connect holiday vouchers</strong> and bank transfer accepted."
             },
             "autres": {
                 "title": "📍 Other Services",

@@ -100,7 +100,7 @@
             },
             "payment": {
                 "title": "💳 Moyens de paiement",
-                "desc": "Chèques, espèces, <strong>chèques vacances ANCV</strong> et <strong>chèques vacances connect</strong>."
+                "desc": "Chèques, espèces, <strong>chèques vacances ANCV</strong>, <strong>chèques vacances connect</strong> et virement."
             },
             "others": {
                 "title": "📍 Autres services",
