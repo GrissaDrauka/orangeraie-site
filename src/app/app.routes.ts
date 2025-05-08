@@ -3,8 +3,6 @@ import { HomeComponent } from './pages/home/home.component';
 //import { ContactComponent } from './pages/contact/contact.component';
 import { ActivitesComponent } from './pages/activites/activites.component';
 import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
-import { InfosPratiquesComponent } from './pages/infos-pratiques/infos-pratiques.component';
-import { ReservationComponent } from './pages/reservation/reservation.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,6 +20,9 @@ export const routes: Routes = [
     path: 'reservation',
     loadChildren: () => import('./pages/reservation/reservation.module').then(m => m.ReservationModule)
   },
-  { path: 'infos-pratiques', component: InfosPratiquesComponent },
+  {
+    path: 'infos-pratiques',
+    loadChildren: () => import('./pages/infos-pratiques/infos-pratiques.module').then(m => m.InfosPratiquesModule)
+  },
   { path: 'activites', component: ActivitesComponent },
 ];

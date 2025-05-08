@@ -17,7 +17,6 @@ import { ActivitesComponent } from './pages/activites/activites.component';
 import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
-import { InfosPratiquesComponent } from './pages/infos-pratiques/infos-pratiques.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
@@ -33,7 +32,6 @@ export function HttpLoaderFactory(http: HttpClient) {
         HomeComponent,
         ContactComponent,
         ChambreDetailComponent,
-        InfosPratiquesComponent,
         ActivitesComponent,
     ],
     imports: [
