@@ -1,5 +1,7 @@
 {
     "commun": {
+        "siret": "SIRET : 797 528 940 00019",
+        "entreprise": "Laurence et Fabrice E.I.",
         "phone_numbers": [
             "+33(0)4 68 82 22 79",
             "+33(0)6 08 06 21 93"
@@ -19,6 +21,7 @@
         "title": "L'Orangeraie",
         "subtitle": "Guest rooms & Cottage in Elne",
         "nav_title": "Navigation",
+        "mentions": "Legal Notice",
         "nav": {
             "home": "Home",
             "rooms": "Our rooms",
@@ -163,11 +166,14 @@
         "equipement": "Amenities",
         "reserver": "Book this room",
         "galerie": "Other photos of the room",
+        "linge": "Bed linen and towels provided",
+        "animaux": "Pets: +€4 in low season · +€5 in mid and high season",
+        "personnes": "Persons",
         "about_stay": {
             "title": "About your stay",
             "desc": "At L’Orangeraie, breakfast is a unique experience: served in the large lounge or in the garden, it invites you to discover a selection of <strong>around ten homemade jams</strong>, full of authentic flavors, lovingly prepared by your host.<br class='hidden sm:block' />Then enjoy the <strong>garden with free access</strong>, or take a refreshing break in the <strong>fully-equipped summer kitchen</strong>."
         },
-        "tarifs": "Rates by season and number of persons",
+        "tarifs": "Rates by season and number of persons - Breakfast included",
         "saison": "Season",
         "basse": "Low",
         "moyenne": "Mid",
@@ -211,7 +217,7 @@
             "lit": "Double bed",
             "wifi": "Free wifi",
             "clim": "Air conditioning",
-            "douche": "Bathroom",
+            "douche": "Private bathroom",
             "tv": "Television",
             "wc": "Private toilet",
             "jardin": "Garden view",
@@ -223,7 +229,7 @@
     "gite": {
         "title": "Our Cottage",
         "intro1": "Nestled in the heart of Elne, our independent cottage welcomes you in a warm and comfortable atmosphere. Perfect for families or longer stays, it offers all the necessary comfort in an authentic setting.",
-        "intro2": "The cottage includes a living room, a fully equipped kitchen, spacious bedrooms, and direct access to the garden.",
+        "intro2": "The cottage includes a living room, a fully equipped kitchen, a spacious bedroom, and direct access to the garden.",
         "classification": "Classified no. 06605 066 065 19 0093",
         "equipments": {
             "title": "Cottage amenities",
@@ -314,6 +320,8 @@
                 "list": [
                     "Patio and garden with furniture",
                     "Equipped summer kitchen",
+                    "Outdoor lounge area with comfortable furniture",
+                    "Ping pong and pool table available",
                     "Shared refrigerators",
                     "Hair dryer on request",
                     "Free Wi-Fi access (throughout the house)",
@@ -384,6 +392,33 @@
         "footer_text_1": "If you have any questions or special requests, feel free to contact us. We are here to assist you!",
         "footer_text_2": "Thank you for your trust, and we look forward to welcoming you to L'Orangeraie!"
     },
+    "legal": {
+        "title": "Legal Notice",
+        "editor": {
+            "title": "1. Site Publisher",
+            "content": "<strong>Business name:</strong> Laurence and Fabrice E.I.<br><strong>Address:</strong> 29 Avenue Paul Reig, 66200 Elne – France<br><strong>Phone:</strong> +33(0)4 68 82 22 79 / +33(0)6 08 06 21 93<br><strong>Email:</strong> contact@orangeraie-elne.fr<br><strong>SIRET number:</strong> 797 528 940 00019<br><strong>Publication director:</strong> Laurence and Fabrice"
+        },
+        "host": {
+            "title": "2. Site Hosting",
+            "content": "<strong>Hosting provider:</strong> OVH<br><strong>Address:</strong> 2 rue Kellermann – 59100 Roubaix – France<br><strong>Phone:</strong> 09 72 10 10 07"
+        },
+        "ip": {
+            "title": "3. Intellectual Property",
+            "content": "All content on this website (texts, images, graphics, logos, icons, etc.) is the exclusive property of its authors or L'Orangeraie, unless otherwise stated. Any reproduction is prohibited without prior written authorization."
+        },
+        "data": {
+            "title": "4. Personal Data Protection",
+            "content": "In accordance with the French Data Protection Act and the GDPR, you have the right to access, rectify, and delete your personal data. For any request, please contact us at the email address provided above."
+        },
+        "terms": {
+            "title": "5. Terms of Use",
+            "content": "The user acknowledges having read and accepted these terms. They agree to use this website in accordance with its intended purpose and in compliance with applicable laws."
+        },
+        "liability": {
+            "title": "6. Limitation of Liability",
+            "content": "L'Orangeraie or Laurence and Fabrice cannot be held responsible for direct or indirect damages resulting from the use of this site or the interpretation of the information it contains."
+        }
+    },
     "seo": {
         "home": {
             "title": "L'Orangeraie – Guesthouse in Elne, France",
@@ -428,6 +463,10 @@
                 "title": "Chambre Coloniale – Exotic and Refined",
                 "description": "A touch of colonial charm in Elne. The Chambre Coloniale combines dark wood, natural materials and elegant decor for a trip to distant lands."
             }
+        },
+        "legal": {
+            "title": "Legal Notice – L'Orangeraie",
+            "description": "Read our website's legal notice: publisher, hosting, intellectual property, data protection and terms of use."
         }
     }
 }

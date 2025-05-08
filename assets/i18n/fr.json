@@ -1,5 +1,7 @@
 {
     "commun": {
+        "siret": "SIRET : 797 528 940 00019",
+        "entreprise": "Laurence et Fabrice E.I.",
         "phone_numbers": [
             "+33(0)4 68 82 22 79",
             "+33(0)6 08 06 21 93"
@@ -19,6 +21,7 @@
         "title": "L'Orangeraie",
         "subtitle": "Chambres d’hôtes & Gîte à Elne",
         "nav_title": "Navigation",
+        "mentions": "Mentions Légales",
         "nav": {
             "home": "Accueil",
             "rooms": "Nos chambres",
@@ -162,11 +165,14 @@
         "equipement": "Équipements",
         "reserver": "Réserver cette chambre",
         "galerie": "Autres vues de la chambre",
+        "linge": "Linge de lit et de toilette fournis",
+        "animaux": "Animaux : +4 € en basse saison · +5 € en moyenne et haute saison",
+        "personnes": "Personnes",
         "about_stay": {
             "title": "À propos de votre séjour",
             "desc": "À l’Orangeraie, le petit déjeuner est une expérience à part entière : servi dans le grand salon ou dans le jardin, il vous invite à découvrir <strong>une dizaine de confitures maison</strong>, aux saveurs authentiques, préparées avec soin par votre hôte.<br class='hidden sm:block' />Profitez ensuite du <strong>jardin en libre accès</strong>, ou préparez une pause fraîcheur dans la <strong>cuisine d’été mise à disposition</strong>."
         },
-        "tarifs": "Tarifs par saison et nombre de personnes",
+        "tarifs": "Tarifs par saison et nombre de personnes - Petit déjeuner inclus",
         "saison": "Saison",
         "basse": "Basse",
         "moyenne": "Moyenne",
@@ -210,7 +216,7 @@
             "lit": "Lit double",
             "wifi": "Wifi gratuit",
             "clim": "Climatisation",
-            "douche": "Salle d’eau",
+            "douche": "Salle d’eau privée",
             "tv": "Télévision",
             "wc": "WC privés",
             "jardin": "Vue jardin",
@@ -222,7 +228,7 @@
     "gite": {
         "title": "Notre Gîte",
         "intro1": "Niché au cœur d’Elne, notre gîte indépendant vous accueille dans une ambiance chaleureuse et confortable. Idéal pour les familles ou les séjours prolongés, il dispose de tout le confort nécessaire dans un cadre authentique.",
-        "intro2": "Le gîte comprend une pièce à vivre, une cuisine équipée, des chambres spacieuses et un accès direct au jardin.",
+        "intro2": "Le gîte comprend une pièce à vivre, une cuisine équipée, 1 chambre spacieuse et un accès direct au jardin.",
         "classification": "Classé n° 06605 066 065 19 0093",
         "equipments": {
             "title": "Équipements du gîte",
@@ -313,6 +319,8 @@
                 "list": [
                     "Patio et jardin avec mobilier",
                     "Cuisine d'été équipée",
+                    "Salon extérieur avec mobilier de détente",
+                    "Table de ping-pong et billard à disposition",
                     "Réfrigérateurs en libre service",
                     "Sèche-cheveux sur demande",
                     "Accès WIFI gratuit (dans toute la maison)",
@@ -383,6 +391,33 @@
         "footer_text_1": "Pour toute question ou demande particulière, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !",
         "footer_text_2": "Nous vous remercions de votre confiance et avons hâte de vous accueillir à l'Orangeraie !"
     },
+    "legal": {
+        "title": "Mentions légales",
+        "editor": {
+            "title": "1. Éditeur du site",
+            "content": "<strong>Nom de l’entreprise :</strong> Laurence et Fabrice E.I.<br><strong>Adresse :</strong> 29 Avenue Paul Reig, 66200 Elne – France<br><strong>Téléphone :</strong> +33(0)4 68 82 22 79 / +33(0)6 08 06 21 93<br><strong>Email :</strong> contact@orangeraie-elne.fr<br><strong>Numéro SIRET :</strong> 797 528 940 00019<br><strong>Directeur de la publication :</strong> Laurence et Fabrice"
+        },
+        "host": {
+            "title": "2. Hébergement du site",
+            "content": "<strong>Nom de l’hébergeur :</strong> OVH<br><strong>Adresse :</strong> 2 rue Kellermann – 59100 Roubaix – France<br><strong>Téléphone :</strong> 09 72 10 10 07"
+        },
+        "ip": {
+            "title": "3. Propriété intellectuelle",
+            "content": "Tous les contenus présents sur ce site (textes, images, graphismes, logo, icônes...) sont la propriété exclusive de leurs auteurs ou de L'Orangeraie, sauf mention contraire. Toute reproduction est interdite sans autorisation écrite préalable."
+        },
+        "data": {
+            "title": "4. Protection des données personnelles",
+            "content": "Conformément à la loi Informatique et Libertés et au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression de vos données personnelles. Pour toute demande, contactez-nous à l’adresse email ci-dessus."
+        },
+        "terms": {
+            "title": "5. Conditions d’utilisation",
+            "content": "L’utilisateur reconnaît avoir pris connaissance des présentes conditions et les accepter. Il s’engage à utiliser ce site conformément à sa destination et dans le respect de la législation en vigueur."
+        },
+        "liability": {
+            "title": "6. Limitation de responsabilité",
+            "content": "L'Orangeraie ou Laurence et Fabrice ne sauraient être tenus responsable de dommages directs ou indirects liés à l’utilisation de ce site, ou à l’interprétation des informations qu’il contient."
+        }
+    },
     "seo": {
         "home": {
             "title": "L'Orangeraie – Chambres d'hôtes à Elne",
@@ -427,6 +462,10 @@
                 "title": "Chambre Coloniale – L'Orangeraie à Elne",
                 "description": "Chambre Coloniale : bois foncé, charme d’ailleurs et matériaux nobles. Élégance et voyage garanti."
             }
+        },
+        "legal": {
+            "title": "Mentions légales – L'Orangeraie",
+            "description": "Consultez les mentions légales de notre site : éditeur, hébergeur, propriété intellectuelle, protection des données et conditions d’utilisation."
         }
     }
 }
