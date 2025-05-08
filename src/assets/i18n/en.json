@@ -463,6 +463,10 @@
                 "title": "Chambre Coloniale – Exotic and Refined",
                 "description": "A touch of colonial charm in Elne. The Chambre Coloniale combines dark wood, natural materials and elegant decor for a trip to distant lands."
             }
+        },
+        "legal": {
+            "title": "Legal Notice – L'Orangeraie",
+            "description": "Read our website's legal notice: publisher, hosting, intellectual property, data protection and terms of use."
         }
     }
 }
