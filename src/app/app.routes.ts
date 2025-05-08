@@ -31,5 +31,9 @@ export const routes: Routes = [
   {
     path: 'mentions-legales',
     loadChildren: () => import('./shared/mentions-legales/mentions-legales.module').then(m => m.MentionsLegalesModule)
+  },
+  {
+    path: 'galerie',
+    loadChildren: () => import('./pages/galerie/galerie.module').then(m => m.GalerieModule)
   }
 ];

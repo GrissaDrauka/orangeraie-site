@@ -392,6 +392,9 @@
         "footer_text_1": "If you have any questions or special requests, feel free to contact us. We are here to assist you!",
         "footer_text_2": "Thank you for your trust, and we look forward to welcoming you to L'Orangeraie!"
     },
+    "galerie": {
+        "title": "Photo Gallery"
+    },
     "legal": {
         "title": "Legal Notice",
         "editor": {

@@ -1,0 +1,18 @@
+<section class="container mx-auto px-4 py-16 mt-20 max-w-6xl">
+    <h1 class="text-3xl sm:text-4xl font-bold font-serif text-orangeraie text-center mb-12">
+        {{ 'galerie.title' | translate }}
+    </h1>
+
+    <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <img *ngFor="let photo of photos" [src]="photo.src" [alt]="photo.alt"
+            class="rounded-xl shadow-md w-full h-64 object-cover cursor-zoom-in hover:scale-105 transition-transform duration-300"
+            (click)="openZoom(photo)" />
+    </div>
+
+    <p-dialog [(visible)]="showDialog" [modal]="true" [dismissableMask]="true"
+        [style]="{ width: '60vw', 'max-width': '60vw' }" [contentStyle]="{ padding: '0'}" [draggable]="false"
+        [closable]="true" (onHide)="closeZoom()" styleClass="rounded-xl shadow-2xl">
+        <img *ngIf="selectedPhoto" [src]="selectedPhoto.src" [alt]="selectedPhoto.alt"
+            class="max-h-[70vh] max-w-full object-contain rounded-xl shadow" />
+    </p-dialog>
+</section>
