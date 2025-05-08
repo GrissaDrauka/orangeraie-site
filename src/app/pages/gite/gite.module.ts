@@ -1,10 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { DialogModule } from 'primeng/dialog';
 import { GalleriaModule } from 'primeng/galleria';
 import { GiteComponent } from './gite.component';
+
+const routes: Routes = [
+    { path: '', component: GiteComponent }
+];
 
 @NgModule({
     declarations: [GiteComponent],
@@ -12,7 +16,7 @@ import { GiteComponent } from './gite.component';
         CommonModule,
         GalleriaModule,
         DialogModule,
-        RouterModule,
+        RouterModule.forChild(routes),
         TranslateModule
     ],
     exports: [GiteComponent]

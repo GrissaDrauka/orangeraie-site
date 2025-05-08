@@ -12,10 +12,10 @@ import { LucideAngularModule, icons } from 'lucide-angular';
 import { DialogModule } from 'primeng/dialog';
 import { GalleriaModule } from 'primeng/galleria';
 import { routes } from './app.routes';
+
 import { ActivitesComponent } from './pages/activites/activites.component';
 import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { GiteModule } from './pages/gite/gite.module';
 import { HomeComponent } from './pages/home/home.component';
 import { InfosPratiquesComponent } from './pages/infos-pratiques/infos-pratiques.component';
 import { ReservationComponent } from './pages/reservation/reservation.component';
@@ -41,7 +41,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
-        GiteModule,
         MatIconModule,
         GalleriaModule,
         DialogModule,

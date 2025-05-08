@@ -13,7 +13,10 @@ export const routes: Routes = [
     path: 'chambres',
     loadChildren: () => import('./pages/chambres/chambres.module').then(m => m.ChambresModule)
   },
-  { path: 'gite', component: GiteComponent },
+  {
+    path: 'gite',
+    loadChildren: () => import('./pages/gite/gite.module').then(m => m.GiteModule)
+  },
   //{ path: 'contact', component: ContactComponent },
   { path: 'chambres/:slug', component: ChambreDetailComponent },
   { path: 'reservation', component: ReservationComponent },
