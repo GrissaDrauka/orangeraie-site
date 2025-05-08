@@ -3,16 +3,43 @@
         {{ 'galerie.title' | translate }}
     </h1>
 
+    <!-- Grille de photos -->
     <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <img *ngFor="let photo of photos" [src]="photo.src" [alt]="photo.alt"
+        <img *ngFor="let photo of photos; let i = index" [src]="photo.src" [alt]="photo.alt"
             class="rounded-xl shadow-md w-full h-64 object-cover cursor-zoom-in hover:scale-105 transition-transform duration-300"
-            (click)="openZoom(photo)" />
+            (click)="openZoom(photo, i)" />
     </div>
 
+    <!-- Dialog -->
     <p-dialog [(visible)]="showDialog" [modal]="true" [dismissableMask]="true"
         [style]="{ width: '60vw', 'max-width': '60vw' }" [contentStyle]="{ padding: '0'}" [draggable]="false"
-        [closable]="true" (onHide)="closeZoom()" styleClass="rounded-xl shadow-2xl">
-        <img *ngIf="selectedPhoto" [src]="selectedPhoto.src" [alt]="selectedPhoto.alt"
-            class="max-h-[70vh] max-w-full object-contain rounded-xl shadow" />
+        [closable]="true" (onHide)="closeZoom()" styleClass="rounded-xl shadow-2xl" styleClass="rounded-xl shadow-2xl">
+
+        <!-- Image zoomée avec flèches -->
+        <div class="relative flex justify-center items-center py-6 px-2">
+            <!-- Flèche gauche -->
+            <button (click)="prevImage()"
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-bold hover:text-orangeraie z-10">
+                ‹
+            </button>
+
+            <img *ngIf="photos[selectedIndex]" [src]="photos[selectedIndex].src" [alt]="photos[selectedIndex].alt"
+                class="max-h-[70vh] max-w-full object-contain rounded-xl shadow z-0" />
+
+            <button (click)="nextImage()"
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-bold hover:text-orangeraie z-10">
+                ›
+            </button>
+        </div>
+
+        <!-- Miniatures -->
+        <div class="flex gap-2 justify-center mt-4 flex-wrap">
+            <img *ngFor="let thumb of photos; let i = index" [src]="thumb.src" [alt]="thumb.alt" (click)="goToImage(i)"
+                class="w-16 h-16 object-cover rounded cursor-pointer transition border-2" [ngClass]="{
+               'border-orangeraie': i === selectedIndex,
+               'border-transparent hover:border-orangeraie': i !== selectedIndex
+             }" />
+        </div>
+
     </p-dialog>
 </section>
