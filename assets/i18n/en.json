@@ -46,7 +46,7 @@
             },
             "coloniale": {
                 "title": "The Colonial Style Room",
-                "desc": "Connecting suite for 4 people with two bedrooms, ideal for family stays."
+                "desc": "Communicating suite for 4 people with two bedrooms, ideal for family stays."
             },
             "see_all": "See all rooms"
         },
@@ -76,8 +76,8 @@
                     "desc": "Available in all rooms"
                 },
                 "parking": {
-                    "title": "Private parking",
-                    "desc": "Free and secure on-site (limited access)"
+                    "title": "Free parking",
+                    "desc": "Private gated parking (limited access) <br>Public nearby"
                 },
                 "ac": {
                     "title": "Air conditioning",
@@ -201,8 +201,8 @@
             "lit": "1 double bed (140x190cm) and 1 single bed (90x190cm)"
         },
         "chambre-coloniale": {
-            "nom": "The Colonial Style Room",
-            "resume": "An elegant room with exotic accents, dark wood, natural materials, and colonial charm.",
+            "nom": "The Colonial Style Suite",
+            "resume": "An elegant communicating suite with an exotic feel, dark wood, natural materials and colonial charm.",
             "description": "An elegant room with exotic touches, where dark wood and natural materials create a setting inspired by colonial charm. An invitation to travel in a refined and peaceful setting.",
             "etage": "1st floor",
             "lit": "1 double bed (160x200cm) and 2 single beds (90x190cm)"
@@ -250,19 +250,19 @@
                     {
                         "season": "Low",
                         "dates": "(01/09 – 01/07)",
-                        "price": "€480",
+                        "price": "€338",
                         "animal": "+€7.50"
                     },
                     {
                         "season": "Mid",
                         "dates": "(02/07 – 14/07)",
-                        "price": "€560",
+                        "price": "€494",
                         "animal": "+€15"
                     },
                     {
                         "season": "High",
                         "dates": "(14/07 – 31/08)",
-                        "price": "€630",
+                        "price": "€509",
                         "animal": "+€18"
                     }
                 ]
@@ -323,14 +323,14 @@
                 ]
             },
             "tables": {
-                "title": "🍽️ Table d'hôtes",
+                "title": "🍽️ Table d'hôtes - By Reservation",
                 "desc": "Enjoy a family-style dinner featuring <strong>regional dishes</strong> made with <strong>fresh local products</strong>.",
                 "dispo": "<strong>📅 Availability:</strong> Sunday, Monday and Thursday evenings, by reservation <strong>24 hours in advance</strong> (minimum 2 people).",
                 "tarifs": "<strong>💰 Prices:</strong> €25 per adult · €15 per child under 12."
             },
             "produits": {
                 "title": "🛍️ Local Products",
-                "desc": "Also discover the <strong>artisan pasta</strong> and <strong>local beer</strong> made by your host!",
+                "desc": "Also discover the <strong>artisan pasta</strong>, the <strong>local beer</strong> and the <strong>spent grain crackers</strong> made by your host!",
                 "cta": "Learn more"
             }
         }
