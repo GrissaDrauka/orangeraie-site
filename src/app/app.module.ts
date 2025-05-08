@@ -13,7 +13,6 @@ import { DialogModule } from 'primeng/dialog';
 import { GalleriaModule } from 'primeng/galleria';
 import { routes } from './app.routes';
 
-import { ActivitesComponent } from './pages/activites/activites.component';
 import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -32,7 +31,6 @@ export function HttpLoaderFactory(http: HttpClient) {
         HomeComponent,
         ContactComponent,
         ChambreDetailComponent,
-        ActivitesComponent,
     ],
     imports: [
         BrowserModule,

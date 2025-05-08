@@ -24,5 +24,8 @@ export const routes: Routes = [
     path: 'infos-pratiques',
     loadChildren: () => import('./pages/infos-pratiques/infos-pratiques.module').then(m => m.InfosPratiquesModule)
   },
-  { path: 'activites', component: ActivitesComponent },
+  {
+    path: 'activites',
+    loadChildren: () => import('./pages/activites/activites.module').then(m => m.ActivitesModule)
+  },
 ];
