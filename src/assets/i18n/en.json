@@ -165,11 +165,12 @@
         "equipement": "Amenities",
         "reserver": "Book this room",
         "galerie": "Other photos of the room",
+        "linge": "Bed linen and towels provided",
         "about_stay": {
             "title": "About your stay",
             "desc": "At L’Orangeraie, breakfast is a unique experience: served in the large lounge or in the garden, it invites you to discover a selection of <strong>around ten homemade jams</strong>, full of authentic flavors, lovingly prepared by your host.<br class='hidden sm:block' />Then enjoy the <strong>garden with free access</strong>, or take a refreshing break in the <strong>fully-equipped summer kitchen</strong>."
         },
-        "tarifs": "Rates by season and number of persons",
+        "tarifs": "Rates by season and number of persons - Breakfast included",
         "saison": "Season",
         "basse": "Low",
         "moyenne": "Mid",

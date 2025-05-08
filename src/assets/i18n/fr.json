@@ -164,11 +164,12 @@
         "equipement": "Équipements",
         "reserver": "Réserver cette chambre",
         "galerie": "Autres vues de la chambre",
+        "linge": "Linge de lit et de toilette fournis",
         "about_stay": {
             "title": "À propos de votre séjour",
             "desc": "À l’Orangeraie, le petit déjeuner est une expérience à part entière : servi dans le grand salon ou dans le jardin, il vous invite à découvrir <strong>une dizaine de confitures maison</strong>, aux saveurs authentiques, préparées avec soin par votre hôte.<br class='hidden sm:block' />Profitez ensuite du <strong>jardin en libre accès</strong>, ou préparez une pause fraîcheur dans la <strong>cuisine d’été mise à disposition</strong>."
         },
-        "tarifs": "Tarifs par saison et nombre de personnes",
+        "tarifs": "Tarifs par saison et nombre de personnes - Petit déjeuner inclus",
         "saison": "Saison",
         "basse": "Basse",
         "moyenne": "Moyenne",
