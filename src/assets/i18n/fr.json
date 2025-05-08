@@ -165,6 +165,8 @@
         "reserver": "Réserver cette chambre",
         "galerie": "Autres vues de la chambre",
         "linge": "Linge de lit et de toilette fournis",
+        "animaux": "Animaux : +4 € en basse saison · +5 € en moyenne et haute saison",
+        "personnes": "Personnes",
         "about_stay": {
             "title": "À propos de votre séjour",
             "desc": "À l’Orangeraie, le petit déjeuner est une expérience à part entière : servi dans le grand salon ou dans le jardin, il vous invite à découvrir <strong>une dizaine de confitures maison</strong>, aux saveurs authentiques, préparées avec soin par votre hôte.<br class='hidden sm:block' />Profitez ensuite du <strong>jardin en libre accès</strong>, ou préparez une pause fraîcheur dans la <strong>cuisine d’été mise à disposition</strong>."

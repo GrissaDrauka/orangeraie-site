@@ -14,9 +14,14 @@
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
             <h1 class="text-4xl font-bold text-orangeraie text-center md:text-left">{{ chambre.nom }}</h1>
             <div class="flex gap-2 justify-center md:justify-end">
-                <span
+                <!--<span
                     class="bg-green-100 text-green-800 text-s px-3 py-1 rounded-full font-medium inline-flex items-center">
                     {{ 'chambres.petitDejInclus' | translate }}
+                </span>-->
+                <span
+                    class="bg-blue-50 text-blue-800 text-s px-3 py-1 rounded-full font-medium inline-flex items-center">
+                    <mat-icon style="font-size: 24px;">people</mat-icon>
+                    {{ chambre.personnes }} {{ 'chambres.personnes' | translate }}
                 </span>
                 <span
                     class="bg-orange-50 text-gray-800 items-center text-s px-3 py-1 rounded-full font-medium inline-flex gap-1">
@@ -51,7 +56,7 @@
                         {{ chambre.lit }}
                     </div>
                     <p class="mt-4 text-sm font-medium text-gray-700">
-                        🧺 {{ 'chambres.linge' | translate }}
+                        {{ 'chambres.linge' | translate }}
                     </p>
                 </div>
 
@@ -116,6 +121,16 @@
                                 <td class="p-2 border-r border-gray-300" *ngIf="chambre.personnes > 2">{{
                                     chambre.tarifs.haute[2] }} €</td>
                                 <td class="p-2" *ngIf="chambre.personnes > 3">{{ chambre.tarifs.haute[3] }} €</td>
+                            </tr>
+                            <tr class="border-t border-orange-200 font-medium bg-orange-50 text-sm text-gray-800">
+                                <td colspan="5" class="p-2 text-center">
+                                    🐾 {{ 'chambres.animaux' | translate }}
+                                </td>
+                            </tr>
+                            <tr class="font-medium bg-orange-50 text-sm text-gray-800">
+                                <td colspan="5" class="p-2 text-center">
+                                    {{ 'gite.pricing.details.3' | translate }}
+                                </td>
                             </tr>
                         </tbody>
                     </table>

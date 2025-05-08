@@ -166,6 +166,8 @@
         "reserver": "Book this room",
         "galerie": "Other photos of the room",
         "linge": "Bed linen and towels provided",
+        "animaux": "Pets: +€4 in low season · +€5 in mid and high season",
+        "personnes": "Persons",
         "about_stay": {
             "title": "About your stay",
             "desc": "At L’Orangeraie, breakfast is a unique experience: served in the large lounge or in the garden, it invites you to discover a selection of <strong>around ten homemade jams</strong>, full of authentic flavors, lovingly prepared by your host.<br class='hidden sm:block' />Then enjoy the <strong>garden with free access</strong>, or take a refreshing break in the <strong>fully-equipped summer kitchen</strong>."
