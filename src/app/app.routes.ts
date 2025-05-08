@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
 import { ChambresComponent } from './pages/chambres/chambres.component';
 import { GiteComponent } from './pages/gite/gite.component';
+import { HomeComponent } from './pages/home/home.component';
 //import { ContactComponent } from './pages/contact/contact.component';
-import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
-import { ReservationComponent } from './pages/reservation/reservation.component';
-import { InfosPratiquesComponent } from './pages/infos-pratiques/infos-pratiques.component';
 import { ActivitesComponent } from './pages/activites/activites.component';
+import { ChambreDetailComponent } from './pages/chambre-detail/chambre-detail.component';
+import { InfosPratiquesComponent } from './pages/infos-pratiques/infos-pratiques.component';
+import { ReservationComponent } from './pages/reservation/reservation.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },

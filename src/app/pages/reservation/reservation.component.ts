@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-reservation',

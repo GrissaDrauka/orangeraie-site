@@ -1,17 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { Observable, take } from 'rxjs';
 import { Chambre } from '../../models/chambre.model';
 import { ChambresService } from '../../services/chambres.service';
-import { Observable, take } from 'rxjs';
-import { TranslateService } from '@ngx-translate/core';
-import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-chambre-detail',
   templateUrl: './chambre-detail.component.html',
   styleUrls: ['./chambre-detail.component.scss']
 })
-export class ChambreDetailComponent implements OnInit {
+export class ChambreDetailComponent {
 
   // Variables pour la chambre
   chambre$!: Observable<Chambre | undefined>;

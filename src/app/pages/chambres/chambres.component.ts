@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ChambresService } from '../../services/chambres.service';
-import { Chambre } from '../../models/chambre.model';
-import { Observable, map } from 'rxjs';
-import { Title, Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
+import { Observable, map } from 'rxjs';
+import { Chambre } from '../../models/chambre.model';
+import { ChambresService } from '../../services/chambres.service';
 
 @Component({
   selector: 'app-chambres',

@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -182,7 +182,7 @@ import { TranslateService } from '@ngx-translate/core';
     </div>
   `,
 })
-export class NavbarComponent implements OnInit, OnDestroy {
+export class NavbarComponent implements OnDestroy {
   isOpen = false;
   isScrolled = false;
   isHebergementsOpen = false;

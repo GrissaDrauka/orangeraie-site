@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GiteComponent } from './gite.component';
-import { GalleriaModule } from 'primeng/galleria';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DialogModule } from 'primeng/dialog';
 import { TranslateModule } from '@ngx-translate/core';
+import { DialogModule } from 'primeng/dialog';
+import { GalleriaModule } from 'primeng/galleria';
+import { GiteComponent } from './gite.component';
 
 @NgModule({
     declarations: [GiteComponent],

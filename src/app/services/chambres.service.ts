@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { combineLatest, map, Observable, of, startWith, switchMap } from 'rxjs';
 import { CHAMBRES } from '../data/chambres.data';
 import { Chambre } from '../models/chambre.model';
-import { TranslateService } from '@ngx-translate/core';
-import { Observable, of, map, switchMap, startWith, combineLatest } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class ChambresService {
