@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { GiteComponent } from './pages/gite/gite.component';
 import { HomeComponent } from './pages/home/home.component';
 //import { ContactComponent } from './pages/contact/contact.component';
 import { ActivitesComponent } from './pages/activites/activites.component';
@@ -19,7 +18,10 @@ export const routes: Routes = [
   },
   //{ path: 'contact', component: ContactComponent },
   { path: 'chambres/:slug', component: ChambreDetailComponent },
-  { path: 'reservation', component: ReservationComponent },
+  {
+    path: 'reservation',
+    loadChildren: () => import('./pages/reservation/reservation.module').then(m => m.ReservationModule)
+  },
   { path: 'infos-pratiques', component: InfosPratiquesComponent },
   { path: 'activites', component: ActivitesComponent },
 ];
