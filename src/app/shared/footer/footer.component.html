@@ -1,80 +1,76 @@
 <footer class="bg-[#f9f4ef] text-gray-700 pt-6 pb-6 px-4 md:px-16">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm items-stretch">
 
-        <!-- Nom / logo -->
-        <div>
-            <h3 class="text-xl font-serif font-bold text-orangeraie mb-3">
-                {{ 'footer.title' | translate }}
-            </h3>
-            <p class="text-gray-600">
-                {{ 'footer.subtitle' | translate }}
-            </p>
-        </div>
-
-        <!-- Navigation -->
-        <div class="space-y-2">
-            <h4 class="font-semibold text-orangeraie">
-                {{ 'footer.nav_title' | translate }}
-            </h4>
-            <ul class="space-y-1">
-                <li>
-                    <a routerLink="/" class="hover:underline cursor-pointer">
-                        {{ 'footer.nav.home' | translate }}
-                    </a>
-                </li>
-                <li>
-                    <a routerLink="/chambres" class="hover:underline cursor-pointer">
-                        {{ 'footer.nav.rooms' | translate }}
-                    </a>
-                </li>
-                <li>
-                    <a routerLink="/gite" class="hover:underline cursor-pointer">
-                        {{ 'footer.nav.gite' | translate }}
-                    </a>
-                </li>
-                <li>
-                    <a routerLink="/contact" class="hover:underline cursor-pointer">
-                        {{ 'footer.nav.contact' | translate }}
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="space-y-4">
-            <h4 class="font-semibold text-orangeraie">
-                {{ 'footer.contact_title' | translate }}
-            </h4>
-
-            <div class="flex items-center gap-2 group">
-                <lucide-icon name="map-pin" size="20"
-                    class="text-orangeraie transition-colors duration-200 group-hover:text-orange-600">
-                </lucide-icon>
-                <a href="https://www.google.com/maps?q=29+Avenue+Paul+Reig,+66200+Elne" target="_blank"
-                    rel="noopener noreferrer" class="hover:underline">
-                    {{ 'footer.address' | translate }}
-                </a>
+        <!-- Colonne 1 : L'Orangeraie -->
+        <div class="md:pr-6">
+            <div class="h-full border-r border-[#7B5E57]/30 pr-6">
+                <h3 class="text-xl font-serif font-bold text-orangeraie mb-3">
+                    {{ 'footer.title' | translate }}
+                </h3>
+                <p class="text-gray-600">{{ 'footer.subtitle' | translate }}</p>
             </div>
+        </div>
 
-            <div class="flex items-center gap-2 group">
-                <lucide-icon name="phone" size="20"
-                    class="text-orangeraie transition-colors duration-200 group-hover:text-orange-600">
-                </lucide-icon>
-                <div class="flex flex-col leading-tight">
-                    <a href="tel:+33468822279" class="hover:underline">+33(0)4 68 82 22 79</a>
-                    <a href="tel:+33608062193" class="hover:underline">+33(0)6 08 06 21 93</a>
+        <!-- Colonne 2 : Navigation -->
+        <div class="space-y-2">
+            <h3 class="text-xl font-serif font-bold text-orangeraie mb-2">
+                {{ 'footer.nav_title' | translate }}
+            </h3>
+            <div class="grid grid-cols-2 gap-x-6 text-sm">
+                <div class="space-y-1">
+                    <a routerLink="/" class="hover:underline cursor-pointer block">{{ 'footer.nav.home' | translate
+                        }}</a>
+                    <a routerLink="/chambres" class="hover:underline cursor-pointer block">{{ 'footer.nav.rooms' |
+                        translate }}</a>
+                    <a routerLink="/gite" class="hover:underline cursor-pointer block">{{ 'footer.nav.gite' | translate
+                        }}</a>
+                </div>
+                <div class="space-y-1">
+                    <a routerLink="/infos-pratiques" class="hover:underline cursor-pointer block">{{ 'navbar.infos' |
+                        translate }}</a>
+                    <a routerLink="/activites" class="hover:underline cursor-pointer block">{{ 'navbar.activities' |
+                        translate }}</a>
+                    <a routerLink="/galerie" class="hover:underline cursor-pointer block">{{ 'galerie.title' | translate
+                        }}</a>
                 </div>
             </div>
+        </div>
 
-            <div class="flex items-center gap-2 group">
-                <lucide-icon name="mail" size="20"
-                    class="text-orangeraie transition-colors duration-200 group-hover:text-orange-600">
-                </lucide-icon>
-                <a href="mailto:contact@orangeraie-elne.fr" class="hover:underline">
-                    {{ 'commun.email' | translate }}
-                </a>
+        <!-- Colonne 3 : Contact -->
+        <div class="md:pl-6">
+            <div class="h-full border-l border-[#7B5E57]/30 pl-6 space-y-4">
+                <h3 class="text-xl font-serif font-bold text-orangeraie">
+                    {{ 'footer.contact_title' | translate }}
+                </h3>
+
+                <div class="flex items-center gap-2 group">
+                    <lucide-icon name="map-pin" size="20"
+                        class="text-orangeraie group-hover:text-orange-600"></lucide-icon>
+                    <a href="https://www.google.com/maps?q=29+Avenue+Paul+Reig,+66200+Elne" target="_blank"
+                        rel="noopener noreferrer" class="hover:underline">
+                        {{ 'footer.address' | translate }}
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-2 group">
+                    <lucide-icon name="phone" size="20"
+                        class="text-orangeraie group-hover:text-orange-600"></lucide-icon>
+                    <div class="flex flex-col leading-tight">
+                        <a href="tel:+33468822279" class="hover:underline">+33(0)4 68 82 22 79</a>
+                        <a href="tel:+33608062193" class="hover:underline">+33(0)6 08 06 21 93</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2 group">
+                    <lucide-icon name="mail" size="20"
+                        class="text-orangeraie group-hover:text-orange-600"></lucide-icon>
+                    <a href="mailto:contact@orangeraie-elne.fr" class="hover:underline">
+                        {{ 'commun.email' | translate }}
+                    </a>
+                </div>
             </div>
         </div>
+
     </div>
 
     <!-- Mentions -->

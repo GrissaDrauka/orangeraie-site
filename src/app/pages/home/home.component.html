@@ -1,38 +1,45 @@
 <!-- Hero Section -->
 <section
-  class="relative w-full bg-black text-white text-center px-4 pt-24 sm:pt-28 pb-16 flex flex-col items-center justify-center min-h-[80vh] bg-cover bg-center"
-  style="background-image: url('assets/commun/petit_dej.jpg');">
-  <h1 class="text-4xl sm:text-5xl font-bold font-playfair mb-4">
-    {{ 'home.title' | translate }}
-  </h1>
-  <p class="text-base sm:text-lg max-w-2xl mb-6 font-sans" [innerHTML]="'home.description' | translate"></p>
+  class="relative w-full text-[#fdf7f0] text-center px-4 pt-24 sm:pt-28 pb-16 flex flex-col items-center justify-center min-h-[80vh] bg-cover bg-center"
+  style="background-image: url('assets/commun/home.jpg');">
 
-  <!-- Cartouche CléVacances seul au-dessus -->
-  <div class="flex justify-center mb-4">
-    <div class="bg-white/90 backdrop-blur-md px-6 py-3 rounded-xl shadow flex items-center gap-4">
-      <img src="assets/picto_3cles4.png" alt="Clévacances" class="h-12 sm:h-12" />
-      <span class="text-lg sm:text-xl text-orangeraie font-semibold font-sans whitespace-nowrap">CléVacances</span>
-    </div>
-  </div>
+  <!-- Overlay sombre -->
+  <div class="absolute inset-0 bg-black/45"></div>
 
-  <!-- Les deux autres côte à côte -->
-  <div class="flex flex-wrap justify-center gap-3 mb-6">
-    <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
-      <img src="assets/accueil-velo.png" alt="Accueil Vélo" class="h-6" />
-      <span class="text-sm text-orangeraie font-semibold font-sans">Accueil Vélo</span>
-    </div>
-    <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
-      <img src="assets/vignobles.png" alt="Vignobles & Découvertes" class="h-6" />
-      <span class="text-sm text-orangeraie font-semibold font-sans">Vignobles & <br />Découvertes</span>
-    </div>
-  </div>
+  <!-- Contenu -->
+  <div class="relative z-10">
+    <h1 class="text-4xl sm:text-5xl font-bold font-playfair mb-4">
+      {{ 'home.title' | translate }}
+    </h1>
+    <p class="text-base sm:text-lg max-w-2xl mb-6 font-sans" [innerHTML]="'home.description' | translate"></p>
 
-  <!-- Boutons réservation -->
-  <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-    <a routerLink="/reservation"
-      class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base cursor-pointer">
-      {{ 'home.cta' | translate }}
-    </a>
+    <!-- Cartouche CléVacances -->
+    <div class="flex justify-center mb-4">
+      <div class="bg-white/90 backdrop-blur-md px-6 py-3 rounded-xl shadow flex items-center gap-4">
+        <img src="assets/picto_3cles4.png" alt="Clévacances" class="h-12 sm:h-12" />
+        <span class="text-lg sm:text-xl text-orangeraie font-semibold font-sans whitespace-nowrap">CléVacances</span>
+      </div>
+    </div>
+
+    <!-- Autres labels -->
+    <div class="flex flex-wrap justify-center gap-3 mb-6">
+      <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
+        <img src="assets/accueil-velo.png" alt="Accueil Vélo" class="h-6" />
+        <span class="text-sm text-orangeraie font-semibold font-sans">Accueil Vélo</span>
+      </div>
+      <div class="bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow flex items-center space-x-2">
+        <img src="assets/vignobles.png" alt="Vignobles & Découvertes" class="h-6" />
+        <span class="text-sm text-orangeraie font-semibold font-sans">Vignobles & <br />Découvertes</span>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a routerLink="/reservation"
+        class="bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition text-sm sm:text-base cursor-pointer">
+        {{ 'home.cta' | translate }}
+      </a>
+    </div>
   </div>
 </section>
 
@@ -136,16 +143,21 @@
   </div>
 </section>
 
-<!-- Lien vers la galerie photo -->
-<div class="text-center mt-16">
-  <p class="text-gray-700 mb-4 text-lg">
-    {{ 'galerie.text' | translate }}
-  </p>
-  <a routerLink="/galerie"
-    class="inline-block bg-orange-100 text-orangeraie font-medium px-6 py-3 rounded-full shadow hover:bg-orange-200 transition">
-    📸 {{ 'galerie.cta' | translate }}
-  </a>
-</div>
+<!-- Section Galerie Photo -->
+<section class="bg-white py-16 px-4 md:px-16">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-serif font-bold text-orangeraie mb-6">
+      📸 {{ 'galerie.title' | translate }}
+    </h2>
+    <p class="text-gray-700 text-base font-sans mb-6">
+      {{ 'galerie.text' | translate }}
+    </p>
+    <a routerLink="/galerie"
+      class="inline-block bg-orangeraie text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a583f] transition cursor-pointer">
+      {{ 'galerie.cta' | translate }}
+    </a>
+  </div>
+</section>
 
 <!-- Section Services & Commodités -->
 <section class="bg-white py-16 px-4 md:px-16">
