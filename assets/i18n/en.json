@@ -392,6 +392,11 @@
         "footer_text_1": "If you have any questions or special requests, feel free to contact us. We are here to assist you!",
         "footer_text_2": "Thank you for your trust, and we look forward to welcoming you to L'Orangeraie!"
     },
+    "galerie": {
+        "title": "Photo Gallery",
+        "text": "Discover more of L'Orangeraie in pictures",
+        "cta": "View the photo gallery"
+    },
     "legal": {
         "title": "Legal Notice",
         "editor": {
@@ -463,6 +468,10 @@
                 "title": "Chambre Coloniale – Exotic and Refined",
                 "description": "A touch of colonial charm in Elne. The Chambre Coloniale combines dark wood, natural materials and elegant decor for a trip to distant lands."
             }
+        },
+        "gallery": {
+            "title": "Photo Gallery – L'Orangeraie in Elne",
+            "description": "Explore L'Orangeraie in pictures: guest rooms, cottage, garden, lounges, breakfast and warm ambiance in southern France."
         },
         "legal": {
             "title": "Legal Notice – L'Orangeraie",

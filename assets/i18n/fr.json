@@ -391,6 +391,11 @@
         "footer_text_1": "Pour toute question ou demande particulière, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !",
         "footer_text_2": "Nous vous remercions de votre confiance et avons hâte de vous accueillir à l'Orangeraie !"
     },
+    "galerie": {
+        "title": "Galerie photos",
+        "text": "Découvrez-en un peu plus de l'Orangeraie en images",
+        "cta": "Voir la galerie photos"
+    },
     "legal": {
         "title": "Mentions légales",
         "editor": {
@@ -462,6 +467,10 @@
                 "title": "Chambre Coloniale – L'Orangeraie à Elne",
                 "description": "Chambre Coloniale : bois foncé, charme d’ailleurs et matériaux nobles. Élégance et voyage garanti."
             }
+        },
+        "gallery": {
+            "title": "Galerie photos – L'Orangeraie à Elne",
+            "description": "Explorez l'Orangeraie en images : chambres d'hôtes, gîte, jardin, salons, petit-déjeuner et ambiance chaleureuse à Elne, dans le sud de la France."
         },
         "legal": {
             "title": "Mentions légales – L'Orangeraie",
