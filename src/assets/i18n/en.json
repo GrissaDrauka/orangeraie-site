@@ -319,19 +319,21 @@
                 "title": "📍 Other Services",
                 "list": [
                     "Patio and garden with furniture",
-                    "Equipped summer kitchen",
+                    "Summer kitchen",
                     "Outdoor lounge area with comfortable furniture",
+                    "Barbecue",
+                    "Drinks available for purchase",
                     "Ping pong and pool table available",
                     "Shared refrigerators",
                     "Hair dryer on request",
-                    "Free Wi-Fi access (throughout the house)",
+                    "Free Wi-Fi access",
                     "Private gated parking (limited access)",
                     "Bed linen and towels provided",
                     "Bus lines nearby"
                 ]
             },
             "tables": {
-                "title": "🍽️ Table d'hôtes - By Reservation",
+                "title": "🍽️ Table d'hôtes",
                 "desc": "Enjoy a family-style dinner featuring <strong>regional dishes</strong> made with <strong>fresh local products</strong>.",
                 "dispo": "<strong>📅 Availability:</strong> Sunday, Monday and Thursday evenings, by reservation <strong>24 hours in advance</strong> (minimum 2 people).",
                 "tarifs": "<strong>💰 Prices:</strong> €25 per adult · €15 per child under 12."

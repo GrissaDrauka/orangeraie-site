@@ -109,7 +109,7 @@
                 "title": "📍 Autres services",
                 "list": [
                     "Patio et jardin avec mobilier",
-                    "Cuisine d'été équipée",
+                    "Cuisine d'été",
                     "Réfrigérateurs en libre service",
                     "Sèche-cheveux sur demande",
                     "Table d'hôtes",
@@ -318,20 +318,22 @@
                 "title": "📍 Autres services",
                 "list": [
                     "Patio et jardin avec mobilier",
-                    "Cuisine d'été équipée",
+                    "Cuisine d'été",
                     "Salon extérieur avec mobilier de détente",
+                    "Barbecue",
+                    "Boissons disponibles à la vente",
                     "Table de ping-pong et billard à disposition",
                     "Réfrigérateurs en libre service",
                     "Sèche-cheveux sur demande",
-                    "Accès WIFI gratuit (dans toute la maison)",
+                    "Accès WIFI gratuit",
                     "Parking privatif fermé (accès limité)",
                     "Draps et linge de toilette fournis",
                     "Lignes de bus à proximité"
                 ]
             },
             "tables": {
-                "title": "🍽️ Tables d'hôtes - Sur réservation",
-                "desc": "Un repas vous est servi à notre table dans une ambiance familiale et chaleureuse, afin de déguster des <strong>plats régionaux</strong> préparés avec des <strong>produits frais du terroir</strong>.",
+                "title": "🍽️ Tables d'hôtes",
+                "desc": "Un repas vous est servi à notre table dans une ambiance familiale et chaleureuse, où vous pourrez y déguster des <strong>plats régionaux</strong> préparés avec des <strong>produits frais du terroir</strong>.",
                 "dispo": "<strong>📅 Disponibilité :</strong> les <strong>dimanches</strong>, <strong>lundis</strong> et <strong>jeudis soir</strong>, sur réservation <strong>24 h à l'avance</strong> (minimum 2 personnes).",
                 "tarifs": "<strong>💰 Tarifs :</strong> 25 € par adulte · 15 € par enfant de moins de 12 ans."
             },
