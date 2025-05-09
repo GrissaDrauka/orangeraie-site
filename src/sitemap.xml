@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+
+  <!-- Accueil -->
+  <url>
+    <loc>https://orangeraie-elne.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/" />
+  </url>
+
+  <!-- Chambres -->
+  <url>
+    <loc>https://orangeraie-elne.fr/chambres</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/chambres" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/chambres" />
+  </url>
+
+  <!-- Détails des chambres -->
+  <url>
+    <loc>https://orangeraie-elne.fr/chambres/chambre-marine</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/chambres/chambre-marine" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/chambres/chambre-marine" />
+  </url>
+
+  <url>
+    <loc>https://orangeraie-elne.fr/chambres/chambre-nature</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/chambres/chambre-nature" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/chambres/chambre-nature" />
+  </url>
+
+  <url>
+    <loc>https://orangeraie-elne.fr/chambres/chambre-bambouseraie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/chambres/chambre-bambouseraie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/chambres/chambre-bambouseraie" />
+  </url>
+
+  <url>
+    <loc>https://orangeraie-elne.fr/chambres/chambre-atelier</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/chambres/chambre-atelier" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/chambres/chambre-atelier" />
+  </url>
+
+  <url>
+    <loc>https://orangeraie-elne.fr/chambres/chambre-coloniale</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/chambres/chambre-coloniale" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/chambres/chambre-coloniale" />
+  </url>
+
+  <!-- Gîte -->
+  <url>
+    <loc>https://orangeraie-elne.fr/gite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/gite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/gite" />
+  </url>
+
+  <!-- Infos pratiques -->
+  <url>
+    <loc>https://orangeraie-elne.fr/infos-pratiques</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/infos-pratiques" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/infos-pratiques" />
+  </url>
+
+  <!-- Activités -->
+  <url>
+    <loc>https://orangeraie-elne.fr/activites</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/activites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/activites" />
+  </url>
+
+  <!-- Galerie -->
+  <url>
+    <loc>https://orangeraie-elne.fr/galerie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/galerie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/galerie" />
+  </url>
+
+  <!-- Réservation -->
+  <url>
+    <loc>https://orangeraie-elne.fr/reservation</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/reservation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/reservation" />
+  </url>
+
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://orangeraie-elne.fr/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orangeraie-elne.fr/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://orangeraie-elne.fr/en/mentions-legales" />
+  </url>
+
+</urlset>
