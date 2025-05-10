@@ -96,7 +96,7 @@
             "title": "Useful Info",
             "breakfast": {
                 "title": "🍽️ Breakfast",
-                "desc": "Traditional French breakfast with coffee, tea, hot chocolate, pastries, bread, yogurt, orange juice and our <strong>10 homemade jams</strong>, served in the garden or dining room."
+                "desc": "Enjoy a French-style breakfast with coffee, tea, hot chocolate, orange juice, <strong>homemade yogurt, freshly baked bread and pastries</strong>, and our <strong>10 homemade jams</strong>, served either in the garden or in the cozy dining room."
             },
             "arrival": {
                 "title": "🕒 Check-in & Check-out",
@@ -309,7 +309,7 @@
         "sections": {
             "petit_dej": {
                 "title": "🍽️ Breakfast",
-                "desc": "Served in the garden or in the dining room. Pastries, hot drinks, orange juice, yogurt, bread, and our <strong>10 homemade jams</strong>."
+                "desc": "Enjoy a French-style breakfast with coffee, tea, hot chocolate, orange juice, <strong>homemade yogurt, freshly baked bread and pastries</strong>, and our <strong>10 homemade jams</strong>, served either in the garden or in the cozy dining room."
             },
             "paiement": {
                 "title": "💳 Payment Methods",
