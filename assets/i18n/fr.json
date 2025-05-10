@@ -95,7 +95,7 @@
             "title": "Infos pratiques",
             "breakfast": {
                 "title": "🍽️ Petit déjeuner",
-                "desc": "Petit déjeuner à la française avec café, thé, chocolat, viennoiseries, pain, yaourt, jus d’orange et nos <strong>10 confitures maison</strong>, servi dans le jardin ou la salle à manger."
+                "desc": "Commencez la journée en douceur avec un petit déjeuner à la française : café, thé, chocolat chaud, jus d’orange, <strong>yaourt maison, pain et viennoiseries tout juste sortis du four</strong>, accompagnés de nos <strong>10 confitures maison</strong>. Le tout servi dans le jardin fleuri ou dans notre salle à manger chaleureuse."
             },
             "arrival": {
                 "title": "🕒 Arrivées & Départs",
@@ -308,7 +308,7 @@
         "sections": {
             "petit_dej": {
                 "title": "🍽️ Petit-déjeuner",
-                "desc": "Servi dans le jardin ou dans la salle à manger. Viennoiseries, boissons chaudes, jus d’orange, yaourt, pain et nos <strong>10 confitures maison</strong>."
+                "desc": "Commencez la journée en douceur avec un petit déjeuner à la française : café, thé, chocolat chaud, jus d’orange, <strong>yaourt maison, pain et viennoiseries tout juste sortis du four</strong>, accompagnés de nos <strong>10 confitures maison</strong>. Le tout servi dans le jardin fleuri ou dans notre salle à manger chaleureuse."
             },
             "paiement": {
                 "title": "💳 Moyens de paiement",
