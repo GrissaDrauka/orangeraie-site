@@ -12,8 +12,8 @@
 
     <!-- Dialog -->
     <p-dialog [(visible)]="showDialog" [modal]="true" [dismissableMask]="true"
-        [style]="{ width: '60vw', 'max-width': '60vw' }" [contentStyle]="{ padding: '0'}" [draggable]="false"
-        [closable]="true" (onHide)="closeZoom()" styleClass="rounded-xl shadow-2xl" styleClass="rounded-xl shadow-2xl">
+        [style]="{ width: '80vw', 'max-width': '80vw' }" [contentStyle]="{ padding: '0'}" [draggable]="false"
+        [closable]="true" (onHide)="closeZoom()" styleClass="rounded-xl shadow-2xl">
 
         <!-- Image zoomée avec flèches -->
         <div class="relative flex justify-center items-center py-6 px-2">
@@ -33,7 +33,7 @@
         </div>
 
         <!-- Miniatures -->
-        <div class="flex gap-2 justify-center mt-4 flex-wrap">
+        <div class="flex gap-2 justify-center mt-4 px-4 flex-wrap">
             <img *ngFor="let thumb of photos; let i = index" [src]="thumb.src" [alt]="thumb.alt" (click)="goToImage(i)"
                 class="w-16 h-16 object-cover rounded cursor-pointer transition border-2" [ngClass]="{
                'border-orangeraie': i === selectedIndex,
