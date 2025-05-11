@@ -9,18 +9,18 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class GalerieComponent {
   photos = [
-    { src: 'assets/commun/entree1.jpg', alt: "Vue de l'entrée 1" },
-    { src: 'assets/commun/entree2.jpg', alt: "Vue de l'entrée 2" },
-    { src: 'assets/commun/salon1.jpg', alt: "Vue du salon 1" },
-    { src: 'assets/commun/salon2.jpg', alt: "Vue du salon 2" },
-    { src: 'assets/commun/salon3.jpg', alt: "Vue du salon 3" },
-    { src: 'assets/commun/tv1.jpg', alt: "Vue du salon TV 1" },
-    { src: 'assets/commun/tv2.jpg', alt: "Vue du salon TV 2" },
-    { src: 'assets/commun/petit_dej.jpg', alt: "Vue du petit déjeuner" },
-    { src: 'assets/commun/home.jpg', alt: "Vue de la maison" },
-    { src: 'assets/commun/exte.jpg', alt: "Vue du jardin" },
-    { src: 'assets/commun/salon_exte.jpg', alt: "Vue du salon extérieur" },
-    { src: 'assets/commun/billard.jpg', alt: "Vue du billard" }
+    { src: 'assets/commun/entree1.webp', alt: "Vue de l'entrée 1" },
+    { src: 'assets/commun/entree2.webp', alt: "Vue de l'entrée 2" },
+    { src: 'assets/commun/salon1.webp', alt: "Vue du salon 1" },
+    { src: 'assets/commun/salon2.webp', alt: "Vue du salon 2" },
+    { src: 'assets/commun/salon3.webp', alt: "Vue du salon 3" },
+    { src: 'assets/commun/tv1.webp', alt: "Vue du salon TV 1" },
+    { src: 'assets/commun/tv2.webp', alt: "Vue du salon TV 2" },
+    { src: 'assets/commun/petit_dej.webp', alt: "Vue du petit déjeuner" },
+    { src: 'assets/commun/home.webp', alt: "Vue de la maison" },
+    { src: 'assets/commun/exte.webp', alt: "Vue du jardin" },
+    { src: 'assets/commun/salon_exte.webp', alt: "Vue du salon extérieur" },
+    { src: 'assets/commun/billard.webp', alt: "Vue du billard" }
   ];
 
   constructor(

@@ -19,9 +19,9 @@ export class ChambresService {
                 haute: [64, 71]
             },
             photos: [
-                'assets/chambres/MARINE/recto.jpg',
-                'assets/chambres/MARINE/verso.jpg',
-                'assets/chambres/MARINE/sdb.jpg'
+                'assets/chambres/MARINE/recto.webp',
+                'assets/chambres/MARINE/verso.webp',
+                'assets/chambres/MARINE/sdb.webp'
             ],
             equipements: ['wifi', 'clim', 'douche', 'wc', 'tv']
         },
@@ -34,9 +34,9 @@ export class ChambresService {
                 haute: [64, 71]
             },
             photos: [
-                'assets/chambres/NATURE/recto.jpg',
-                'assets/chambres/NATURE/verso.jpg',
-                'assets/chambres/NATURE/sdb.jpg'
+                'assets/chambres/NATURE/recto.webp',
+                'assets/chambres/NATURE/verso.webp',
+                'assets/chambres/NATURE/sdb.webp'
             ],
             equipements: ['wifi', 'clim', 'douche', 'wc', 'tv'],
         },
@@ -49,9 +49,9 @@ export class ChambresService {
                 haute: [64, 71]
             },
             photos: [
-                'assets/chambres/BAMBOUSERAIE/recto.jpg',
-                'assets/chambres/BAMBOUSERAIE/verso.jpg',
-                'assets/chambres/BAMBOUSERAIE/sdb.jpg'
+                'assets/chambres/BAMBOUSERAIE/recto.webp',
+                'assets/chambres/BAMBOUSERAIE/verso.webp',
+                'assets/chambres/BAMBOUSERAIE/sdb.webp'
             ],
             equipements: ['wifi', 'clim', 'douche', 'wc', 'tv']
         },
@@ -64,9 +64,9 @@ export class ChambresService {
                 haute: [76, 76, 83]
             },
             photos: [
-                'assets/chambres/ATELIER/recto.jpg',
-                'assets/chambres/ATELIER/verso.jpg',
-                'assets/chambres/ATELIER/sdb.jpg'
+                'assets/chambres/ATELIER/recto.webp',
+                'assets/chambres/ATELIER/verso.webp',
+                'assets/chambres/ATELIER/sdb.webp'
             ],
             equipements: ['wifi', 'clim', 'douche', 'wc', 'tv']
         },
@@ -79,9 +79,9 @@ export class ChambresService {
                 haute: [0, 81, 91, 102]
             },
             photos: [
-                'assets/chambres/COLONIALE/recto.jpg',
-                'assets/chambres/COLONIALE/verso.jpg',
-                'assets/chambres/COLONIALE/sdb.jpg'
+                'assets/chambres/COLONIALE/recto.webp',
+                'assets/chambres/COLONIALE/verso.webp',
+                'assets/chambres/COLONIALE/sdb.webp'
             ],
             equipements: ['wifi', 'clim', 'douche', 'wc', 'tv']
         }

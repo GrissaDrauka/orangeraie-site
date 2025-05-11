@@ -31,32 +31,32 @@ export class GiteComponent {
 
   album = [
     {
-      image: 'assets/gite/gite.jpg',
-      thumbnail: 'assets/gite/gite.jpg',
+      image: 'assets/gite/gite.webp',
+      thumbnail: 'assets/gite/gite.webp',
       alt: 'Chambre',
       title: 'Chambre'
     },
     {
-      image: 'assets/gite/salon.jpg',
-      thumbnail: 'assets/gite/salon.jpg',
+      image: 'assets/gite/salon.webp',
+      thumbnail: 'assets/gite/salon.webp',
       alt: 'Salon - Cuisine',
       title: 'Salon - Cuisine'
     },
     {
-      image: 'assets/gite/salledebain.jpg',
-      thumbnail: 'assets/gite/salledebain.jpg',
+      image: 'assets/gite/salledebain.webp',
+      thumbnail: 'assets/gite/salledebain.webp',
       alt: 'Salle de bain',
       title: 'Salle de bain'
     },
     {
-      image: 'assets/gite/ext1.jpg',
-      thumbnail: 'assets/gite/ext1.jpg',
+      image: 'assets/gite/ext1.webp',
+      thumbnail: 'assets/gite/ext1.webp',
       alt: 'Extérieur 1',
       title: 'Extérieur 1'
     },
     {
-      image: 'assets/gite/ext2.jpg',
-      thumbnail: 'assets/gite/ext2.jpg',
+      image: 'assets/gite/ext2.webp',
+      thumbnail: 'assets/gite/ext2.webp',
       alt: 'Extérieur 2',
       title: 'Extérieur 2'
     },
