@@ -15,30 +15,33 @@
     </p-galleria>
 
     <!-- Dialog zoom inchangé -->
-    <p-dialog [(visible)]="showDialog" [modal]="true" [dismissableMask]="true"
-        [style]="{ width: '60vw', 'max-width': '60vw' }" [contentStyle]="{ padding: '0' }" [draggable]="false"
-        [closable]="true" (onHide)="closeZoom()" styleClass="rounded-xl shadow-2xl">
-        <div class="relative flex justify-center items-center py-6 px-2">
+    <p-dialog [(visible)]="showDialog" [modal]="true" [dismissableMask]="true" [closable]="true" header=""
+        [style]="{ width: '80vw', 'max-width': '80vw' }" [contentStyle]="{ padding: '0' }"
+        styleClass="rounded-xl shadow-2xl" (onHide)="closeZoom()">
+
+        <div class="zoom-content relative flex justify-center items-center py-6 px-2">
             <button (click)="prevImage()"
                 class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-orangeraie transition z-10">
                 ‹
             </button>
 
             <img *ngIf="selectedImage" [src]="selectedImage.image"
-                class="max-h-[70vh] max-w-full object-contain rounded-xl shadow z-0" />
+                class="max-h-[80vh] max-w-full object-contain rounded-xl shadow z-0" />
 
             <button (click)="nextImage()"
                 class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-orangeraie transition z-10">
                 ›
             </button>
         </div>
-        <div class="flex gap-2 justify-center mt-4 flex-wrap">
+
+        <div class="flex flex-wrap gap-2 justify-center mt-4 px-4">
             <img *ngFor="let thumb of album" [src]="thumb.image" (click)="goToImage(thumb)"
-                class="w-16 h-16 object-cover rounded cursor-pointer transition border-2" [ngClass]="{
-             'border-orangeraie': thumb === selectedImage,
-             'border-transparent hover:border-orangeraie': thumb !== selectedImage
-           }" />
+                class="thumbnail-img object-cover rounded cursor-pointer transition border-2" [ngClass]="{
+      'border-orangeraie': thumb === selectedImage,
+      'border-transparent hover:border-orangeraie': thumb !== selectedImage
+    }" />
         </div>
+
     </p-dialog>
 
     <!-- Texte & boutons -->

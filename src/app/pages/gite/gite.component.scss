@@ -1,3 +1,4 @@
+// Galleria indicators
 ::ng-deep .p-galleria-indicators {
     transform: translateY(10px);
     margin-top: 1rem;
@@ -16,16 +17,19 @@
     cursor: pointer;
 }
 
+// Dialog backdrop blur
 ::ng-deep .p-dialog-mask.p-component-overlay {
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1000 !important;
 }
 
-/* Supprime tout flou sur la boîte de contenu interne */
+// Dialog container
 ::ng-deep .p-dialog {
+    animation: fadeZoomIn 0.4s ease-out !important;
     background: transparent !important;
     box-shadow: none !important;
+    border-radius: 1rem !important;
 }
 
 ::ng-deep .p-dialog .p-dialog-content {
@@ -33,10 +37,7 @@
     box-shadow: none !important;
 }
 
-::ng-deep .p-dialog {
-    animation: fadeZoomIn 0.4s ease-out !important;
-}
-
+// Animation d’apparition douce
 @keyframes fadeZoomIn {
     0% {
         opacity: 0;
@@ -49,14 +50,71 @@
     }
 }
 
-:host ::ng-deep .p-dialog {
-    border-radius: 1rem !important;
+// Navigation arrows
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.left-arrow {
+    left: 1rem;
+}
+
+.right-arrow {
+    right: 1rem;
+}
+
+.nav-arrow:hover {
+    color: #c0703f;
+}
+
+// Mobile responsive
+@media (max-width: 640px) {
+
+    ::ng-deep .p-dialog,
+    ::ng-deep .p-dialog-content {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+    }
+
+    ::ng-deep .p-dialog .p-dialog-content img {
+        max-height: 85vh;
+    }
+}
+
+::ng-deep .p-dialog {
+    max-height: 100vh !important;
+    overflow: visible !important;
+}
+
+::ng-deep .p-dialog .p-dialog-content {
+    overflow: visible !important;
+    max-height: none !important;
+}
+
+/* ✅ On limite uniquement le bloc image */
+.zoom-content {
+    max-height: 90vh;
+    overflow: hidden;
 }
 
 ::ng-deep .p-dialog .p-dialog-header .p-dialog-header-icon {
     color: white;
 }
 
-::ng-deep .p-dialog .p-dialog-header .p-dialog-header-icon:hover {
-    color: #7a583f;
+.thumbnail-img {
+    width: 4rem; // équivaut à w-16
+    height: 4rem;
 }

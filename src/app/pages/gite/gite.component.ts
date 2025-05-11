@@ -80,8 +80,13 @@ export class GiteComponent {
   showDialog = false;
   selectedImage: any = null;
 
+  get isMobile(): boolean {
+    return window.innerWidth <= 640;
+  }
+
   closeZoom() {
     this.showDialog = false;
+    this.selectedImage = null;
     document.body.style.overflow = '';
   }
 
