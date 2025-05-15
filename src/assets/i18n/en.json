@@ -10,7 +10,7 @@
     },
     "navbar": {
         "home": "Home",
-        "accommodation": "Our Accommodations",
+        "accommodation": "Our Accommodation",
         "rooms": "Our Rooms",
         "gite": "Our Cottage",
         "reservation": "Booking",
@@ -55,20 +55,20 @@
         },
         "contact_teaser": {
             "title": "A question about our rooms?",
-            "text": "Feel free to contact us — we reply quickly and gladly.",
+            "text": "Feel free to contact us — we will gladly reply.",
             "cta": "Contact us"
         },
         "gite_section": {
             "title": "Our Cottage",
-            "desc": "Discover our independent, comfortable and fully-equipped cottage, perfect for couples, families or groups of friends. Located in a peaceful setting with a terrace and garden view — ideal for a longer stay in the Pyrénées-Orientales.",
+            "desc": "Discover our private, comfortable and fully equipped cottage nestled in a quiet setting with the bedroom overlooking the patio. It’s perfect for a couple, a family or a group of friends to stay over the week and visit the Pyrénées-Orientales area.",
             "cta": "Learn more"
         },
         "services": {
-            "title": "Services & Amenities",
+            "title": "Amenities",
             "list": {
                 "bed": {
                     "title": "Comfortable bedding",
-                    "desc": "Linens provided, beds made upon arrival"
+                    "desc": "Bed sheets and towels provided, beds made upon arrival"
                 },
                 "breakfast": {
                     "title": "Breakfast",
@@ -88,7 +88,7 @@
                 },
                 "bike": {
                     "title": "Bike garage",
-                    "desc": "Secure storage for bicycles"
+                    "desc": "Locked and secured"
                 }
             }
         },
@@ -396,7 +396,7 @@
     },
     "galerie": {
         "title": "Photo Gallery",
-        "text": "Discover more of L'Orangeraie in pictures",
+        "text": "See more of L’Orangeraie in pictures",
         "cta": "View the photo gallery"
     },
     "legal": {
